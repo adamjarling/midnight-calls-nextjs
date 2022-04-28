@@ -35,14 +35,39 @@ export default function Home() {
         <section>
           <div className={styles.centered}>
             <h1 className={styles.title}>The Midnight Calls</h1>
-            {/* <div className={styles.flag}>
+            <a
+              href="https://reggieslive.com/show/the-claws/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
-                src={`/images/chicago-flag.png`}
-                alt="chicago flag"
-                width={40}
-                height={25}
+                src={`/images/poster-reggies-2022-06-24-IG.jpeg`}
+                alt="The Midnight Calls at Reggies poster"
+                width={1200}
+                height={1200}
               />
-            </div> */}
+            </a>
+            <div className={styles.textWrap}>
+              <p>
+                The Midnight Calls howl at the moon in and around Chicago USA.
+              </p>
+              <p>
+                Debut gig at{" "}
+                <a
+                  href="https://reggieslive.com/show/the-claws/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Reggies
+                </a>{" "}
+                Friday, June 24 w/ The Claws
+              </p>
+              <p>
+                <a href="https://www.ticketweb.com/event/the-claws-the-midnight-reggies-music-joint-tickets/12004405">
+                  Buy tickets
+                </a>
+              </p>
+            </div>
           </div>
         </section>
       </main>
