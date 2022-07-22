@@ -15,23 +15,6 @@ body {
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: "Staatliches", sans-serif; */
-  font-family: "Courier New", Courier, monospace;
-}
-
-a {
-  color: inherit;
-}
-
-body {
-  display: flex;
-  /* background: url(/images/daniils-petrovs-AaYmWia-D4k-unsplash.jpeg); */
-  background-size: cover;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

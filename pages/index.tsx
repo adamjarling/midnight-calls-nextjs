@@ -1,11 +1,11 @@
 import Head from "next/head";
+import HomeBanner from "../components/HomeBanner";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
-import styles2 from "../styles/Home.module.sass";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="font-statliches">
       <Head>
         <title>The Midnight Calls</title>
         <meta
@@ -15,64 +15,76 @@ export default function Home() {
         <link rel="icon" href="/icons8-lightning-bolt-50.png" />
       </Head>
 
-      <main className={styles.main}>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-        <div className={styles2.firefly}></div>
-
-        <section>
-          <div className={styles.centered}>
-            <h1 className={styles.title}>The Midnight Calls</h1>
-            <a
-              href="https://reggieslive.com/show/the-claws/"
-              target="_blank"
-              rel="noreferrer"
-            >
+      <main>
+        <HomeBanner />
+        <section className="container text-center">
+          <h1 className="py-10 text-5xl font-statliches">
+            The Midnight Calls &#9734; Chicago USA &#9734; Denim &apos; n
+            Leather
+          </h1>
+        </section>
+        <div className="md:hidden">
+          <Link href="https://www.reggieslive.com/show/supersuckers-6/">
+            <a target="_blank">
               <Image
-                src={`/images/poster-reggies-2022-06-24-IG.jpeg`}
-                alt="The Midnight Calls at Reggies poster"
-                width={1200}
-                height={1200}
+                src="/images/Oct16Supersuckers.jpeg"
+                width={825}
+                height={1275}
+                alt="The Midnight Calls and Supersuckers flyer October 2022"
               />
             </a>
-            <div className={styles.textWrap}>
-              <p>
-                The Midnight Calls howl at the moon in and around Chicago USA.
-              </p>
-              <p>
-                Debut gig at{" "}
-                <a
-                  href="https://reggieslive.com/show/the-claws/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Reggies
-                </a>{" "}
-                Friday, June 24 w/ The Claws
-              </p>
-              <p>
-                <a href="https://www.ticketweb.com/event/the-claws-the-midnight-reggies-music-joint-tickets/12004405">
-                  Buy tickets
+          </Link>
+          <Image
+            src="/images/Jun24TheClaws.jpeg"
+            width={825}
+            height={1275}
+            alt="The Midnight Calls and Supersuckers flyer October 2022"
+          />
+        </div>
+        <div className="hidden md:block">
+          <Link href="https://www.reggieslive.com/show/supersuckers-6/">
+            <a target="_blank">
+              <Image
+                src="/images/Oct16SupersuckersLONG.jpeg"
+                width={1267}
+                height={599}
+                alt="The Midnight Calls and Supersuckers flyer October 2022"
+              />
+            </a>
+          </Link>
+          <Image
+            src="/images/Jun24TheClawsLONG.jpeg"
+            width={1267}
+            height={599}
+            alt="The Midnight Calls and Supersuckers flyer October 2022"
+          />
+        </div>
+        <section className="container">
+          <div className="mx-auto max-w-xl py-10 text-center">
+            <p className="text-5xl pb-5">&#9734;</p>
+            <p className="text-2xl tracking-wider">
+              Hailing from Chicago, The Midnight Calls is the brainchild of
+              guitarist Adam J. Arling (The Last Vegas, Urge Overkill, Warrior
+              Soul) and singer Taran de Pablos (Fierce Atmospheres, Skinwalker).
+              While working together in the AC/DC tribute Black Angus, the duo
+              decided to get back on the song-writing saddle and came up with a
+              bunch of denim-and-leather, Blues-infused, Rock'n Roll songs
+              reminiscent of bands like Cheap Trick, AC/DC or Guns N' Roses. The
+              band's first show is scheduled for June 24th at Reggies. Let There
+              Be Rock!
+            </p>
+            <p className="pt-10 text-lg">
+              <Link href="https://www.facebook.com/themidnightcallsofficial">
+                <a target="_blank" className="text-gray-500">
+                  Follow on Facebook
                 </a>
-              </p>
-            </div>
+              </Link>
+            </p>
           </div>
         </section>
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer></footer>
     </div>
   );
 }
