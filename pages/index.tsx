@@ -17,10 +17,19 @@ export default function Home() {
 
       <main>
         <HomeBanner />
-        <section className="container text-center">
-          <h1 className="py-10 text-5xl font-statliches">
-            The Midnight Calls &#9734; Chicago USA &#9734; Denim &apos; n
-            Leather
+        <div className="container">
+          <p className="text-right">
+            Photo:{" "}
+            <Link href="https://www.instagram.com/bikerchickie_m/">
+              <a>bikerchickie_m</a>
+            </Link>
+          </p>
+        </div>
+        <section className="container text-center mx-auto">
+          <h1 className="py-10 text-5xl">
+            The Midnight Calls
+            <br />
+            Chicago USA &#9734; Denim &apos; n Leather
           </h1>
         </section>
         <div className="md:hidden">
@@ -49,6 +58,7 @@ export default function Home() {
                 width={1267}
                 height={599}
                 alt="The Midnight Calls and Supersuckers flyer October 2022"
+                layout="responsive"
               />
             </a>
           </Link>
@@ -57,9 +67,10 @@ export default function Home() {
             width={1267}
             height={599}
             alt="The Midnight Calls and Supersuckers flyer October 2022"
+            layout="responsive"
           />
         </div>
-        <section className="container">
+        <section className="container mx-auto">
           <div className="mx-auto max-w-xl py-10 text-center">
             <p className="text-5xl pb-5">&#9734;</p>
             <p className="text-2xl tracking-wider">
@@ -68,10 +79,10 @@ export default function Home() {
               Soul) and singer Taran de Pablos (Fierce Atmospheres, Skinwalker).
               While working together in the AC/DC tribute Black Angus, the duo
               decided to get back on the song-writing saddle and came up with a
-              bunch of denim-and-leather, Blues-infused, Rock'n Roll songs
-              reminiscent of bands like Cheap Trick, AC/DC or Guns N' Roses. The
-              band's first show is scheduled for June 24th at Reggies. Let There
-              Be Rock!
+              bunch of denim-and-leather, Blues-infused, Rock&apos;n Roll songs
+              reminiscent of bands like Cheap Trick, AC/DC or Guns N&apos;
+              Roses. The band&apos;s first show is scheduled for June 24th at
+              Reggies. Let There Be Rock!
             </p>
             <p className="pt-10 text-lg">
               <Link href="https://www.facebook.com/themidnightcallsofficial">

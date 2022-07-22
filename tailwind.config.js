@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      padding: "2rem",
+    },
     extend: {
       fontFamily: {
         statliches: ["Staatliches", "sans-serif"],
