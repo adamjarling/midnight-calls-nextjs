@@ -74,20 +74,22 @@ export default function Home() {
           <div className="mx-auto max-w-xl py-10 text-center">
             <p className="text-5xl pb-5">&#9734;</p>
             <p className="text-2xl tracking-wider">
-              Hailing from Chicago, The Midnight Calls is the brainchild of
-              guitarist Adam J. Arling (The Last Vegas, Urge Overkill, Warrior
-              Soul) and singer Taran de Pablos (Fierce Atmospheres, Skinwalker).
-              While working together in the AC/DC tribute Black Angus, the duo
-              decided to get back on the song-writing saddle and came up with a
-              bunch of denim-and-leather, Blues-infused, Rock&apos;n Roll songs
-              reminiscent of bands like Cheap Trick, AC/DC or Guns N&apos;
-              Roses. The band&apos;s first show is scheduled for June 24th at
-              Reggies. Let There Be Rock!
+              From from Chicago USA, The Midnight Calls play denim-and-leather,
+              Blues-infused, Rock&apos;n Roll songs reminiscent of bands like
+              Cheap Trick, AC/DC or Guns N&apos; Roses. The band is writing
+              material for its debut album slated for 2023. Let There Be Rock!
             </p>
             <p className="pt-10 text-lg">
               <Link href="https://www.facebook.com/themidnightcallsofficial">
                 <a target="_blank" className="text-gray-500">
                   Follow on Facebook
+                </a>
+              </Link>
+            </p>
+            <p className="text-lg">
+              <Link href="https://www.instagram.com/themidnightcallsofficial/">
+                <a target="_blank" className="text-gray-500">
+                  Get creepy on Instagram
                 </a>
               </Link>
             </p>
