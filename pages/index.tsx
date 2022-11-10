@@ -32,6 +32,19 @@ export default function Home() {
             Chicago USA &#9734; Denim &apos; n Leather
           </h1>
         </section>
+        <section className="bg-black text-white mx-auto pt-10 pb-20 text-center text-xl mb-10">
+          <h2 className="text-5xl md:text-7xl text-gray-200 animate-pulse">
+            New Years Eve 2022!
+          </h2>
+          <p className="my-6">Live at Reggies Chicago</p>
+          <a
+            className="p-5 bg-white text-black inline-block  hover:bg-gray-200"
+            href="https://www.ticketweb.com/event/new-years-eve-2023-featuring-reggies-music-joint-tickets/12650055"
+            target="_blank"
+          >
+            Get Tickets
+          </a>
+        </section>
         <div className="md:hidden">
           <Link href="https://www.reggieslive.com/show/supersuckers-6/">
             <a target="_blank">

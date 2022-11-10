@@ -19,6 +19,10 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 21px;
+}
+
 a {
   @apply transition-all ease-in-out duration-300 text-gray-600 hover:text-gray-900;
 }
