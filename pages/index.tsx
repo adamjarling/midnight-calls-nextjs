@@ -2,6 +2,7 @@ import Head from "next/head";
 import HomeBanner from "../components/HomeBanner";
 import Image from "next/image";
 import Link from "next/link";
+import NYEBanner from "../public/images/Dec31-2022-LONG.jpeg";
 
 export default function Home() {
   return (
@@ -25,22 +26,27 @@ export default function Home() {
             </Link>
           </p>
         </div>
-        <section className="container text-center mx-auto">
+        <section className="container mx-auto text-center">
           <h1 className="py-10 text-5xl">
             The Midnight Calls
             <br />
             Chicago USA &#9734; Denim &apos; n Leather
           </h1>
         </section>
-        <section className="bg-black text-white mx-auto pt-10 pb-20 text-center text-xl mb-10">
-          <h2 className="text-5xl md:text-7xl text-gray-200 animate-pulse">
-            New Years Eve 2022!
-          </h2>
-          <p className="my-6">Live at Reggies Chicago</p>
+        <section className="mx-auto mb-10 text-center">
           <a
-            className="p-5 bg-white text-black inline-block  hover:bg-gray-200"
+            className=""
             href="https://www.ticketweb.com/event/new-years-eve-2023-featuring-reggies-music-joint-tickets/12650055"
             target="_blank"
+            rel="noreferrer"
+          >
+            <Image src={NYEBanner} alt="New Years Eve 2022 flyer" />
+          </a>
+          <a
+            className="inline-block p-5 my-6 text-2xl text-white bg-black hover:text-gray-200"
+            href="https://www.ticketweb.com/event/new-years-eve-2023-featuring-reggies-music-joint-tickets/12650055"
+            target="_blank"
+            rel="noreferrer"
           >
             Get Tickets
           </a>
@@ -84,8 +90,8 @@ export default function Home() {
           />
         </div>
         <section className="container mx-auto">
-          <div className="mx-auto max-w-xl py-10 text-center">
-            <p className="text-5xl pb-5">&#9734;</p>
+          <div className="max-w-xl py-10 mx-auto text-center">
+            <p className="pb-5 text-5xl">&#9734;</p>
             <p className="text-2xl tracking-wider">
               From from Chicago USA, The Midnight Calls play denim-and-leather,
               Blues-infused, Rock&apos;n Roll songs reminiscent of bands like
