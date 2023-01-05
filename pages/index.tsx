@@ -33,7 +33,17 @@ export default function Home() {
         </section>
 
         <section className="">
-          <Image src={NYEBanner} alt="New Years Eve 2022 flyer" />
+          <div className="md:hidden">
+            <Image
+              src="/images/Dec 31 Pipe.jpg"
+              width={825}
+              height={1275}
+              alt="New Years Eve 2022 flyer"
+            />
+          </div>
+          <div className="hidden md:block">
+            <Image src={NYEBanner} alt="New Years Eve 2022 flyer" />
+          </div>
         </section>
         <div className="md:hidden">
           <Link href="https://www.reggieslive.com/show/supersuckers-6/">
