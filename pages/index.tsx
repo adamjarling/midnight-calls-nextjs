@@ -3,6 +3,7 @@ import HomeBanner from "../components/HomeBanner";
 import Image from "next/image";
 import Link from "next/link";
 import NYEBanner from "../public/images/Dec31-2022-LONG.jpeg";
+import JasonKane from "../public/images/Feb2023_JasonKane_Poster_PRINT.jpg";
 
 export default function Home() {
   return (
@@ -18,38 +19,21 @@ export default function Home() {
 
       <main>
         <HomeBanner />
-        <div className="container">
-          <p className="text-right">
-            Photo:{" "}
-            <Link href="https://www.instagram.com/bikerchickie_m/">
-              <a>bikerchickie_m</a>
-            </Link>
-          </p>
-        </div>
-        <section className="container mx-auto text-center">
-          <h1 className="py-10 text-5xl">
-            The Midnight Calls
-            <br />
-            Chicago USA &#9734; Denim &apos; n Leather
-          </h1>
+
+        <section className="py-10 text-center">
+          <div className="container mx-auto">
+            <p className="mb-6 text-5xl md:text-6xl xl:text-7xl">
+              Wednedsay, February 8th 2023
+            </p>
+            <Image
+              src={JasonKane}
+              alt="Jason Kane and the Jive residency poster"
+            />
+          </div>
         </section>
-        <section className="mx-auto mb-10 text-center">
-          <a
-            className=""
-            href="https://www.ticketweb.com/event/new-years-eve-2023-featuring-reggies-music-joint-tickets/12650055"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image src={NYEBanner} alt="New Years Eve 2022 flyer" />
-          </a>
-          <a
-            className="inline-block p-5 my-6 text-2xl text-white bg-black hover:text-gray-200"
-            href="https://www.ticketweb.com/event/new-years-eve-2023-featuring-reggies-music-joint-tickets/12650055"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Get Tickets
-          </a>
+
+        <section className="">
+          <Image src={NYEBanner} alt="New Years Eve 2022 flyer" />
         </section>
         <div className="md:hidden">
           <Link href="https://www.reggieslive.com/show/supersuckers-6/">
@@ -93,9 +77,9 @@ export default function Home() {
           <div className="max-w-xl py-10 mx-auto text-center">
             <p className="pb-5 text-5xl">&#9734;</p>
             <p className="text-2xl tracking-wider">
-              From from Chicago USA, The Midnight Calls play denim-and-leather,
+              From Chicago USA, The Midnight Calls play denim-and-leather,
               Blues-infused, Rock&apos;n Roll songs reminiscent of bands like
-              Cheap Trick, AC/DC or Guns N&apos; Roses. The band is writing
+              Cheap Trick, AC/DC or The Black Crowes. The band is writing
               material for its debut album slated for 2023. Let There Be Rock!
             </p>
             <p className="pt-10 text-lg">
