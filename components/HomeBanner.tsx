@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const HomeBanner = () => {
@@ -30,7 +29,7 @@ const HomeBanner = () => {
       <p className="absolute text-sm text-right text-white bottom-2 right-5">
         Photo:{" "}
         <Link href="https://www.instagram.com/bikerchickie_m/">
-          <a className="text-white">bikerchickie_m</a>
+          <span className="text-white">bikerchickie_m</span>
         </Link>
       </p>
     </div>

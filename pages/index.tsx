@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import NYEBanner from "../public/images/Dec31-2022-LONG.jpeg";
 import JasonKane from "../public/images/Feb2023_JasonKane_Poster_PRINT.jpg";
+import forgeFlyer from "../public/images/2023-april-forge.jpeg";
+import forgeFlyerMobile from "../public/images/2023-april-forge-mobile.jpeg";
 
 export default function Home() {
   return (
@@ -20,11 +22,30 @@ export default function Home() {
       <main>
         <HomeBanner />
 
-        <section className="py-10 text-center">
+        <section>
+          <div className="md:hidden">
+            <Link
+              target="_blank"
+              href="https://www.ticketweb.com/event/yet-again-hazard-the-the-forge-tickets/12878045"
+            >
+              <Image
+                src={forgeFlyerMobile}
+                alt="April 14th at the Forge flyer"
+              />
+            </Link>
+          </div>
+          <div className="hidden md:block">
+            <Link
+              target="_blank"
+              href="https://www.ticketweb.com/event/yet-again-hazard-the-the-forge-tickets/12878045"
+            >
+              <Image src={forgeFlyer} alt="April 14th at the Forge flyer" />
+            </Link>
+          </div>
+        </section>
+
+        <section className="py-0 text-center">
           <div className="container mx-auto">
-            <p className="mb-6 text-5xl md:text-6xl xl:text-7xl">
-              Wednedsay, February 8th 2023
-            </p>
             <Image
               src={JasonKane}
               alt="Jason Kane and the Jive residency poster"
@@ -47,14 +68,12 @@ export default function Home() {
         </section>
         <div className="md:hidden">
           <Link href="https://www.reggieslive.com/show/supersuckers-6/">
-            <a target="_blank">
-              <Image
-                src="/images/Oct16Supersuckers.jpeg"
-                width={825}
-                height={1275}
-                alt="The Midnight Calls and Supersuckers flyer October 2022"
-              />
-            </a>
+            <Image
+              src="/images/Oct16Supersuckers.jpeg"
+              width={825}
+              height={1275}
+              alt="The Midnight Calls and Supersuckers flyer October 2022"
+            />
           </Link>
           <Image
             src="/images/Jun24TheClaws.jpeg"
@@ -65,15 +84,13 @@ export default function Home() {
         </div>
         <div className="hidden md:block">
           <Link href="https://www.reggieslive.com/show/supersuckers-6/">
-            <a target="_blank">
-              <Image
-                src="/images/Oct16SupersuckersLONG.jpeg"
-                width={1267}
-                height={599}
-                alt="The Midnight Calls and Supersuckers flyer October 2022"
-                layout="responsive"
-              />
-            </a>
+            <Image
+              src="/images/Oct16SupersuckersLONG.jpeg"
+              width={1267}
+              height={599}
+              alt="The Midnight Calls and Supersuckers flyer October 2022"
+              layout="responsive"
+            />
           </Link>
           <Image
             src="/images/Jun24TheClawsLONG.jpeg"
@@ -94,16 +111,12 @@ export default function Home() {
             </p>
             <p className="pt-10 text-lg">
               <Link href="https://www.facebook.com/themidnightcallsofficial">
-                <a target="_blank" className="text-gray-500">
-                  Follow on Facebook
-                </a>
+                Follow on Facebook
               </Link>
             </p>
             <p className="text-lg">
               <Link href="https://www.instagram.com/themidnightcallsofficial/">
-                <a target="_blank" className="text-gray-500">
-                  Get creepy on Instagram
-                </a>
+                Get creepy on Instagram
               </Link>
             </p>
           </div>
