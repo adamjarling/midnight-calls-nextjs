@@ -81,7 +81,11 @@ export default function Home() {
                     <p className="md:text-right">{show.location}</p>
                     {show.ticketsUrl && (
                       <p className="text-xl md:text-right">
-                        <a href={show.ticketsUrl} target="_blank">
+                        <a
+                          href={show.ticketsUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           Buy Tickets
                         </a>
                       </p>
@@ -101,6 +105,7 @@ export default function Home() {
                 <Link
                   target="_blank"
                   href="https://www.ticketweb.com/event/yet-again-hazard-the-the-forge-tickets/12878045"
+                  rel="noreferrer"
                 >
                   <Image
                     src={forgeFlyerMobile}
@@ -114,6 +119,7 @@ export default function Home() {
                 <Link
                   target="_blank"
                   href="https://www.ticketweb.com/event/yet-again-hazard-the-the-forge-tickets/12878045"
+                  rel="noreferrer"
                 >
                   <Image
                     src={forgeFlyer}
