@@ -9,9 +9,15 @@ import forgeFlyerAug2023 from "../public/images/2023-08-06_forge_1200x1200.jpeg"
 import forgeFlyerMobile from "../public/images/2023-april-forge-mobile.jpeg";
 import { shows } from "../data/shows";
 
+const filteredShows = shows.filter((show) => {
+  const showDate = new Date(show.date);
+  const today = new Date();
+  return showDate > today;
+});
+
 export default function Home() {
   return (
-    <div className="font-statliches">
+    <div className="font-poppins">
       <Head>
         <title>The Midnight Calls</title>
         <meta
@@ -52,12 +58,15 @@ export default function Home() {
             Upcoming Shows
           </h2>
           <ul>
-            {shows.map((show) => (
+            {filteredShows.map((show) => (
               <li key={show.date} className="py-5 text-3xl">
                 <div className="flex flex-col justify-between md:flex-row">
                   <div className="flex flex-col items-center justify-center md:items-start">
-                    <p className="">{show.date}</p>
+                    <p className="font-semibold">{show.date}</p>
                     <p className="text-center md:text-left">{show.venue}</p>
+                    {show.time && (
+                      <p className="font-light md:text-left">{show.time}</p>
+                    )}
                   </div>
                   <div className="flex flex-col items-center justify-center">
                     <p className="md:text-right">{show.location}</p>

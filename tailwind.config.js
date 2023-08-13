@@ -10,6 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        caprasimo: ["Caprasimo", "sans-serif"],
         statliches: ["Staatliches", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },

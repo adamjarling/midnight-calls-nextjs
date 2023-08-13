@@ -13,18 +13,25 @@ body {
 } */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  font-size: 21px;
 }
 
 a {
   @apply text-gray-600 transition-all duration-300 ease-in-out hover:text-gray-900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-caprasimo;
 }
 
 .headline {
