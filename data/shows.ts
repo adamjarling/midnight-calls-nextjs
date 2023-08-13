@@ -47,6 +47,15 @@ export const shows: Show[] = [
     ticketsUrl: "",
   },
   {
+    date: "Sat Sept 29, 2023",
+    venue: "Live Wire Lounge",
+    location: "Chicago, IL",
+    venueUrl: "",
+    facebookEventUrl: "",
+    time: "9:00pm",
+    ticketsUrl: "",
+  },
+  {
     date: "Oct 13, 2023",
     venue: "Brauerhaus",
     location: "Lombard, IL",

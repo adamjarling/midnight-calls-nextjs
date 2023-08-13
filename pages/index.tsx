@@ -47,24 +47,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto md:container">
-          <Image
-            src={forgeFlyerAug2023}
-            alt="MC at the Forge August 6, 2023"
-            className="mx-auto"
-          />
-
-          <div className="flex justify-center w-full pb-10 mt-5">
-            <Link
-              href="https://www.ticketweb.com/event/-blacktop-mojo-yet-the-forge-tickets/13266278"
-              target="_blank"
-              className="button"
-            >
-              Buy Tickets
-            </Link>
-          </div>
-        </section>
-
         <section className="container pb-10 mx-auto">
           <h2 className="pt-10 pb-5 text-center md:pb-10 headline">
             Upcoming Shows
@@ -101,6 +83,12 @@ export default function Home() {
           <section className="container mx-auto">
             <div className="grid grid-cols-1 gap-10">
               <h2 className="mt-10 text-center headline">Past Shows</h2>
+              <Image
+                src={forgeFlyerAug2023}
+                alt="MC at the Forge August 6, 2023"
+                className="mx-auto"
+              />
+
               <div className="md:hidden">
                 <Link
                   target="_blank"
