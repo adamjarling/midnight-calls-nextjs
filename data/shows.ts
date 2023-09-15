@@ -1,4 +1,4 @@
-type Show = {
+export type Show = {
   date: string;
   venue: string;
   location: string;
@@ -59,6 +59,15 @@ export const shows: Show[] = [
     date: "Oct 13, 2023",
     venue: "Brauerhaus",
     location: "Lombard, IL",
+    venueUrl: "",
+    facebookEventUrl: "",
+    time: "9:00pm",
+    ticketsUrl: "",
+  },
+  {
+    date: "Nov 3, 2023",
+    venue: "Reggies w/ Steepwater Band",
+    location: "Chicago, IL",
     venueUrl: "",
     facebookEventUrl: "",
     time: "9:00pm",

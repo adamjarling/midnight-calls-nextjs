@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* font-size: 21px; */
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-medium uppercase;
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  .banner-headline {
+    @apply pb-3 text-5xl font-semibold leading-none text-center lg:text-6xl;
+  }
+
+  .section {
+    @apply max-w-3xl py-8 mx-auto;
+  }
+}

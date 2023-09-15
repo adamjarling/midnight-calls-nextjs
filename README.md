@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS / TypeScript / TailwindCSS boilerplate
+
+Baseline starter project files for a [NextJS](https://nextjs.org/) (server components) React application which uses TypeScript and [TailwindCSS](https://tailwindcss.com/). Intended to be a helpful starting point.
+
+## Includes
+
+- Using [Next13](https://nextjs.org/) `/app` directory and Server components by default
+- Typescript
+- [TailwindCSS](https://tailwindcss.com/)
+- ESLint via Prettier
+- Google Analytics (UA) example
+- OpenGraph dynamic image setup using [Vercel's OG package](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation)
+- Masonry photo gallery w/ Lightbox support
+- Parallax Hero components (Video and Image)
+- [Framer Motion](https://www.framer.com/motion/) support
 
 ## Getting Started
 
-First, run the development server:
+Clone the app and run `npm i`
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Update the `package.json` file to your new site info
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Update the config file `nttb-config.ts` with some sitewide defaults.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Boom 🚀
