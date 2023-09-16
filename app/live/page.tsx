@@ -43,10 +43,10 @@ const Shows = async () => {
           <ShowsList2 shows={currentShows as Show[]} />
         </div>
         {images && <MasonryGallery dir={folder} images={images} />}
-        <section className="container">
+        {/* <section className="container">
           <h3 className="text-2xl font-bold">Past Shows</h3>
           <ShowsList2 shows={pastShows as Show[]} />
-        </section>
+        </section> */}
       </div>
     </Main>
   );
