@@ -32,14 +32,19 @@ export default function Home() {
             images={[
               {
                 mediaQuery: `(max-width: 640px)`,
-                src: "/images/the-midnight-calls_promo-pic-square.jpg ",
-                srcSet: "/images/the-midnight-calls_promo-pic-square.jpg",
+                src: "/images/the-midnight-calls_promo-pic-mobile.jpg ",
+                srcSet: "/images/the-midnight-calls_promo-pic-mobile2.jpg",
               },
               {
                 mediaQuery: "(min-width: 641px)",
                 src: "/images/the-midnight-calls_promo-pic.jpg",
                 srcSet: "/images/the-midnight-calls_promo-pic.jpg",
               },
+              // {
+              //   mediaQuery: "",
+              //   src: "/images/the-midnight-calls_promo-pic.jpg",
+              //   srcSet: "/images/the-midnight-calls_promo-pic.jpg",
+              // },
             ]}
           />
         </div>
