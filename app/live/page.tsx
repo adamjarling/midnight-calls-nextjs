@@ -33,7 +33,7 @@ const Shows = async () => {
   });
 
   return (
-    <Main flushTop>
+    <Main>
       <Banner className="md:py-20">
         <BannerHeadline>Live</BannerHeadline>
       </Banner>

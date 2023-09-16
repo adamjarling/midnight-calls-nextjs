@@ -5,7 +5,7 @@ export const navigation = [
   { name: "Press Pack", href: "/press" },
   { name: "Live", href: "/live" },
   // { name: "Music", href: "/music" },
-  { name: "Photos", href: "/photos" },
+  // { name: "Photos", href: "/photos" },
 ];
 
 export const socialIcons = [

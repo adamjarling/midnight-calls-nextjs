@@ -1,17 +1,14 @@
 import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 
-import Banner from "@/components/banner/Banner";
-import BannerHeadline from "@/components/banner/Headline";
-import Main from "@/components/Main";
 import { promises as fs } from "fs";
 import path from "path";
-import { shuffle } from "../utils/shuffle";
+import { shuffle } from "@/app/utils/shuffle";
 
 const sizeOf = require("image-size");
 
 const folder = "photos";
 
-const GalleryPage = async () => {
+const HomePhotos = async () => {
   // Get filenames from a directory
   const imageDirectory = path.join(process.cwd(), `/public/${folder}`);
   const imageFilenames = (await fs.readdir(imageDirectory)).filter(
@@ -27,14 +24,7 @@ const GalleryPage = async () => {
     };
   });
 
-  return (
-    <Main>
-      <Banner className="">
-        <BannerHeadline>Photos</BannerHeadline>
-      </Banner>
-      {images && <MasonryGallery dir={folder} images={images} />}
-    </Main>
-  );
+  return <>{images && <MasonryGallery dir={folder} images={images} />}</>;
 };
 
-export default GalleryPage;
+export default HomePhotos;

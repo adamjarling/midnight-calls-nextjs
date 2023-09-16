@@ -14,7 +14,7 @@ import mcPhotoCloseup from "@/public/images/the-midnight-calls_promo-pic-closeup
 
 const About = () => {
   return (
-    <Main flushTop={true}>
+    <Main flushTop={false}>
       <div className="space-y-16">
         <div>
           <Banner>
@@ -32,13 +32,9 @@ const About = () => {
               />
             </div>
           </div>
-
-          <div className="flex justify-center pt-5">
-            <Button href="/photos">View all photos </Button>
-          </div>
         </div>
 
-        <section className="max-w-4xl mx-auto">
+        <section className="max-w-4xl px-6 mx-auto">
           <Banner>
             <BannerHeadline>Bio</BannerHeadline>
           </Banner>

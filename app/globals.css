@@ -19,6 +19,10 @@ html {
     @apply mb-4;
   }
 
+  .button {
+    @apply px-6 py-4 uppercase border rounded-lg;
+  }
+
   .banner-headline {
     @apply pb-3 text-5xl font-semibold leading-none text-center lg:text-6xl;
   }
