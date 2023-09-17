@@ -19,7 +19,7 @@ const BannerHeadline: React.FC<BannerHeadlineProps> = ({ children }) => {
       transition={{
         duration: 0.5,
       }}
-      className="banner-headline"
+      className="text-5xl font-semibold leading-none text-center lg:text-6xl"
     >
       {children}
     </motion.h2>

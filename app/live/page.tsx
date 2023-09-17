@@ -2,13 +2,17 @@ import { Show, shows } from "@/data/shows";
 
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
+import HeroWrapper from "./HeroWrapper";
 import Image from "next/image";
 import Main from "@/components/Main";
 import MasonryGallery from "@/components/Masonry";
 import { MasonryImage } from "@/components/Masonry";
+import ParallaxHero from "@/components/ParallaxHero";
+import ShowListBig from "@/components/shows/ListBig";
 import ShowsList2 from "@/components/shows/List2";
 import { promises as fs } from "fs";
 import path from "path";
+import rockPic from "@/public/photos/DSC05518.jpg";
 import useShows from "@/hooks/use-shows";
 
 const sizeOf = require("image-size");
@@ -33,15 +37,14 @@ const Shows = async () => {
   });
 
   return (
-    <Main>
-      <Banner className="md:py-20">
+    <Main flushTop>
+      <HeroWrapper />
+      {/* <Banner className="">
         <BannerHeadline>Live</BannerHeadline>
-      </Banner>
+      </Banner> */}
 
       <div className="space-y-16">
-        <div className="container">
-          <ShowsList2 shows={currentShows as Show[]} />
-        </div>
+        <ShowListBig shows={currentShows as Show[]} />
         {images && <MasonryGallery dir={folder} images={images} />}
         {/* <section className="container">
           <h3 className="text-2xl font-bold">Past Shows</h3>

@@ -1,5 +1,7 @@
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
+import BannerText from "@/components/banner/Text";
+import Container from "@/components/Container";
 import HomeHero from "@/components/home/Hero";
 import HomePhotos from "@/components/home/Photos";
 import Image from "next/image";
@@ -51,43 +53,43 @@ export default function Home() {
           <HomeHero />
         </div>
 
-        <Banner className="">
+        <Banner>
           <BannerHeadline>New Single...</BannerHeadline>
-          <p className="">
-            The Midnight Calls are debuting their debut single October 2023. Get
-            ready for Whaddya! Here are some pictures from the video shoot with
-            the fabulous{" "}
-            <a href="https://mediamadegreat.com/" target="_blank">
-              Michael Digioia
-            </a>
-            .
-          </p>
-          <div className="grid grid-cols-1 gap-3 mt-8 md:grid-cols-2">
-            {videoPics.map((pic, i) => (
-              <div key={i}>
-                <Image src={pic.src} alt={pic.alt} />
-              </div>
-            ))}
-          </div>
-          {/* <Image
-            src={logo}
-            className="max-w-full py-10 mx-auto md:max-w-xl"
-            alt="Midnight Calls logo"
-          /> */}
+          <BannerText>
+            <p className="">
+              The Midnight Calls are debuting their debut single October 2023.
+              Get ready for Whaddya! Here are some pictures from the video shoot
+              with the fabulous{" "}
+              <a href="https://mediamadegreat.com/" target="_blank">
+                Michael Digioia
+              </a>
+              .
+            </p>
+          </BannerText>
         </Banner>
 
-        <Image src={mcGarage} alt="Rocking the garage" />
-
-        <Banner className="relative z-20">
-          <BannerHeadline>Upcoming Shows</BannerHeadline>
-          <ShowsList shows={shows} />
-        </Banner>
-
-        <div className="flex justify-center mb-20">
-          <Link href="/live" className="button">
-            View All Shows
-          </Link>
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+          {videoPics.map((pic, i) => (
+            <div key={i}>
+              <Image src={pic.src} alt={pic.alt} />
+            </div>
+          ))}
         </div>
+
+        <Image className="pt-3" src={mcGarage} alt="Rocking the garage" />
+
+        <Container>
+          <Banner className="relative z-20">
+            <BannerHeadline>Upcoming Shows</BannerHeadline>
+          </Banner>
+          <ShowsList shows={shows} />
+          <div className="flex justify-center mb-20">
+            <Link href="/live" className="button">
+              View All Shows
+            </Link>
+          </div>
+        </Container>
+
         {/* <div className="flex justify-center">
           <Button href="/live">See All Shows</Button>
         </div> */}

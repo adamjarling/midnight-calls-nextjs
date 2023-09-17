@@ -4,6 +4,7 @@ import { Button, HeroImage } from "zuma-blocks";
 
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
+import BannerText from "@/components/banner/Text";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
@@ -35,16 +36,16 @@ const About = () => {
         </div>
 
         <section className="max-w-4xl px-6 mx-auto">
-          <Banner>
-            <BannerHeadline>Bio</BannerHeadline>
-          </Banner>
-          <p>
-            From Chicago USA, The Midnight Calls play denim-and-leather,
-            Blues-infused, Rock&apos;n Roll songs reminiscent of bands like
-            Cheap Trick, AC/DC or The Black Crowes. The band is writing material
-            for its debut album slated for 2023. Let There Be Rock!
-          </p>
-          <p>More coming soon...</p>
+          <BannerHeadline>Bio</BannerHeadline>
+          <BannerText>
+            <p>
+              From Chicago USA, The Midnight Calls play denim-and-leather,
+              Blues-infused, Rock&apos;n Roll songs reminiscent of bands like
+              Cheap Trick, AC/DC or The Black Crowes. The band is writing
+              material for its debut album slated for 2023. Let There Be Rock!
+            </p>
+            <p>More coming soon...</p>
+          </BannerText>
         </section>
         <div>
           <Banner>

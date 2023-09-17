@@ -1,8 +1,10 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 
+import Container from "./Container";
 import Image from "next/image";
 
 type ParallaxHeroProps = {
+  className?: string;
   headline?: string;
   imageUrl: string;
   altText: string;
@@ -13,6 +15,7 @@ type ParallaxHeroProps = {
 const MotionImage = motion(Image);
 
 const ParallaxHero: React.FC<ParallaxHeroProps> = ({
+  className = "",
   headline,
   imageUrl,
   altText,
@@ -23,7 +26,9 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
   const y = useTransform(scrollYProgress, [0, 1], ["0", "10%"]);
 
   return (
-    <div className="relative w-full overflow-hidden h-[90vh]">
+    <div
+      className={`relative w-full overflow-hidden h-[90vh] mb-10 ${className}`}
+    >
       <MotionImage
         style={{ y }}
         src={imageUrl}
@@ -34,18 +39,12 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
       {/* Top gradient overlay */}
       <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-black to-transparent" />
 
-      <div className="container absolute z-10 w-full mt-20 text-center transform -translate-x-1/2 lg:mt-24 lg:text-left left-1/2">
-        <div className="lg:max-w-md">
-          <h1 className="inline-block mb-4 text-4xl leading-none text-white md:text-6xl">
+      <div className="absolute z-10 w-full bottom-5 left">
+        <Container>
+          <h1 className="inline-block p-1 text-6xl leading-none text-white bg-black bg-opacity-50 md:text-7xl">
             {headline}
           </h1>
-          {subHeadline && (
-            <p className="max-w-sm mx-auto mb-5 text-lg text-white md:max-w-md md:text-xl">
-              {subHeadline}
-            </p>
-          )}
-          {Button && Button}
-        </div>
+        </Container>
       </div>
 
       {/* Bottom gradient overlay */}
