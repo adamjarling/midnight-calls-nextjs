@@ -41,9 +41,14 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
 
       <div className="absolute z-10 w-full bottom-5 left">
         <Container>
-          <h1 className="inline-block p-1 text-6xl leading-none text-white bg-black bg-opacity-50 md:text-7xl">
+          <motion.h1
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="inline-block p-1 text-6xl leading-none text-white bg-black bg-opacity-30 md:text-7xl"
+          >
             {headline}
-          </h1>
+          </motion.h1>
         </Container>
       </div>
 

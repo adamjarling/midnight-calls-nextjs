@@ -39,9 +39,6 @@ const Shows = async () => {
   return (
     <Main flushTop>
       <HeroWrapper />
-      {/* <Banner className="">
-        <BannerHeadline>Live</BannerHeadline>
-      </Banner> */}
 
       <div className="space-y-16">
         <ShowListBig shows={currentShows as Show[]} />

@@ -1,76 +1,68 @@
 export type Show = {
-  date: string;
+  datetime: string;
   venue: string;
   location: string;
-  venueUrl: string;
-  facebookEventUrl: string;
-  time: string;
-  ticketsUrl: string;
+  venueUrl?: string;
+  facebookEventUrl?: string;
+  ticketsUrl?: string;
 };
 
 export const shows: Show[] = [
   {
-    date: "Sun Aug 6, 2023",
+    datetime: "2023-08-06T18:00:00",
     venue: "The Forge",
     location: "Joliet, IL",
     venueUrl: "",
     facebookEventUrl: "",
-    time: "7:00pm",
     ticketsUrl:
       "https://www.ticketweb.com/event/-blacktop-mojo-yet-the-forge-tickets/13266278",
   },
   {
-    date: "Sun Aug 27, 2023",
+    datetime: "2023-08-27T15:00:00",
     venue: "The Thirsty Beaver",
     location: "Crestwood, IL",
     venueUrl: "",
     facebookEventUrl: "",
-    time: "2:00pm",
     ticketsUrl: "",
   },
   {
-    date: "Sat Sept 2, 2023",
+    datetime: "2023-09-02T18:00:00",
     venue: "The Northman Riverwalk",
     location: "Chicago, IL",
     venueUrl: "",
     facebookEventUrl: "",
-    time: "6:00pm",
     ticketsUrl: "",
   },
   {
-    date: "Sat Sept 9, 2023",
+    datetime: "2023-09-09T23:00:00",
     venue: "Reggies",
     location: "Chicago, IL",
     venueUrl: "",
     facebookEventUrl: "",
-    time: "11:00pm",
     ticketsUrl: "",
   },
   {
-    date: "Sat Sept 29, 2023",
+    datetime: "2023-09-29T21:00:00",
     venue: "Live Wire Lounge",
     location: "Chicago, IL",
     venueUrl: "",
     facebookEventUrl: "",
-    time: "9:00pm",
     ticketsUrl: "",
   },
   {
-    date: "Oct 13, 2023",
+    datetime: "2023-10-13T20:00:00",
     venue: "Brauerhaus",
     location: "Lombard, IL",
     venueUrl: "",
     facebookEventUrl: "",
-    time: "9:00pm",
     ticketsUrl: "",
   },
   {
-    date: "Nov 3, 2023",
+    datetime: "2023-11-03T20:00:00",
     venue: "Reggies w/ Steepwater Band",
     location: "Chicago, IL",
     venueUrl: "",
-    facebookEventUrl: "",
-    time: "9:00pm",
+    facebookEventUrl: "https://google.com",
     ticketsUrl: "",
   },
 ];

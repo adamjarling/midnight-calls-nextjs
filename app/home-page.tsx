@@ -1,3 +1,5 @@
+import { Show, shows } from "@/data/shows";
+
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import BannerText from "@/components/banner/Text";
@@ -8,9 +10,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
 import ParallaxHero from "@/components/ParallaxHero";
+import ShowListItem from "@/components/shows/ListItem";
 import ShowsList from "@/components/shows/List";
 import mcGarage from "@/public/images/mc-garage-rockin.jpg";
-import { shows } from "@/data/shows";
+import useShows from "@/hooks/use-shows";
 import video1pic from "@/public/images/video/20230826_111731.jpg";
 import video2pic from "@/public/images/video/20230826_112458.jpg";
 import video3pic from "@/public/images/video/20230826_113602.jpg";
@@ -36,6 +39,8 @@ const videoPics = [
 ];
 
 export default function Home() {
+  const { currentShows } = useShows(shows);
+
   return (
     <>
       <Main flushTop>
@@ -82,7 +87,14 @@ export default function Home() {
           <Banner className="relative z-20">
             <BannerHeadline>Upcoming Shows</BannerHeadline>
           </Banner>
-          <ShowsList shows={shows} />
+          <ul>
+            {currentShows.length > 0 &&
+              currentShows.slice(0, 2).map((show) => (
+                <li key={show.datetime}>
+                  <ShowListItem show={show as Show}></ShowListItem>
+                </li>
+              ))}
+          </ul>
           <div className="flex justify-center mb-20">
             <Link href="/live" className="button">
               View All Shows

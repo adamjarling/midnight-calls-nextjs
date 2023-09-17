@@ -1,9 +1,9 @@
 type Show = {
-  date: string;
+  datetime: string;
   [key: string]: string | number;
 };
 
-export default function useShows(shows: Array<Show>) {
+export default function useShows(shows?: Array<Show>) {
   const payload = {
     currentShows: [],
     pastShows: [],
@@ -12,17 +12,19 @@ export default function useShows(shows: Array<Show>) {
   const currentShows: Show[] = [];
   const pastShows: Show[] = [];
 
-  if (!shows || shows.length === 0) return payload;
+  //if (!shows || shows.length === 0) return payload;
 
-  const sorted = shows.sort((a, b) => {
-    const aDate = new Date(a.date);
-    const bDate = new Date(b.date);
+  const sorted = shows
+    ? shows.sort((a, b) => {
+        const aDate = new Date(a.datetime);
+        const bDate = new Date(b.datetime);
 
-    return aDate < bDate ? -1 : aDate === bDate ? 0 : 1;
-  });
+        return aDate < bDate ? -1 : aDate === bDate ? 0 : 1;
+      })
+    : [];
 
   sorted.forEach((show) => {
-    const showDate = new Date(show.date);
+    const showDate = new Date(show.datetime);
     const now = new Date();
     if (showDate >= now) {
       currentShows.push(show);
@@ -31,8 +33,34 @@ export default function useShows(shows: Array<Show>) {
     }
   });
 
+  const getNiceDate = (show: Show) => {
+    const date = new Date(show.datetime);
+    const options = {
+      month: "short",
+      day: "numeric",
+    };
+
+    const hours = date.getHours();
+    const weekday = date.toLocaleDateString("en-US", {
+      weekday: "short",
+    });
+    const time = date.toLocaleTimeString("en-US", {
+      hour: "numeric",
+    });
+
+    // @ts-ignore
+    const niceDate = date.toLocaleDateString("en-US", options);
+
+    return {
+      niceDate,
+      weekday,
+      time,
+    };
+  };
+
   return {
     currentShows,
+    getNiceDate,
     pastShows,
     sorted,
   };
