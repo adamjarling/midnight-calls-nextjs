@@ -33,6 +33,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={libreFranklin.className}>
+      <link
+        rel="icon"
+        href="/images/logo/mc-initials2_white.png"
+        type="image/png"
+      />
       <body>
         <div className="relative bg-slate-950 text-slate-50">
           {/* <Nav links={nav} /> */}

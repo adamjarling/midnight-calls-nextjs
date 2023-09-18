@@ -24,18 +24,18 @@ const videoPics = [
     src: video1pic,
     alt: "The Midnight Calls video shoot",
   },
-  {
-    src: video2pic,
-    alt: "The Midnight Calls video shoot",
-  },
+  // {
+  //   src: video2pic,
+  //   alt: "The Midnight Calls video shoot",
+  // },
   {
     src: video3pic,
     alt: "The Midnight Calls video shoot",
   },
-  {
-    src: video4pic,
-    alt: "The Midnight Calls video shoot",
-  },
+  // {
+  //   src: video4pic,
+  //   alt: "The Midnight Calls video shoot",
+  // },
 ];
 
 export default function Home() {

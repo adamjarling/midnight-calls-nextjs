@@ -7,7 +7,7 @@ interface ShowsListProps {
 
 const ShowsList: React.FC<ShowsListProps> = ({ shows }) => {
   const currentShows = shows.filter((show) => {
-    const showDate = new Date(show.date);
+    const showDate = new Date(show.datetime);
     const now = new Date();
     return showDate >= now;
   });
@@ -15,10 +15,10 @@ const ShowsList: React.FC<ShowsListProps> = ({ shows }) => {
   return (
     <ul>
       {currentShows.map((show) => (
-        <li key={show.date} className="py-5 text-3xl">
+        <li key={show.datetime} className="py-5 text-3xl">
           <div className="flex flex-col justify-between md:flex-row">
             <div className="flex flex-col items-center justify-center md:items-start">
-              <p className="">{show.date}</p>
+              <p className="">{show.datetime}</p>
               <p className="text-center md:text-left">{show.venue}</p>
             </div>
             <div className="flex flex-col items-center justify-center">

@@ -27,7 +27,7 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
 
   return (
     <div
-      className={`relative w-full overflow-hidden h-[90vh] mb-10 ${className}`}
+      className={`relative w-full overflow-hidden h-[60vh] mb-10 ${className}`}
     >
       <MotionImage
         style={{ y }}
