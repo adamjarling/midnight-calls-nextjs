@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@heroicons/react':
+    specifier: ^2.0.18
+    version: 2.0.18(react@18.2.0)
   '@types/node':
     specifier: ^20.6.0
     version: 20.6.1
@@ -54,8 +57,8 @@ dependencies:
     specifier: ^3.12.2
     version: 3.12.2(react-dom@18.2.0)(react@18.2.0)
   zuma-blocks:
-    specifier: ^0.0.6
-    version: 0.0.6
+    specifier: ^0.0.7
+    version: 0.0.7
 
 devDependencies:
   autoprefixer:
@@ -2976,8 +2979,8 @@ packages:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: false
 
-  /zuma-blocks@0.0.6:
-    resolution: {integrity: sha512-G8bomxZvrVKaMIdSUUWQPDmfZp+YeCxSUZxT3nNsPwnSuce3SDsAhxqDtFpHGU92xj7jpDs6foKb0xOm79yRUw==}
+  /zuma-blocks@0.0.7:
+    resolution: {integrity: sha512-BVNZLwMFnfKebFIYvaUFv0HjtVt8XZ+LGzyi9Tu30VdEqZzceOahHXnCvpcSZb9d3vXVnKs0tXx17d6Ygm+iBw==}
     dependencies:
       '@headlessui/react': 1.7.17(react-dom@18.2.0)(react@18.2.0)
       '@heroicons/react': 2.0.18(react@18.2.0)

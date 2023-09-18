@@ -1,5 +1,6 @@
 import { Show, shows } from "@/data/shows";
 
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import BannerText from "@/components/banner/Text";
@@ -59,7 +60,7 @@ export default function Home() {
         </div>
 
         <Banner>
-          <BannerHeadline>New Single...</BannerHeadline>
+          <BannerHeadline>New Single</BannerHeadline>
           <BannerText>
             <p className="">
               The Midnight Calls are debuting their debut single October 2023.
@@ -95,9 +96,10 @@ export default function Home() {
                 </li>
               ))}
           </ul>
-          <div className="flex justify-center mb-20">
+          <div className="flex justify-end mb-20">
             <Link href="/live" className="button">
               View All Shows
+              <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
             </Link>
           </div>
         </Container>

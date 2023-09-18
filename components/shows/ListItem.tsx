@@ -20,7 +20,12 @@ const ShowListItem = ({ show }: { show: Show }) => {
             </a>
           </p>
           <p>{show.location}</p>
-          <a className="inline-block button" href={show.ticketsUrl}>
+          <a
+            className="inline-block button"
+            href={
+              show.ticketsUrl || show.facebookEventUrl || show.venueUrl || "#"
+            }
+          >
             Buy tickets
           </a>
         </div>
