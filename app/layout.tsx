@@ -1,10 +1,10 @@
 import "./globals.css";
 
+import { Bungee, Libre_Franklin } from "next/font/google";
 import { config, nav } from "nttb-config";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { Libre_Franklin } from "next/font/google";
 import { Metadata } from "next";
 import Script from "next/script";
 
@@ -13,6 +13,12 @@ const { OPEN_GRAPH, SITE } = config;
 const libreFranklin = Libre_Franklin({
   subsets: ["latin"],
   variable: "--font-libreFranklin",
+});
+
+const headlineFont = Bungee({
+  subsets: ["latin"],
+  variable: "--font-headlineFont",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -32,7 +38,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={libreFranklin.className}>
+    <html
+      lang="en"
+      className={`${headlineFont.variable} ${libreFranklin.className}`}
+    >
       <link
         rel="icon"
         href="/images/logo/mc-initials2_white.png"

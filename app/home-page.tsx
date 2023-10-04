@@ -60,7 +60,7 @@ export default function Home() {
         </div>
 
         <Banner>
-          <BannerHeadline>New Single</BannerHeadline>
+          <BannerHeadline>October 10, 2023</BannerHeadline>
           <BannerText>
             <p className="">
               The Midnight Calls are debuting their debut single October 2023.
@@ -72,6 +72,15 @@ export default function Home() {
               .
             </p>
           </BannerText>
+          <div className="container">
+            <iframe
+              className="w-full aspect-video"
+              src="https://www.youtube.com/embed/cSudUFoNrug?si=DXxjoQpGtjPNurCe"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
         </Banner>
 
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
@@ -81,8 +90,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-
-        <Image className="pt-3" src={mcGarage} alt="Rocking the garage" />
 
         <Container>
           <Banner className="relative z-20">

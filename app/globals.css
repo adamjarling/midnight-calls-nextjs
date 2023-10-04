@@ -12,7 +12,7 @@ html {
   h3,
   h4,
   h5 {
-    @apply font-medium uppercase;
+    @apply font-medium uppercase font-headline;
   }
 
   p {
