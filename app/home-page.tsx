@@ -60,22 +60,10 @@ export default function Home() {
         </div>
 
         <Banner>
-          <BannerHeadline>October 10, 2023</BannerHeadline>
-          <BannerText>
-            <p className="">
-              The Midnight Calls are debuting their debut single October 2023.
-              Get ready for Whaddya! Here are some pictures from the video shoot
-              with the fabulous{" "}
-              <a href="https://mediamadegreat.com/" target="_blank">
-                Michael Digioia
-              </a>
-              .
-            </p>
-          </BannerText>
-          <div className="container">
+          <div className="container mt-10">
             <iframe
               className="w-full aspect-video"
-              src="https://www.youtube.com/embed/cSudUFoNrug?si=DXxjoQpGtjPNurCe"
+              src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

@@ -39,12 +39,14 @@ const About = () => {
           <BannerHeadline>Bio</BannerHeadline>
           <BannerText>
             <p>
-              From Chicago USA, The Midnight Calls play denim-and-leather,
-              Blues-infused, Rock&apos;n Roll songs reminiscent of bands like
-              Cheap Trick, AC/DC or The Black Crowes. The band is writing
-              material for its debut album slated for 2023. Let There Be Rock!
+              &apos;Whaddya&apos; is the first single and video from Chicago
+              roots rock band, The Midnight Calls. The Midnight Calls plays
+              blues-based rock music in the vein of AC/DC, Muddy Waters, Rose
+              Tattoo, Thin Lizzy and other classic, guitar-driven rock icons.
+              The Midnight Calls perform regularly at clubs and festivals around
+              the south side of Chicago, and will be releasing their first
+              full-length album Spring 2024. Boom. Let&apos;s rock.
             </p>
-            <p>More coming soon...</p>
           </BannerText>
         </section>
         <div>

@@ -58,12 +58,12 @@ const socialMedia = {
     url: "",
   },
   spotify: {
-    handle: "",
-    url: "",
+    handle: "6rcObgTuaf4s9uaOEK68D9",
+    url: "https://open.spotify.com/artist/6rcObgTuaf4s9uaOEK68D9?si=GBA_A_1nSDS_BwJEzAUEeg",
   },
   youTube: {
-    handle: "",
-    url: "",
+    handle: "@themidnightcalls",
+    url: "https://www.youtube.com/@themidnightcalls",
   },
 };
 
