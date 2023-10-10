@@ -5,11 +5,12 @@ import { Button, HeroImage } from "zuma-blocks";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import BannerText from "@/components/banner/Text";
+import Container from "@/components/Container";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
 import logoBW from "@/public/images/logo/mc-logo-outline_white.png";
-import logoBlue from "@/public/images/logo/Blue.png";
+import logoWhite from "@/public/images/logo/mc-logo_white.png";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
 import mcPhotoCloseup from "@/public/images/the-midnight-calls_promo-pic-closeup.jpg";
 
@@ -18,11 +19,24 @@ const About = () => {
     <Main flushTop={false}>
       <div className="space-y-16">
         <div>
-          <Banner>
-            <BannerHeadline>Press Photos</BannerHeadline>
-          </Banner>
+          {/* <Banner>
+            <BannerHeadline>Press Pack</BannerHeadline>
+          </Banner> */}
 
-          <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+          <Container className="mb-10">
+            <iframe
+              className="w-full aspect-video"
+              src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </Container>
+        </div>
+
+        <div>
+          <BannerHeadline>Press Photos</BannerHeadline>
+          <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2">
             <div>
               <Image src={mcPhoto1} alt="Midnight Calls promo picture" />
             </div>
@@ -59,7 +73,7 @@ const About = () => {
                 <Image src={logoBW} alt="Midnight Calls logo black and white" />
               </div>
               <div>
-                <Image src={logoBlue} alt="Midnight Calls logo blue" />
+                <Image src={logoWhite} alt="Midnight Calls logo blue" />
               </div>
             </div>
           </section>

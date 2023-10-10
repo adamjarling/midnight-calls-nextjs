@@ -59,24 +59,21 @@ export default function Home() {
           <HomeHero />
         </div>
 
-        <Banner>
-          <div className="container mt-10">
-            <iframe
-              className="w-full aspect-video"
-              src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+        <div className="container my-10 md:my-16">
+          <iframe
+            className="w-full aspect-video"
+            src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+          <div className="hidden grid-cols-1 gap-3 mt-5 md:grid md:grid-cols-2">
+            {videoPics.map((pic, i) => (
+              <div key={i}>
+                <Image src={pic.src} alt={pic.alt} />
+              </div>
+            ))}
           </div>
-        </Banner>
-
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          {videoPics.map((pic, i) => (
-            <div key={i}>
-              <Image src={pic.src} alt={pic.alt} />
-            </div>
-          ))}
         </div>
 
         <Container>

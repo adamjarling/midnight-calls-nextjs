@@ -2,6 +2,7 @@
 
 import { FooterSimpleCentered, SocialIcons } from "zuma-blocks";
 
+import { BsSpotify } from "react-icons/bs";
 import Link from "next/link";
 import React from "react";
 import { socialMedia } from "@/nttb-config";
@@ -25,9 +26,14 @@ const footerInfo = {
       icon: SocialIcons.InstagramIcon,
     },
     {
-      name: "Twitter",
-      href: "https://twitter.com",
-      icon: SocialIcons.TwitterIcon,
+      name: "Spotify",
+      href: socialMedia.spotify.url,
+      icon: BsSpotify,
+    },
+    {
+      name: "YouTube",
+      href: socialMedia.youTube.url,
+      icon: SocialIcons.YouTubeIcon,
     },
   ],
 };

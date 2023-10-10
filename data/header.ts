@@ -1,3 +1,4 @@
+import { BsSpotify } from "react-icons/bs";
 import { SocialIcons } from "zuma-blocks";
 import { socialMedia } from "@/nttb-config";
 
@@ -20,8 +21,13 @@ export const socialIcons = [
     icon: SocialIcons.InstagramIcon,
   },
   {
-    name: "Twitter",
-    href: socialMedia.twitter.url,
-    icon: SocialIcons.TwitterIcon,
+    name: "Spotify",
+    href: socialMedia.spotify.url,
+    icon: BsSpotify,
+  },
+  {
+    name: "YouTube",
+    href: socialMedia.youTube.url,
+    icon: SocialIcons.YouTubeIcon,
   },
 ];
