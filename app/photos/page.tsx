@@ -3,9 +3,14 @@ import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import Main from "@/components/Main";
+import { Metadata } from "next";
 import { promises as fs } from "fs";
 import path from "path";
 import { shuffle } from "../utils/shuffle";
+
+export const metadata: Metadata = {
+  title: "Photos",
+};
 
 const sizeOf = require("image-size");
 

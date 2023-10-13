@@ -1,7 +1,3 @@
-"use client";
-
-import { Button, HeroImage } from "zuma-blocks";
-
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import BannerText from "@/components/banner/Text";
@@ -9,10 +5,15 @@ import Container from "@/components/Container";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
+import { Metadata } from "next";
 import logoBW from "@/public/images/logo/mc-logo-outline_white.png";
 import logoWhite from "@/public/images/logo/mc-logo_white.png";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
 import mcPhotoCloseup from "@/public/images/the-midnight-calls_promo-pic-closeup.jpg";
+
+export const metadata: Metadata = {
+  title: "Press Pack",
+};
 
 const About = () => {
   return (
@@ -52,15 +53,33 @@ const About = () => {
         <section className="max-w-4xl px-6 mx-auto">
           <BannerHeadline>Bio</BannerHeadline>
           <BannerText>
-            <p>
-              &apos;Whaddya&apos; is the first single and video from Chicago
-              roots rock band, The Midnight Calls. The Midnight Calls plays
-              blues-based rock music in the vein of AC/DC, Muddy Waters, Rose
-              Tattoo, Thin Lizzy and other classic, guitar-driven rock icons.
-              The Midnight Calls perform regularly at clubs and festivals around
-              the south side of Chicago, and will be releasing their first
-              full-length album Spring 2024. Boom. Let&apos;s rock.
-            </p>
+            <div className="text-xl leading-relaxed">
+              <p>
+                &apos;Whaddya&apos; is the first single and video from Chicago
+                roots rock band, The Midnight Calls. The Midnight Calls plays
+                blues-based rock music in the vein of AC/DC, Muddy Waters, Rose
+                Tattoo, Thin Lizzy and other classic, guitar-driven rock icons.
+                The Midnight Calls perform regularly at clubs and festivals
+                around the south side of Chicago, and will be releasing their
+                first full-length album Spring 2024.
+              </p>
+              <p>
+                The Midnight Calls features experienced musicians from the
+                Chicago scene who&apos;ve toured the world with bands including
+                Loudmouth, Head On, The Last Vegas, Urge Overkill, Skinwalker
+                and the Wooly Rhinos.
+              </p>
+              <p>
+                The Midnight Calls are:
+                <ul>
+                  <li>Taran De Pablos - Vocals</li>
+                  <li>Tony McQuaid - Guitar</li>
+                  <li>Sean Barnes - Bass</li>
+                  <li>Adam Arling - Guitar</li>
+                  <li>Chuck Harling - Drums</li>
+                </ul>
+              </p>
+            </div>
           </BannerText>
         </section>
         <div>

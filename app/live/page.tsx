@@ -7,6 +7,7 @@ import Image from "next/image";
 import Main from "@/components/Main";
 import MasonryGallery from "@/components/Masonry";
 import { MasonryImage } from "@/components/Masonry";
+import { Metadata } from "next";
 import ParallaxHero from "@/components/ParallaxHero";
 import ShowListBig from "@/components/shows/ListBig";
 import ShowsList2 from "@/components/shows/List2";
@@ -14,6 +15,10 @@ import { promises as fs } from "fs";
 import path from "path";
 import rockPic from "@/public/photos/DSC05518.jpg";
 import useShows from "@/hooks/use-shows";
+
+export const metadata: Metadata = {
+  title: "Live",
+};
 
 const sizeOf = require("image-size");
 
