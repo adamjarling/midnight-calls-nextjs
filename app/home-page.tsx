@@ -25,18 +25,10 @@ const videoPics = [
     src: video1pic,
     alt: "The Midnight Calls video shoot",
   },
-  // {
-  //   src: video2pic,
-  //   alt: "The Midnight Calls video shoot",
-  // },
   {
     src: video3pic,
     alt: "The Midnight Calls video shoot",
   },
-  // {
-  //   src: video4pic,
-  //   alt: "The Midnight Calls video shoot",
-  // },
 ];
 
 export default function Home() {
@@ -80,6 +72,7 @@ export default function Home() {
           <Banner className="relative z-20">
             <BannerHeadline>Upcoming Shows</BannerHeadline>
           </Banner>
+
           <ul>
             {currentShows.length > 0 &&
               currentShows.slice(0, 2).map((show) => (

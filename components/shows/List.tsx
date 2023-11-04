@@ -19,13 +19,13 @@ const ShowsList: React.FC<ShowsListProps> = ({ shows }) => {
           <div className="flex flex-col justify-between md:flex-row">
             <div className="flex flex-col items-center justify-center md:items-start">
               <p className="">{show.datetime}</p>
-              <p className="text-center md:text-left">{show.venue}</p>
+              <p className="text-center md:text-left">{show.venue.name}</p>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <p className="md:text-right">{show.location}</p>
-              {show.ticketsUrl && (
+              <p className="md:text-right">{`${show.venue.city}, ${show.venue.stateProvince} ${show.venue.country}`}</p>
+              {show.url.ticket && (
                 <p className="text-xl md:text-right">
-                  <a href={show.ticketsUrl} target="_blank" rel="noreferrer">
+                  <a href={show.url.ticket} target="_blank" rel="noreferrer">
                     Buy Tickets
                   </a>
                 </p>

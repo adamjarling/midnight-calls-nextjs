@@ -1,7 +1,4 @@
-type Show = {
-  datetime: string;
-  [key: string]: string | number;
-};
+import { type Show } from "@/data/shows";
 
 export default function useShows(shows?: Array<Show>) {
   const payload = {
@@ -47,6 +44,7 @@ export default function useShows(shows?: Array<Show>) {
     const time = date.toLocaleTimeString("en-US", {
       hour: "numeric",
     });
+    const year = date.getFullYear();
 
     // @ts-ignore
     const niceDate = date.toLocaleDateString("en-US", options);
@@ -55,12 +53,21 @@ export default function useShows(shows?: Array<Show>) {
       niceDate,
       weekday,
       time,
+      year,
     };
+  };
+
+  const isPastShow = (show: Show) => {
+    // return true if show is in the past
+    const showDate = new Date(show.datetime);
+    const now = new Date();
+    return showDate < now;
   };
 
   return {
     currentShows,
     getNiceDate,
+    isPastShow,
     pastShows,
     sorted,
   };

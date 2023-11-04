@@ -36,7 +36,10 @@ const About = () => {
         </div>
 
         <div>
-          <BannerHeadline>Press Photos</BannerHeadline>
+          <Container>
+            <BannerHeadline>Press Photos</BannerHeadline>
+          </Container>
+
           <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2">
             <div>
               <Image src={mcPhoto1} alt="Midnight Calls promo picture" />
@@ -53,7 +56,7 @@ const About = () => {
         <section className="max-w-4xl px-6 mx-auto">
           <BannerHeadline>Bio</BannerHeadline>
           <BannerText>
-            <div className="text-xl leading-relaxed">
+            <div className="leading-relaxed lg:text-xl">
               <p>
                 &apos;Whaddya&apos; is the first single and video from Chicago
                 roots rock band, The Midnight Calls. The Midnight Calls plays
