@@ -10,6 +10,7 @@ import ParallaxHero from "@/components/ParallaxHero";
 import ShowListBig from "@/components/shows/ListBig";
 import { promises as fs } from "fs";
 import path from "path";
+import rocHausPic from "@/public/images/2023-11-30(2).jpg";
 import rockPic from "@/public/photos/DSC05518.jpg";
 import useShows from "@/hooks/use-shows";
 
@@ -47,7 +48,10 @@ const Shows = async () => {
         {currentShows.length === 0 && (
           <ShowListBig shows={pastShows as Show[]} />
         )}
-        {images && <MasonryGallery dir={folder} images={images} />}
+
+        <Image src={rocHausPic} alt="RocHaus" className="mx-auto" />
+
+        {images && <MasonryGallery dir={folder} images={images.reverse()} />}
 
         {currentShows.length > 0 && (
           <section className="container">

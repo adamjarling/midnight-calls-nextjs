@@ -14,11 +14,10 @@ import ParallaxHero from "@/components/ParallaxHero";
 import ShowListItem from "@/components/shows/ListItem";
 import ShowsList from "@/components/shows/List";
 import mcGarage from "@/public/images/mc-garage-rockin.jpg";
+import rocHausPic from "@/public/images/2023-11-30(2).jpg";
 import useShows from "@/hooks/use-shows";
 import video1pic from "@/public/images/video/20230826_111731.jpg";
-import video2pic from "@/public/images/video/20230826_112458.jpg";
 import video3pic from "@/public/images/video/20230826_113602.jpg";
-import video4pic from "@/public/images/video/20230826_130048.jpg";
 
 const videoPics = [
   {
@@ -72,6 +71,8 @@ export default function Home() {
           <Banner className="relative z-20">
             <BannerHeadline>Upcoming Shows</BannerHeadline>
           </Banner>
+
+          <Image src={rocHausPic} alt="RocHaus" className="mx-auto mb-16" />
 
           <ul>
             {currentShows.length > 0 &&
