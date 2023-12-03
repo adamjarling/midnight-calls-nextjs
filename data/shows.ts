@@ -235,4 +235,22 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
+  {
+    datetime: "2024-03-08T21:00:00",
+    venue: {
+      name: "Liars Club",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/liarsclubchicago/",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
 ];
