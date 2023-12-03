@@ -17,7 +17,11 @@ const ShowListItem = ({ show }: { show: Show }) => {
         </div>
         <div className="col-span-8 pl-3 space-y-8">
           <p className="text-2xl font-semibold uppercase">
-            <a href={show.venue.url?.website} target="_blank">
+            <a
+              href={show.venue.url?.website}
+              target="_blank"
+              className={`${show.venue.url?.website ? "underline" : ""}`}
+            >
               {show.venue.name}
             </a>
           </p>

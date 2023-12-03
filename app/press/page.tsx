@@ -72,8 +72,8 @@ const About = () => {
                 Loudmouth, Head On, The Last Vegas, Urge Overkill, Skinwalker
                 and the Wooly Rhinos.
               </p>
+              <h4 className="pt-3 mb-3">The Midnight Calls are:</h4>
               <p>
-                The Midnight Calls are:
                 <ul>
                   <li>Taran De Pablos - Vocals</li>
                   <li>Tony McQuaid - Guitar</li>

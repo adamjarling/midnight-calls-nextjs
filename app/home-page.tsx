@@ -1,6 +1,6 @@
+import { ArrowRightIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { Show, shows } from "@/data/shows";
 
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import BannerText from "@/components/banner/Text";
@@ -14,6 +14,7 @@ import ParallaxHero from "@/components/ParallaxHero";
 import ShowListItem from "@/components/shows/ListItem";
 import ShowsList from "@/components/shows/List";
 import mcGarage from "@/public/images/mc-garage-rockin.jpg";
+import mcTShirts from "@/public/images/mc-merch-table.jpg";
 import rocHausPic from "@/public/images/2023-11-30(2).jpg";
 import useShows from "@/hooks/use-shows";
 import video1pic from "@/public/images/video/20230826_111731.jpg";
@@ -58,21 +59,40 @@ export default function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
-          <div className="hidden grid-cols-1 gap-3 mt-5 md:grid md:grid-cols-2">
+          {/* <div className="hidden grid-cols-1 gap-3 mt-5 md:grid md:grid-cols-2">
             {videoPics.map((pic, i) => (
               <div key={i}>
                 <Image src={pic.src} alt={pic.alt} />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
+
+        <section className="py-10">
+          <Container className="max-w-4xl my-10 text-center">
+            <Image src={mcTShirts} alt="Midnight Calls T-shirts" />
+            {/* <p className="text-center">
+              The merchandise table lookin' legit. Collectors edition T-shirts,
+              Stickers and Guitar Picks now available.
+            </p> */}
+            <div className="p-10 space-y-3 text-gray-300 bg-gray-900">
+              <h5 className="text-xl">Holiday Sale! The "Chicago Combo"</h5>
+              <p className="pb-5">
+                1 T-shirt (XS - 2XL), 2 stickers, 2 guitar picks (one "MAC", one
+                "ADAM") for $25, plus $10 shipping USA.
+              </p>
+              <p>
+                Order now <ChevronRightIcon className="inline-block w-6 h-6" />{" "}
+                themidnightcallsofficial@gmail.com
+              </p>
+            </div>
+          </Container>
+        </section>
 
         <Container>
           <Banner className="relative z-20">
             <BannerHeadline>Upcoming Shows</BannerHeadline>
           </Banner>
-
-          <Image src={rocHausPic} alt="RocHaus" className="mx-auto mb-16" />
 
           <ul>
             {currentShows.length > 0 &&
@@ -81,6 +101,11 @@ export default function Home() {
                   <ShowListItem show={show as Show}></ShowListItem>
                 </li>
               ))}
+            {currentShows.length === 0 && (
+              <p className="text-center">
+                Check back soon for 2024 show announcments!
+              </p>
+            )}
           </ul>
           <div className="flex justify-end mb-20">
             <Link href="/live" className="button">

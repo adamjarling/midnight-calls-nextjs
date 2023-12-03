@@ -49,8 +49,6 @@ const Shows = async () => {
           <ShowListBig shows={pastShows as Show[]} />
         )}
 
-        <Image src={rocHausPic} alt="RocHaus" className="mx-auto" />
-
         {images && <MasonryGallery dir={folder} images={images.reverse()} />}
 
         {currentShows.length > 0 && (
