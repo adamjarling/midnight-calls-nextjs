@@ -76,10 +76,13 @@ export default function Home() {
               Stickers and Guitar Picks now available.
             </p> */}
             <div className="p-10 space-y-3 text-gray-300 bg-gray-900">
-              <h5 className="text-xl">Holiday Sale! The "Chicago Combo"</h5>
+              <h5 className="text-xl">
+                Holiday Sale! The &quot;Chicago Combo&quot;
+              </h5>
               <p className="pb-5">
-                1 T-shirt (XS - 2XL), 2 stickers, 2 guitar picks (one "MAC", one
-                "ADAM") for $25, plus $10 shipping USA.
+                1 T-shirt (XS - 2XL), 2 stickers, 2 guitar picks (one
+                &quot;MAC&quot;, one &quot;ADAM&quot;) for $25, plus $10
+                shipping USA.
               </p>
               <p>
                 Order now <ChevronRightIcon className="inline-block w-6 h-6" />{" "}
