@@ -81,7 +81,7 @@ export default function Home() {
                   Holiday Sale! The &quot;Chicago Combo&quot;
                 </h5>
                 <p className="pb-5">
-                  1 T-shirt (XS - 2XL), 2 stickers, 2 guitar picks (one
+                  1 T-shirt (S - XL), 2 stickers, 2 guitar picks (one
                   &quot;MAC&quot;, one &quot;ADAM&quot;) for $25, plus $10
                   shipping USA.
                 </p>
