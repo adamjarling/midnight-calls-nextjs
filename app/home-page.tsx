@@ -51,78 +51,81 @@ export default function Home() {
           <HomeHero />
         </div>
 
-        <div className="container my-10 md:my-16">
-          <iframe
-            className="w-full aspect-video"
-            src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-          {/* <div className="hidden grid-cols-1 gap-3 mt-5 md:grid md:grid-cols-2">
+        <div className="space-y-10">
+          <div className="container my-10 md:my-16">
+            <iframe
+              className="w-full aspect-video"
+              src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            {/* <div className="hidden grid-cols-1 gap-3 mt-5 md:grid md:grid-cols-2">
             {videoPics.map((pic, i) => (
               <div key={i}>
                 <Image src={pic.src} alt={pic.alt} />
               </div>
             ))}
           </div> */}
-        </div>
+          </div>
 
-        <section className="py-10">
-          <Container className="max-w-4xl my-10 text-center">
-            <Image src={mcTShirts} alt="Midnight Calls T-shirts" />
-            {/* <p className="text-center">
+          <section className="">
+            <Container className="max-w-4xl text-center">
+              <Image src={mcTShirts} alt="Midnight Calls T-shirts" />
+              {/* <p className="text-center">
               The merchandise table lookin' legit. Collectors edition T-shirts,
               Stickers and Guitar Picks now available.
             </p> */}
-            <div className="p-10 space-y-3 text-gray-300 bg-gray-900">
-              <h5 className="text-xl">
-                Holiday Sale! The &quot;Chicago Combo&quot;
-              </h5>
-              <p className="pb-5">
-                1 T-shirt (XS - 2XL), 2 stickers, 2 guitar picks (one
-                &quot;MAC&quot;, one &quot;ADAM&quot;) for $25, plus $10
-                shipping USA.
-              </p>
-              <p>
-                Order now <ChevronRightIcon className="inline-block w-6 h-6" />{" "}
-                themidnightcallsofficial@gmail.com
-              </p>
+              <div className="p-5 space-y-3 text-gray-300 bg-gray-900">
+                <h5 className="text-xl">
+                  Holiday Sale! The &quot;Chicago Combo&quot;
+                </h5>
+                <p className="pb-5">
+                  1 T-shirt (XS - 2XL), 2 stickers, 2 guitar picks (one
+                  &quot;MAC&quot;, one &quot;ADAM&quot;) for $25, plus $10
+                  shipping USA.
+                </p>
+                <p>
+                  Order now{" "}
+                  <ChevronRightIcon className="inline-block w-6 h-6" />{" "}
+                  themidnightcallsofficial@gmail.com
+                </p>
+              </div>
+            </Container>
+          </section>
+
+          <Container>
+            <Banner className="relative z-20">
+              <BannerHeadline>Upcoming Shows</BannerHeadline>
+            </Banner>
+
+            <ul>
+              {currentShows.length > 0 &&
+                currentShows.slice(0, 2).map((show) => (
+                  <li key={show.datetime}>
+                    <ShowListItem show={show as Show}></ShowListItem>
+                  </li>
+                ))}
+              {currentShows.length === 0 && (
+                <p className="text-center">
+                  Check back soon for 2024 show announcments!
+                </p>
+              )}
+            </ul>
+            <div className="flex justify-end mb-20">
+              <Link href="/live" className="button">
+                View All Shows
+                <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
+              </Link>
             </div>
           </Container>
-        </section>
 
-        <Container>
-          <Banner className="relative z-20">
-            <BannerHeadline>Upcoming Shows</BannerHeadline>
-          </Banner>
-
-          <ul>
-            {currentShows.length > 0 &&
-              currentShows.slice(0, 2).map((show) => (
-                <li key={show.datetime}>
-                  <ShowListItem show={show as Show}></ShowListItem>
-                </li>
-              ))}
-            {currentShows.length === 0 && (
-              <p className="text-center">
-                Check back soon for 2024 show announcments!
-              </p>
-            )}
-          </ul>
-          <div className="flex justify-end mb-20">
-            <Link href="/live" className="button">
-              View All Shows
-              <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
-            </Link>
-          </div>
-        </Container>
+          <HomePhotos />
+        </div>
 
         {/* <div className="flex justify-center">
           <Button href="/live">See All Shows</Button>
         </div> */}
-
-        <HomePhotos />
       </Main>
     </>
   );
