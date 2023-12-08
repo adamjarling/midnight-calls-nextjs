@@ -236,6 +236,24 @@ export const shows: Show[] = [
     },
   },
   {
+    datetime: "2024-02-02T21:00:00",
+    venue: {
+      name: "115 Bourbon Street",
+      city: "Merrionette Park",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/115BourbonStreet/",
+        website: "https://www.115bourbonstreet.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
     datetime: "2024-03-08T21:00:00",
     venue: {
       name: "Liars Club",
@@ -244,7 +262,7 @@ export const shows: Show[] = [
       country: "USA",
       url: {
         facebook: "https://www.facebook.com/liarsclubchicago/",
-        website: "",
+        website: "https://www.liarsclubstore.com/",
       },
     },
     url: {
