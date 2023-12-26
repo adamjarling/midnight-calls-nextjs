@@ -35,24 +35,6 @@ const About = () => {
           </Container>
         </div>
 
-        <div>
-          <Container>
-            <BannerHeadline>Press Photos</BannerHeadline>
-          </Container>
-
-          <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2">
-            <div>
-              <Image src={mcPhoto1} alt="Midnight Calls promo picture" />
-            </div>
-            <div>
-              <Image
-                src={mcPhotoCloseup}
-                alt="Midnight Calls promo picture close-up"
-              />
-            </div>
-          </div>
-        </div>
-
         <section className="max-w-4xl px-6 mx-auto">
           <BannerHeadline>Bio</BannerHeadline>
           <BannerText>
@@ -73,18 +55,35 @@ const About = () => {
                 and the Wooly Rhinos.
               </p>
               <h4 className="pt-3 mb-3">The Midnight Calls are:</h4>
-              <p>
-                <ul>
-                  <li>Taran De Pablos - Vocals</li>
-                  <li>Tony McQuaid - Guitar</li>
-                  <li>Sean Barnes - Bass</li>
-                  <li>Adam Arling - Guitar</li>
-                  <li>Chuck Harling - Drums</li>
-                </ul>
-              </p>
+              <ul>
+                <li>Taran De Pablos - Vocals</li>
+                <li>Tony McQuaid - Guitar</li>
+                <li>Sean Barnes - Bass</li>
+                <li>Adam Arling - Guitar</li>
+                <li>Chuck Harling - Drums</li>
+              </ul>
             </div>
           </BannerText>
         </section>
+
+        <div>
+          <Container>
+            <BannerHeadline>Press Photos</BannerHeadline>
+          </Container>
+
+          <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2">
+            <div>
+              <Image src={mcPhoto1} alt="Midnight Calls promo picture" />
+            </div>
+            <div>
+              <Image
+                src={mcPhotoCloseup}
+                alt="Midnight Calls promo picture close-up"
+              />
+            </div>
+          </div>
+        </div>
+
         <div>
           <Banner>
             <BannerHeadline>Logos</BannerHeadline>

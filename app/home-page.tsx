@@ -6,28 +6,35 @@ import BannerHeadline from "@/components/banner/Headline";
 import BannerText from "@/components/banner/Text";
 import Container from "@/components/Container";
 import HomeHero from "@/components/home/Hero";
-import HomePhotos from "@/components/home/Photos";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
 import ParallaxHero from "@/components/ParallaxHero";
 import ShowListItem from "@/components/shows/ListItem";
 import ShowsList from "@/components/shows/List";
-import mcGarage from "@/public/images/mc-garage-rockin.jpg";
+import garageShot from "@/public/photos/mc-garage-rockin.jpg";
 import mcTShirts from "@/public/images/mc-merch-table.jpg";
-import rocHausPic from "@/public/images/2023-11-30(2).jpg";
+import rocHausPic from "@/public/photos/rochaus-full-band.jpg";
+import rosesVidShoot from "@/public/photos/photo-roses-vid-shoot.jpg";
+import taranLeaning from "@/public/photos/DSC01206.jpg";
 import useShows from "@/hooks/use-shows";
-import video1pic from "@/public/images/video/20230826_111731.jpg";
-import video3pic from "@/public/images/video/20230826_113602.jpg";
 
-const videoPics = [
+const homePics = [
   {
-    src: video1pic,
+    src: rocHausPic,
     alt: "The Midnight Calls video shoot",
   },
   {
-    src: video3pic,
-    alt: "The Midnight Calls video shoot",
+    src: taranLeaning,
+    alt: "The Midnight Calls",
+  },
+  {
+    src: rosesVidShoot,
+    alt: "The Midnight Calls Roses shoot",
+  },
+  {
+    src: garageShot,
+    alt: "The Midnight Calls Whaddya vid shoot",
   },
 ];
 
@@ -72,25 +79,10 @@ export default function Home() {
           <section className="">
             <Container className="max-w-4xl text-center">
               <Image src={mcTShirts} alt="Midnight Calls T-shirts" />
-              {/* <p className="text-center">
-              The merchandise table lookin' legit. Collectors edition T-shirts,
-              Stickers and Guitar Picks now available.
-            </p> */}
-              <div className="p-5 space-y-3 text-gray-300 bg-gray-900">
-                <h5 className="text-xl">
-                  Holiday Sale! The &quot;Chicago Combo&quot;
-                </h5>
-                <p className="pb-5">
-                  1 T-shirt (S - XL), 2 stickers, 2 guitar picks (one
-                  &quot;MAC&quot;, one &quot;ADAM&quot;) for $25, plus $10
-                  shipping USA.
-                </p>
-                <p>
-                  Order now{" "}
-                  <ChevronRightIcon className="inline-block w-6 h-6" />{" "}
-                  themidnightcallsofficial@gmail.com
-                </p>
-              </div>
+              <p className="text-center">
+                The merchandise table lookin&apos; legit. Collectors edition
+                T-shirts, Stickers and Guitar Picks now available.
+              </p>
             </Container>
           </section>
 
@@ -99,28 +91,44 @@ export default function Home() {
               <BannerHeadline>Upcoming Shows</BannerHeadline>
             </Banner>
 
-            <ul>
-              {currentShows.length > 0 &&
-                currentShows.slice(0, 2).map((show) => (
-                  <li key={show.datetime}>
-                    <ShowListItem show={show as Show}></ShowListItem>
-                  </li>
-                ))}
-              {currentShows.length === 0 && (
-                <p className="text-center">
-                  Check back soon for 2024 show announcments!
-                </p>
-              )}
-            </ul>
-            <div className="flex justify-end mb-20">
-              <Link href="/live" className="button">
-                View All Shows
-                <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
-              </Link>
+            <div className="max-w-3xl mx-auto">
+              <ul>
+                {currentShows.length > 0 &&
+                  currentShows.slice(0, 2).map((show) => (
+                    <li key={show.datetime}>
+                      <ShowListItem show={show as Show}></ShowListItem>
+                    </li>
+                  ))}
+                {currentShows.length === 0 && (
+                  <p className="text-center">
+                    Check back soon for show announcements!
+                  </p>
+                )}
+              </ul>
+              <div className="flex justify-end mb-20">
+                <Link href="/live" className="button">
+                  View All Shows
+                  <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
+                </Link>
+              </div>
             </div>
           </Container>
 
-          <HomePhotos />
+          <div>
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+              {homePics.map((pic, i) => (
+                <Link href="/photos" key={i}>
+                  <Image src={pic.src} alt={pic.alt} />
+                </Link>
+              ))}
+            </div>
+            <div className="relative z-40 block pt-10 text-center">
+              <Link href="/photos" className="button">
+                View All Photos
+                <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* <div className="flex justify-center">

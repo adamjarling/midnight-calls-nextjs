@@ -1,9 +1,9 @@
 "use client";
 
-import { navigation, socialIcons } from "@/data/header";
-
 import { HeaderSimpleCentered } from "zuma-blocks";
 import React from "react";
+import { nav } from "@/nttb-config";
+import { socialIcons } from "@/data/header";
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ const Header = () => {
         classNames="uppercase relative"
         logo={"/images/logo/mc-logo-outline_white.png"}
         mobile={{ bgOverlay: "bg-slate-950" }}
-        navigation={navigation}
+        navigation={nav}
         socialIcons={socialIcons}
       />
     </div>

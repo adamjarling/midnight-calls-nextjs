@@ -1,19 +1,15 @@
 "use client";
 
 import { FooterSimpleCentered, SocialIcons } from "zuma-blocks";
+import { nav, socialMedia } from "@/nttb-config";
 
 import { BsSpotify } from "react-icons/bs";
 import Link from "next/link";
 import React from "react";
-import { socialMedia } from "@/nttb-config";
 
 const footerInfo = {
   bandName: "The Midnight Calls",
-  nav: [
-    { name: "Home", href: "/" },
-    { name: "Press Pack", href: "/press" },
-    { name: "Live", href: "/live" },
-  ],
+  nav: [{ name: "Home", href: "/" }, ...nav],
   socials: [
     {
       name: "Facebook",

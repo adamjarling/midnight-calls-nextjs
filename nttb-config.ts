@@ -7,9 +7,7 @@ const config = {
       "The Midnight Calls are a blues rock band from Chicago featuring Taran De Pablos, Adam J. Arling, Tony McQuaid, Sean Barnes and Chuck Harling.",
     images: [
       {
-        url: `${
-          process.env.NEXT_PUBLIC_BASE_URL
-        }/api/og?cover=${encodeURIComponent(ogImage)}`,
+        url: `/api/og?cover=${encodeURIComponent(ogImage)}`,
       },
     ],
     locale: "en-US",
@@ -26,22 +24,9 @@ const config = {
 };
 
 const nav = [
-  {
-    href: "/about",
-    label: "About",
-  },
-  {
-    href: "/masonry-gallery",
-    label: "Masonry Gallery",
-  },
-  {
-    href: "/shows",
-    label: "Shows",
-  },
-  {
-    href: "/music",
-    label: "Music",
-  },
+  { name: "Live", href: "/live" },
+  { name: "Photos", href: "/photos" },
+  { name: "Press Pack", href: "/press" },
 ];
 
 const socialMedia = {
