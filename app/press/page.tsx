@@ -11,6 +11,17 @@ import logoWhite from "@/public/images/logo/mc-logo_white.png";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
 import mcPhotoCloseup from "@/public/images/the-midnight-calls_promo-pic-closeup.jpg";
 
+const videos = [
+  {
+    youTubeId: "ba9kWpoC9_U",
+    title: "The Midnight Calls - Coming Up Roses (Official Video)",
+  },
+  // {
+  //   youTubeId: "8p8w0IqR1kg",
+  //   title: "The Midnight Calls - Whaddya (Official Video)",
+  // },
+];
+
 export const metadata: Metadata = {
   title: "Press Pack",
 };
@@ -101,7 +112,17 @@ const About = () => {
         </div>
         <div>
           <Banner>
-            <BannerHeadline>Stage Plot</BannerHeadline>
+            <BannerHeadline>Videos</BannerHeadline>
+            {videos.map(({ youTubeId, title }) => (
+              <iframe
+                key={youTubeId}
+                className="w-full mt-5 aspect-video"
+                src={`https://www.youtube.com/embed/${youTubeId}?si=oOjlsgFCEwaOHI5x`}
+                title={title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            ))}
           </Banner>
         </div>
         <div>

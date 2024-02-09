@@ -49,11 +49,14 @@ const Shows = async () => {
           <ShowListBig shows={pastShows as Show[]} />
         )}
 
+        <h3 className="py-10 text-4xl font-bold text-center md:text-6xl">
+          Past Shows
+        </h3>
+
         {images && <MasonryGallery dir={folder} images={images.reverse()} />}
 
         {currentShows.length > 0 && (
           <section className="container">
-            <h3 className="text-2xl font-bold">Past Shows</h3>
             <ShowListBig shows={pastShows as Show[]} />
           </section>
         )}

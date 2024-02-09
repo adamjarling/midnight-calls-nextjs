@@ -38,6 +38,17 @@ const homePics = [
   },
 ];
 
+const videos = [
+  {
+    youTubeId: "ba9kWpoC9_U",
+    title: "The Midnight Calls - Coming Up Roses (Official Video)",
+  },
+  {
+    youTubeId: "8p8w0IqR1kg",
+    title: "The Midnight Calls - Whaddya (Official Video)",
+  },
+];
+
 export default function Home() {
   const { currentShows } = useShows(shows);
 
@@ -59,21 +70,18 @@ export default function Home() {
         </div>
 
         <div className="space-y-10">
-          <div className="container my-10 md:my-16">
-            <iframe
-              className="w-full aspect-video"
-              src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            {/* <div className="hidden grid-cols-1 gap-3 mt-5 md:grid md:grid-cols-2">
-            {videoPics.map((pic, i) => (
-              <div key={i}>
-                <Image src={pic.src} alt={pic.alt} />
-              </div>
+          <div className="container mt-10 space-y-10 md:mt-16">
+            {videos.map(({ youTubeId, title }) => (
+              <iframe
+                key={youTubeId}
+                className="w-full aspect-video"
+                src={`https://www.youtube.com/embed/${youTubeId}?si=oOjlsgFCEwaOHI5x`}
+                title={title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             ))}
-          </div> */}
+            h2
           </div>
 
           <section className="">
