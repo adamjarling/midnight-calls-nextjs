@@ -271,4 +271,22 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
+  {
+    datetime: "2024-05-19T18:00:00",
+    venue: {
+      name: "The Vixen",
+      city: "McHenry",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/vixmchenry",
+        website: "https://www.vixenmchenry.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
 ];

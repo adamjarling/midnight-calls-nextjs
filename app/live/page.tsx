@@ -13,6 +13,7 @@ import path from "path";
 import rocHausPic from "@/public/images/2023-11-30(2).jpg";
 import rockPic from "@/public/photos/DSC05518.jpg";
 import useShows from "@/hooks/use-shows";
+import vixenFlyer from "@/public/posters/2024_vixen.jpg";
 
 export const metadata: Metadata = {
   title: "Live",
@@ -45,6 +46,12 @@ const Shows = async () => {
 
       <div className="space-y-16">
         <ShowListBig shows={currentShows as Show[]} />
+
+        <Image
+          src={vixenFlyer}
+          alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
+        />
+
         {currentShows.length === 0 && (
           <ShowListBig shows={pastShows as Show[]} />
         )}

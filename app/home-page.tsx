@@ -18,6 +18,7 @@ import rocHausPic from "@/public/photos/rochaus-full-band.jpg";
 import rosesVidShoot from "@/public/photos/photo-roses-vid-shoot.jpg";
 import taranLeaning from "@/public/photos/DSC01206.jpg";
 import useShows from "@/hooks/use-shows";
+import vixenFlyer from "@/public/posters/2024_vixen.jpg";
 
 const homePics = [
   {
@@ -43,10 +44,10 @@ const videos = [
     youTubeId: "ba9kWpoC9_U",
     title: "The Midnight Calls - Coming Up Roses (Official Video)",
   },
-  {
-    youTubeId: "8p8w0IqR1kg",
-    title: "The Midnight Calls - Whaddya (Official Video)",
-  },
+  // {
+  //   youTubeId: "8p8w0IqR1kg",
+  //   title: "The Midnight Calls - Whaddya (Official Video)",
+  // },
 ];
 
 export default function Home() {
@@ -55,14 +56,6 @@ export default function Home() {
   return (
     <>
       <Main flushTop>
-        {/* <ParallaxHero
-          imageUrl="/images/5L9A2266.jpg"
-          // headline="Parallax Banner goes here"
-          altText="The Midnight Calls band photo"
-          // subHeadline="Some random subheadline content can go here to describe something"
-          // Button={<Button cb={() => console.log("yo")}>Get Started</Button>}
-        /> */}
-
         <div className="relative">
           {/* Top gradient overlay */}
           {/* <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-black to-transparent" /> */}
@@ -82,6 +75,16 @@ export default function Home() {
               ></iframe>
             ))}
             h2
+          </div>
+
+          <div className="text-center">
+            <p className="">
+              Just announced! May 19, 2024 with Faster Pussycat
+            </p>
+            <Image
+              src={vixenFlyer}
+              alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
+            />
           </div>
 
           <section className="">
