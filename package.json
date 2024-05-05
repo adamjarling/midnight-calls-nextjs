@@ -13,29 +13,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "^2.1.1",
-    "@types/node": "^20.11.17",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
+    "@heroicons/react": "^2.1.3",
+    "@types/node": "^20.12.8",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
     "@vercel/og": "^0.6.2",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0",
-    "framer-motion": "^11.0.3",
+    "eslint": "^9.2.0",
+    "eslint-config-next": "^14.2.3",
+    "framer-motion": "^11.1.7",
     "image-size": "^1.1.1",
-    "next": "^14.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^5.0.1",
+    "next": "^14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-icons": "^5.2.0",
     "react-masonry-css": "^1.0.16",
-    "sharp": "^0.33.2",
-    "typescript": "^5.3.3",
-    "yet-another-react-lightbox": "^3.17.0",
+    "sharp": "^0.33.3",
+    "typescript": "^5.4.5",
+    "yet-another-react-lightbox": "^3.17.5",
     "zuma-blocks": "^0.0.8"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.19",
     "eslint-config-prettier": "^9.1.0",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1"
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
   }
 }
