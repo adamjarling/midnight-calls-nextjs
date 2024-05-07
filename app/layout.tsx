@@ -6,7 +6,10 @@ import { config, nav } from "nttb-config";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Metadata } from "next";
+import Navbar from "@/components/Navbar";
+import { OverflowHiddenProvider } from "@/context/overflow-hidden";
 import Script from "next/script";
+import Wrapper from "@/components/Wrapper";
 
 const { OPEN_GRAPH, SITE } = config;
 
@@ -31,8 +34,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
   children,
 }: {
   children: React.ReactNode;
@@ -47,26 +48,26 @@ export default function RootLayout({
         href="/images/logo/mc-initials2_white.png"
         type="image/png"
       />
-      <body>
-        <div className="relative bg-slate-950 text-slate-50">
-          {/* <Nav links={nav} /> */}
-          <Header />
+
+      <OverflowHiddenProvider>
+        <Wrapper>
+          <Navbar />
           <div className="">{children}</div>
           <Footer />
-        </div>
+        </Wrapper>
+      </OverflowHiddenProvider>
 
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA}`}
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA}`}
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${process.env.NEXT_PUBLIC_GA}');
             `}
-        </Script>
-      </body>
+      </Script>
     </html>
   );
 }
