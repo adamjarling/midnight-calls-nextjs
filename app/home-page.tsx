@@ -98,7 +98,7 @@ export default function Home() {
           </section>
 
           <Container>
-            <Banner className="relative z-20">
+            <Banner className="relative z-0">
               <BannerHeadline>Upcoming Shows</BannerHeadline>
             </Banner>
 

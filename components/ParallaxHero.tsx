@@ -39,7 +39,7 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({
       {/* Top gradient overlay */}
       <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-black to-transparent" />
 
-      <div className="absolute z-10 w-full bottom-5 left">
+      <div className="absolute z-0 w-full bottom-5 left">
         <Container>
           <motion.h1
             initial={{ opacity: 0 }}
