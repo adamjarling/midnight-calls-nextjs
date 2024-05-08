@@ -13,13 +13,13 @@ import mcPhotoCloseup from "@/public/images/the-midnight-calls_promo-pic-closeup
 
 const videos = [
   {
+    youTubeId: "8p8w0IqR1kg",
+    title: "The Midnight Calls - Whaddya (Official Video)",
+  },
+  {
     youTubeId: "ba9kWpoC9_U",
     title: "The Midnight Calls - Coming Up Roses (Official Video)",
   },
-  // {
-  //   youTubeId: "8p8w0IqR1kg",
-  //   title: "The Midnight Calls - Whaddya (Official Video)",
-  // },
 ];
 
 export const metadata: Metadata = {
@@ -31,11 +31,7 @@ const About = () => {
     <Main flushTop={false}>
       <div className="space-y-16">
         <div>
-          {/* <Banner>
-            <BannerHeadline>Press Pack</BannerHeadline>
-          </Banner> */}
-
-          <Container className="mb-10">
+          <Container className="mt-12 mb-10">
             <iframe
               className="w-full aspect-video"
               src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"

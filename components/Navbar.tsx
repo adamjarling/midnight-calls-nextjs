@@ -62,10 +62,11 @@ const Navbar = () => {
           {
             "opacity-0": !isMobileNavOpen,
             "opacity-100": isMobileNavOpen,
+            hidden: !isMobileNavOpen,
           }
         )}
       >
-        <ul className="absolute w-full space-y-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 pb-36">
+        <ul className="absolute w-full pb-24 space-y-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
           {nav.map((link) => (
             <li key={link.name} className="text-2xl font-bold uppercase">
               <a href={link.href}>{link.name}</a>
@@ -86,38 +87,37 @@ const Navbar = () => {
           ref={imageRef}
           src={mcLogo}
           alt="Midnight Calls logo"
-          className="absolute top-0 z-30 w-auto pt-3 -translate-x-1/2 h-28 md:h-24 left-1/2"
+          className="absolute top-0 z-30 w-auto h-24 pt-3 -translate-x-1/2 left-1/2"
         />
       </Link>
 
       {/* Header bar */}
       <header
-        className={classNames(
-          [`fixed z-20 flex items-center justify-center w-full px-5 py-5`],
-          {
-            "bg-black": !isLogoVisible,
-          }
-        )}
+        className={classNames([`fixed z-20 w-full`], {
+          "bg-black": !isLogoVisible,
+        })}
       >
-        <Link
-          href="/"
-          className={cn([`uppercase font-headline ease-in duration-200`], {
-            "opacity-0": isLogoVisible,
-            "opacity-100": !isLogoVisible,
-          })}
-        >
-          The Midnight Calls
-        </Link>
-        <button
-          className="absolute text-4xl font-bold uppercase transform -translate-y-1/2 right-8 top-1/2"
-          onClick={handleNavClick}
-        >
-          {isMobileNavOpen ? (
-            <XMarkIcon className="w-10 h-10 md:w-10 md:h-10" />
-          ) : (
-            <Bars2Icon className="w-10 h-10 md:w-14 md:h-14" />
-          )}
-        </button>
+        <div className="flex items-center justify-center px-5 py-5">
+          <Link
+            href="/"
+            className={cn([`uppercase font-headline ease-in duration-200`], {
+              "opacity-0": isLogoVisible,
+              "opacity-100": !isLogoVisible,
+            })}
+          >
+            The Midnight Calls
+          </Link>
+          <button
+            className="absolute text-4xl font-bold uppercase transform -translate-y-1/2 right-6 lg:right-8 top-1/2"
+            onClick={handleNavClick}
+          >
+            {isMobileNavOpen ? (
+              <XMarkIcon className="w-10 h-10 md:w-10 md:h-10" />
+            ) : (
+              <Bars2Icon className="w-10 h-10 md:w-14 md:h-14" />
+            )}
+          </button>
+        </div>
       </header>
     </div>
   );

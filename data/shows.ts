@@ -289,4 +289,22 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
+  {
+    datetime: "2024-06-23T14:00:00",
+    venue: {
+      name: "Thirsty Beaver",
+      city: "Crestwood",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/thirstybeavercrestwood/",
+        website: "https://www.thirstybeaverpubandgrub.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
 ];
