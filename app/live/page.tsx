@@ -6,14 +6,15 @@ import Main from "@/components/Main";
 import MasonryGallery from "@/components/Masonry";
 import { MasonryImage } from "@/components/Masonry";
 import { Metadata } from "next";
-import ParallaxHero from "@/components/ParallaxHero";
 import ShowListBig from "@/components/shows/ListBig";
 import { promises as fs } from "fs";
+import jasonKaneGig from "@/public/posters/2024-06-12-reggies-jason-kane1.jpg";
 import path from "path";
 import rocHausPic from "@/public/images/2023-11-30(2).jpg";
 import rockPic from "@/public/photos/DSC05518.jpg";
 import useShows from "@/hooks/use-shows";
 import vixenFlyer from "@/public/posters/2024_vixen.jpg";
+import vixenFlyerMobile from "@/public/posters/2024_vixen_square.jpg";
 
 export const metadata: Metadata = {
   title: "Live",
@@ -47,10 +48,26 @@ const Shows = async () => {
       <div className="space-y-16">
         <ShowListBig shows={currentShows as Show[]} />
 
-        <Image
-          src={vixenFlyer}
-          alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
-        />
+        <div className="flex flex-col items-center space-y-10">
+          <div>
+            <Image
+              src={vixenFlyer}
+              alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
+              className="hidden md:block"
+            />
+            <Image
+              src={vixenFlyerMobile}
+              alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
+              className="inline-block md:hidden"
+            />
+          </div>
+
+          <Image
+            src={jasonKaneGig}
+            alt="Live at Reggies"
+            className="inline-block"
+          />
+        </div>
 
         {currentShows.length === 0 && (
           <ShowListBig shows={pastShows as Show[]} />

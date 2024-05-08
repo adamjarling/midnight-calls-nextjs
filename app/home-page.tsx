@@ -21,6 +21,7 @@ import rosesVidShoot from "@/public/photos/photo-roses-vid-shoot.jpg";
 import taranLeaning from "@/public/photos/DSC01206.jpg";
 import useShows from "@/hooks/use-shows";
 import vixenFlyer from "@/public/posters/2024_vixen.jpg";
+import vixenFlyerMobile from "@/public/posters/2024_vixen_square.jpg";
 
 const homePics = [
   {
@@ -80,6 +81,12 @@ export default function Home() {
             <Image
               src={vixenFlyer}
               alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
+              className="hidden md:block"
+            />
+            <Image
+              src={vixenFlyerMobile}
+              alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
+              className="block md:hidden"
             />
             <p className="container">
               All Ages. May 19th, 2024 at{" "}

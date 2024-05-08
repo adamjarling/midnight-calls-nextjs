@@ -286,7 +286,27 @@ export const shows: Show[] = [
     url: {
       facebook: "",
       image: "",
-      ticket: "",
+      ticket:
+        "https://www.etix.com/ticket/p/54878196/faster-pussycat-wmidnight-calls-mchenry-the-vixen",
+    },
+  },
+  {
+    datetime: "2024-06-12T19:00:00",
+    venue: {
+      name: "Reggies",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "https://www.reggieslive.com/show/jason-kane-the-jive-20/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket:
+        "https://www.ticketweb.com/event/jason-kane-the-jive-reggies-music-joint-tickets/13370724",
     },
   },
   {
