@@ -24,6 +24,7 @@ const Navbar = () => {
   const hideLogo = ["/"].includes(path || "");
 
   function handleNavClick() {
+    console.log("click");
     setIsMobileNavOpen(!isMobileNavOpen);
     toggleOverflowHidden();
   }
@@ -57,18 +58,22 @@ const Navbar = () => {
       <nav
         className={cn(
           [
-            `fixed z-10 w-full h-screen mb-64 text-center border border-black bg-black/85 border-spacing-10 transition-opacity duration-300 `,
+            `z-10 w-full h-screen mb-64 text-center border border-black bg-black/85 border-spacing-10 transition-opacity duration-300 `,
           ],
           {
             "opacity-0": !isMobileNavOpen,
             "opacity-100": isMobileNavOpen,
             hidden: !isMobileNavOpen,
+            fixed: isMobileNavOpen,
           }
         )}
       >
-        <ul className="absolute w-full pb-24 space-y-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+        <ul className="absolute w-full pb-24 space-y-12 -translate-x-1/2 -translate-y-1/2 lg:space-y-16 left-1/2 top-1/2">
           {nav.map((link) => (
-            <li key={link.name} className="text-2xl font-bold uppercase">
+            <li
+              key={link.name}
+              className="text-4xl font-bold uppercase lg:text-6xl"
+            >
               <a href={link.href}>{link.name}</a>
             </li>
           ))}
