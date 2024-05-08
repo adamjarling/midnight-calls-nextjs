@@ -5,7 +5,6 @@ import { useOverflowHidden } from "@/context/overflow-hidden";
 
 export default function Wrapper({ children }: { children: React.ReactNode }) {
   const { isOverflowHidden } = useOverflowHidden();
-  console.log("isOverflowHidden", isOverflowHidden);
 
   return (
     <body

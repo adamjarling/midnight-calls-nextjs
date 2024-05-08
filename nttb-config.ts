@@ -24,6 +24,7 @@ const config = {
 };
 
 const nav = [
+  { name: "Home", href: "/" },
   { name: "Live", href: "/live" },
   { name: "Photos", href: "/photos" },
   { name: "Press Pack", href: "/press" },

@@ -9,7 +9,7 @@ import React from "react";
 
 const footerInfo = {
   bandName: "The Midnight Calls",
-  nav: [{ name: "Home", href: "/" }, ...nav],
+  nav,
   socials: [
     {
       name: "Facebook",

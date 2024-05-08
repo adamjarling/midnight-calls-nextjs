@@ -2,9 +2,11 @@
 
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import React, { useEffect, useRef, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 import Image from "next/image";
 import Link from "next/link";
+import classNames from "classnames";
 import cn from "classnames";
 import mcLogo from "public/images/logo/mc-logo_white.png";
 import { nav } from "@/nttb-config";
@@ -15,7 +17,11 @@ const Navbar = () => {
   const [isLogoVisible, setIsLogoVisible] = useState(true);
   const { toggleOverflowHidden } = useOverflowHidden();
 
+  const path = usePathname();
   const imageRef = useRef(null);
+
+  const isNavbarInitialTransparent = ["/"].includes(path || "");
+  const hideLogo = ["/"].includes(path || "");
 
   function handleNavClick() {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -47,10 +53,11 @@ const Navbar = () => {
 
   return (
     <div className="relative">
+      {/* Nav overlay */}
       <nav
         className={cn(
           [
-            `fixed z-10 w-full h-screen pb-32 text-center border border-black bg-black/85 border-spacing-10 transition-opacity duration-300`,
+            `fixed z-10 w-full h-screen mb-64 text-center border border-black bg-black/85 border-spacing-10 transition-opacity duration-300 `,
           ],
           {
             "opacity-0": !isMobileNavOpen,
@@ -58,7 +65,7 @@ const Navbar = () => {
           }
         )}
       >
-        <ul className="absolute w-full space-y-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+        <ul className="absolute w-full space-y-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 pb-36">
           {nav.map((link) => (
             <li key={link.name} className="text-2xl font-bold uppercase">
               <a href={link.href}>{link.name}</a>
@@ -67,16 +74,31 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <Link href="/" className="">
+      {/* Logo */}
+      <Link
+        href="/"
+        className={cn({
+          "opacity-0": hideLogo,
+          "opacity-100": !hideLogo,
+        })}
+      >
         <Image
           ref={imageRef}
           src={mcLogo}
           alt="Midnight Calls logo"
-          className="absolute top-0 z-30 w-1/2 pt-3 -translate-x-1/2 left-1/2"
+          className="absolute top-0 z-30 w-auto pt-3 -translate-x-1/2 h-28 md:h-24 left-1/2"
         />
       </Link>
 
-      <header className="fixed z-20 flex items-center justify-center w-full px-5 py-4 bg-black">
+      {/* Header bar */}
+      <header
+        className={classNames(
+          [`fixed z-20 flex items-center justify-center w-full px-5 py-5`],
+          {
+            "bg-black": !isLogoVisible,
+          }
+        )}
+      >
         <Link
           href="/"
           className={cn([`uppercase font-headline ease-in duration-200`], {
@@ -87,13 +109,13 @@ const Navbar = () => {
           The Midnight Calls
         </Link>
         <button
-          className="absolute text-4xl font-bold uppercase transform -translate-y-1/2 right-5 top-1/2"
+          className="absolute text-4xl font-bold uppercase transform -translate-y-1/2 right-8 top-1/2"
           onClick={handleNavClick}
         >
           {isMobileNavOpen ? (
-            <XMarkIcon className="w-8 h-8" />
+            <XMarkIcon className="w-10 h-10 md:w-10 md:h-10" />
           ) : (
-            <Bars2Icon className="w-8 h-8" />
+            <Bars2Icon className="w-10 h-10 md:w-14 md:h-14" />
           )}
         </button>
       </header>
