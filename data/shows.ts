@@ -283,6 +283,7 @@ export const shows: Show[] = [
         website: "https://www.vixenmchenry.com/",
       },
     },
+    notes: "with Faster Pussycat",
     url: {
       facebook: "",
       image: "",
@@ -302,6 +303,7 @@ export const shows: Show[] = [
         website: "https://www.reggieslive.com/show/jason-kane-the-jive-20/",
       },
     },
+    notes: "with Jason Kane and the Jive",
     url: {
       facebook: "",
       image: "",
@@ -319,6 +321,26 @@ export const shows: Show[] = [
       url: {
         facebook: "https://www.facebook.com/thirstybeavercrestwood/",
         website: "https://www.thirstybeaverpubandgrub.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2024-08-02T21:00:00",
+    notes:
+      "with Black Angus and The Evictions.  Adam is fleeing the country goodbye show!",
+    venue: {
+      name: "Live Wire Lounge",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "https://livewireloungechicago.com/",
       },
     },
     url: {
