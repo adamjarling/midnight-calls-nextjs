@@ -34,9 +34,10 @@ const About = () => {
           <Container className="mt-12 mb-10">
             <iframe
               className="w-full aspect-video"
-              src="https://www.youtube.com/embed/8p8w0IqR1kg?si=ko2yuy5QBobKdzP1"
+              src="https://www.youtube.com/embed/0EN_QF5trtU?si=WO3DKH9d4X50ZmY8"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
           </Container>
@@ -47,28 +48,32 @@ const About = () => {
           <BannerText>
             <div className="leading-relaxed lg:text-xl">
               <p>
-                &apos;Whaddya&apos; is the first single and video from Chicago
-                roots rock band, The Midnight Calls. The Midnight Calls plays
-                blues-based rock music in the vein of AC/DC, Muddy Waters, Rose
-                Tattoo, Thin Lizzy and other classic, guitar-driven rock icons.
-                The Midnight Calls perform regularly at clubs and festivals
-                around the south side of Chicago, and will be releasing their
-                first full-length album Spring 2024.
+                The Midnight Calls is a denim and leather Rock & Roll outfit
+                from Chicago. The band is fronted by Spain-born singer, Taran de
+                Pablos and features guitarists Adam Arling (The Last Vegas, Urge
+                Overkill, Warrior Soul) and Tony McQuaid (Loudmouth, Frank Bang
+                & the Secret Stash), bassist Sean Barnes and drummer Chuck
+                Harling. Their music is heavily influenced by the blues-infused
+                sounds of classic bands like Aerosmith, The Rolling Stones or
+                AC/DC. With a recipe based on grooves, hooks, and loud guitars
+                as the main ingredients, The Midnight Calls are not reinventing
+                the Rock & Roll wheel, but rather rolling it down the road with
+                the swagger and style that you would expect from road-tested
+                musicians that have toured the US and Europe a few times over.{" "}
               </p>
+
               <p>
-                The Midnight Calls features experienced musicians from the
-                Chicago scene who&apos;ve toured the world with bands including
-                Loudmouth, Head On, The Last Vegas, Urge Overkill, Skinwalker
-                and the Wooly Rhinos.
+                Since their inception in late 2022, The Midnight Calls have
+                released three singles, “Whaddya”, “Coming Up Roses”, and their
+                latest song, “So Cold” which features Chris Grove (Survivor,
+                Joel Hoekstra, Eddie Money) on keyboards. While developing their
+                music in the studio, the band has stayed active, sharing the
+                stage with national acts like The Supersuckers, The Steepwater
+                Band, Faster Pussycat, Blacktop Mojo, or Jason Kane & The Jive
+                amongst others. At the moment, The Midnight Calls are working on
+                material for their first album, to be expected in early 2025,
+                with touring planned following its release.
               </p>
-              <h4 className="pt-3 mb-3">The Midnight Calls are:</h4>
-              <ul>
-                <li>Taran De Pablos - Vocals</li>
-                <li>Tony McQuaid - Guitar</li>
-                <li>Sean Barnes - Bass</li>
-                <li>Adam Arling - Guitar</li>
-                <li>Chuck Harling - Drums</li>
-              </ul>
             </div>
           </BannerText>
         </section>

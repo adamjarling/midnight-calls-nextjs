@@ -78,11 +78,13 @@ export default function Home() {
           </div> */}
 
           <div className="mt-20 space-y-6 text-center">
-            <Image
-              src={vixenFlyer}
-              alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
-              className="hidden md:block"
-            />
+            <div className="flex justify-center w-full">
+              <Image
+                src={vixenFlyer}
+                alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
+                className="hidden md:block"
+              />
+            </div>
             <Image
               src={vixenFlyerMobile}
               alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
