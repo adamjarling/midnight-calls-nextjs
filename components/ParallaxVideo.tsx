@@ -42,7 +42,7 @@ const ParallaxVideo: React.FC<ParallaxVideoProps> = ({
       >
         <source src={videoUrl} type="video/mp4"></source>
       </motion.video>
-      <div className="absolute inset-0 w-full h-full bg-black opacity-70"></div>
+      <div className="absolute inset-0 w-full h-full bg-black opacity-20"></div>
       <motion.div className="absolute z-10 text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
         {headline && (
           <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl">

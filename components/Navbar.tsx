@@ -24,7 +24,6 @@ const Navbar = () => {
   const hideLogo = ["/"].includes(path || "");
 
   function handleNavClick() {
-    console.log("click");
     setIsMobileNavOpen(!isMobileNavOpen);
     toggleOverflowHidden();
   }
@@ -68,11 +67,11 @@ const Navbar = () => {
           }
         )}
       >
-        <ul className="absolute w-full pb-24 space-y-12 -translate-x-1/2 -translate-y-1/2 lg:space-y-16 left-1/2 top-1/2">
+        <ul className="absolute w-full pb-24 space-y-12 -translate-x-1/2 -translate-y-1/2 lg:pb-16 lg:space-y-16 left-1/2 top-1/2">
           {nav.map((link) => (
             <li
               key={link.name}
-              className="text-4xl font-bold uppercase lg:text-6xl"
+              className="text-4xl font-bold uppercase lg:text-5xl"
             >
               <a href={link.href}>{link.name}</a>
             </li>
@@ -92,7 +91,7 @@ const Navbar = () => {
           ref={imageRef}
           src={mcLogo}
           alt="Midnight Calls logo"
-          className="absolute top-0 z-30 w-auto h-24 pt-3 -translate-x-1/2 left-1/2"
+          className="absolute top-0 z-30 w-auto h-20 pt-3 -translate-x-1/2 left-1/2"
         />
       </Link>
 

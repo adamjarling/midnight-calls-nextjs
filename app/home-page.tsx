@@ -1,23 +1,17 @@
-import { ArrowRightIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { Show, shows } from "@/data/shows";
 
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
-import BannerText from "@/components/banner/Text";
 import Container from "@/components/Container";
-import { ExternalLink } from "zuma-blocks";
 import HomeHero from "@/components/home/Hero";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
-import ParallaxHero from "@/components/ParallaxHero";
 import ShowListItem from "@/components/shows/ListItem";
-import ShowsList from "@/components/shows/List";
 import garageShot from "@/public/photos/mc-garage-rockin.jpg";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
-import mcTShirts from "@/public/images/mc-merch-table.jpg";
 import rocHausPic from "@/public/photos/rochaus-full-band.jpg";
-import rosesVidShoot from "@/public/photos/photo-roses-vid-shoot.jpg";
 import taranLeaning from "@/public/photos/DSC01206.jpg";
 import useShows from "@/hooks/use-shows";
 import vixenFlyer from "@/public/posters/2024_vixen.jpg";
@@ -47,10 +41,6 @@ const videos = [
     youTubeId: "ba9kWpoC9_U",
     title: "The Midnight Calls - Coming Up Roses (Official Video)",
   },
-  // {
-  //   youTubeId: "8p8w0IqR1kg",
-  //   title: "The Midnight Calls - Whaddya (Official Video)",
-  // },
 ];
 
 export default function Home() {
@@ -59,23 +49,10 @@ export default function Home() {
   return (
     <>
       <Main flushTop>
-        <div className="relative">
-          <HomeHero />
-        </div>
-
         <div className="space-y-20 lg:space-y-32">
-          {/* <div className="container mt-10 space-y-10 md:mt-16">
-            {videos.map(({ youTubeId, title }) => (
-              <iframe
-                key={youTubeId}
-                className="w-full aspect-video"
-                src={`https://www.youtube.com/embed/${youTubeId}?si=oOjlsgFCEwaOHI5x`}
-                title={title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            ))}
-          </div> */}
+          <div className="relative">
+            <HomeHero />
+          </div>
 
           <div className="mt-20 space-y-6 text-center">
             <div className="flex justify-center w-full">

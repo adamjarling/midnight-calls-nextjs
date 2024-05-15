@@ -12,16 +12,14 @@ const HomeHero = () => {
         <Image
           src={soColdCover}
           alt="So Cold single cover"
-          className="w-auto lg:max-h-screen"
+          className="w-auto max-h-[80vh]"
         />
       </div>
 
       <h2 className="text-2xl text-center md:text-4xl">
         "So Cold"
         <br />
-        World premiere
-        <br />
-        May 14, 2024
+        Single Out Now!
       </h2>
 
       <div className="flex justify-center">
