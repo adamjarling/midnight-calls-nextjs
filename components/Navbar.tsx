@@ -20,8 +20,7 @@ const Navbar = () => {
   const path = usePathname();
   const imageRef = useRef(null);
 
-  const isNavbarInitialTransparent = ["/"].includes(path || "");
-  const hideLogo = ["/"].includes(path || "");
+  const hideLogo = ["/"].includes(path || "") || isMobileNavOpen;
 
   function handleNavClick() {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -57,7 +56,7 @@ const Navbar = () => {
       <nav
         className={cn(
           [
-            `z-10 w-full h-screen mb-64 text-center border border-black bg-black/85 border-spacing-10 transition-opacity duration-300 `,
+            `z-30 w-full h-screen mb-64 text-center border border-black bg-black/85 border-spacing-10 transition-opacity duration-300 `,
           ],
           {
             "opacity-0": !isMobileNavOpen,
@@ -71,7 +70,7 @@ const Navbar = () => {
           {nav.map((link) => (
             <li
               key={link.name}
-              className="text-4xl font-bold uppercase lg:text-5xl"
+              className="text-4xl font-bold uppercase duration-200 ease-in transform lg:text-5xl hover:scale-110"
             >
               <a href={link.href}>{link.name}</a>
             </li>
@@ -97,7 +96,7 @@ const Navbar = () => {
 
       {/* Header bar */}
       <header
-        className={classNames([`fixed z-20 w-full`], {
+        className={classNames([`fixed z-40 w-full`], {
           "bg-black": !isLogoVisible,
         })}
       >

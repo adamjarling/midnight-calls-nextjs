@@ -330,6 +330,26 @@ export const shows: Show[] = [
     },
   },
   {
+    datetime: "2024-06-29T18:00:00",
+    venue: {
+      name: "The Northman Riverwalk",
+
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/thenorthmanriverwalk",
+        website: "https://www.thenorthman.com/",
+      },
+    },
+    notes: "On the Chicago River at the Riverwalk at Northman Cidery",
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
     datetime: "2024-08-02T21:00:00",
     notes:
       "with Black Angus and The Evictions.  Adam is fleeing the country goodbye show!",
