@@ -30,15 +30,6 @@ const HomeHero = () => {
           Watch on YouTube
         </ExternalLink>
       </div>
-
-      <iframe
-        className="w-full aspect-video"
-        src="https://www.youtube.com/embed/0EN_QF5trtU?si=WO3DKH9d4X50ZmY8"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
     </div>
   );
 };

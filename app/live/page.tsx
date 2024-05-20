@@ -10,11 +10,7 @@ import ShowListBig from "@/components/shows/ListBig";
 import { promises as fs } from "fs";
 import jasonKaneGig from "@/public/posters/2024-06-12-reggies-jason-kane1.jpg";
 import path from "path";
-import rocHausPic from "@/public/images/2023-11-30(2).jpg";
-import rockPic from "@/public/photos/DSC05518.jpg";
 import useShows from "@/hooks/use-shows";
-import vixenFlyer from "@/public/posters/2024_vixen.jpg";
-import vixenFlyerMobile from "@/public/posters/2024_vixen_square.jpg";
 
 export const metadata: Metadata = {
   title: "Live",
@@ -33,41 +29,33 @@ const Shows = async () => {
     (f) => f !== ".DS_Store"
   );
 
-  const images = imageFilenames.map((ifn): MasonryImage => {
-    const dimensions = sizeOf(`${imageDirectory}/${ifn}`);
-    return {
-      filename: `/${folder}/${ifn}`,
-      ...dimensions,
-    };
-  });
+  const images = imageFilenames
+    .map((ifn): MasonryImage => {
+      const dimensions = sizeOf(`${imageDirectory}/${ifn}`);
+      return {
+        filename: `/${folder}/${ifn}`,
+        ...dimensions,
+      };
+    })
+    .filter(
+      (image) =>
+        image.filename !== "/posters/2024-06-12-reggies-jason-kane1.jpg"
+    );
 
   return (
     <Main flushTop>
       <HeroWrapper />
 
       <div className="space-y-16">
-        <ShowListBig shows={currentShows as Show[]} />
-
         <div className="flex flex-col items-center space-y-10">
-          <div>
-            <Image
-              src={vixenFlyer}
-              alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
-              className="hidden md:block"
-            />
-            <Image
-              src={vixenFlyerMobile}
-              alt="The Midnight Calls with Faster Pussycat May 19, 2024 flyer"
-              className="inline-block md:hidden"
-            />
-          </div>
-
           <Image
             src={jasonKaneGig}
             alt="Live at Reggies"
             className="inline-block"
           />
         </div>
+
+        <ShowListBig shows={currentShows as Show[]} />
 
         {currentShows.length === 0 && (
           <ShowListBig shows={pastShows as Show[]} />
