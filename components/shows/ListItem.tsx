@@ -27,18 +27,28 @@ const ShowListItem = ({ show }: { show: Show }) => {
           </p>
           <p>{`${show.venue.city}, ${show.venue.stateProvince} ${show.venue.country}`}</p>
           {!isPastShow(show) && (
-            <a
-              className="inline-block button"
-              href={
-                show.url.ticket ||
-                show.url.facebook ||
-                show.venue.url?.website ||
-                show.venue.url?.facebook ||
-                "#"
-              }
-            >
-              Buy tickets
-            </a>
+            <>
+              <a
+                className="inline-block button"
+                href={
+                  show.url.ticket ||
+                  show.url.facebook ||
+                  show.venue.url?.website ||
+                  show.venue.url?.facebook ||
+                  "#"
+                }
+              >
+                Buy tickets
+              </a>
+              {show.url.facebook && (
+                <a
+                  className="inline-block lg:ml-3 button"
+                  href={show.url.facebook}
+                >
+                  Facebook Event
+                </a>
+              )}
+            </>
           )}
           {show.notes && <p className="text-sm">{show.notes}</p>}
         </div>

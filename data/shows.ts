@@ -324,10 +324,11 @@ export const shows: Show[] = [
       },
     },
     url: {
-      facebook: "",
+      facebook: "https://www.facebook.com/events/387731674248265",
       image: "",
       ticket: "",
     },
+    notes: "Free Show!",
   },
   {
     datetime: "2024-06-29T18:00:00",
@@ -342,7 +343,8 @@ export const shows: Show[] = [
         website: "https://www.thenorthman.com/",
       },
     },
-    notes: "On the Chicago River at the Riverwalk at Northman Cidery",
+    notes:
+      "Free Show! On the Chicago River at the Riverwalk at Northman Cidery",
     url: {
       facebook: "",
       image: "",

@@ -29,31 +29,26 @@ const Shows = async () => {
     (f) => f !== ".DS_Store"
   );
 
-  const images = imageFilenames
-    .map((ifn): MasonryImage => {
-      const dimensions = sizeOf(`${imageDirectory}/${ifn}`);
-      return {
-        filename: `/${folder}/${ifn}`,
-        ...dimensions,
-      };
-    })
-    .filter(
-      (image) =>
-        image.filename !== "/posters/2024-06-12-reggies-jason-kane1.jpg"
-    );
+  const images = imageFilenames.map((ifn): MasonryImage => {
+    const dimensions = sizeOf(`${imageDirectory}/${ifn}`);
+    return {
+      filename: `/${folder}/${ifn}`,
+      ...dimensions,
+    };
+  });
 
   return (
     <Main flushTop>
       <HeroWrapper />
 
       <div className="space-y-16">
-        <div className="flex flex-col items-center space-y-10">
+        {/* <div className="flex flex-col items-center space-y-10">
           <Image
             src={jasonKaneGig}
             alt="Live at Reggies"
             className="inline-block"
           />
-        </div>
+        </div> */}
 
         <ShowListBig shows={currentShows as Show[]} />
 
