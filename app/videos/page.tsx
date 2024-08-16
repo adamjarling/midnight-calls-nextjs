@@ -1,4 +1,5 @@
 import MasonryGallery, { MasonryImage } from "@/components/Masonry";
+import React from "react";
 
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
@@ -39,9 +40,9 @@ const VideoPage = async () => {
       <Banner className="">
         <BannerHeadline>Videos</BannerHeadline>
       </Banner>
-      <div className="container space-y-16 lg:space-y-20">
+      <div className="space-y-16 lg:space-y-20">
         {videos.map(({ youTubeId, title, description }) => (
-          <div>
+          <div key={youTubeId} className="container">
             <iframe
               key={youTubeId}
               className="w-full aspect-video"
@@ -50,10 +51,13 @@ const VideoPage = async () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+
             {description && (
-              <p className="pt-3 text-sm text-gray-300 lg:text-base">
-                {description}
-              </p>
+              <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <p className="max-w-3xl pt-8 mx-auto text-sm text-gray-300 lg:text-base">
+                  {description}
+                </p>
+              </div>
             )}
           </div>
         ))}

@@ -4,7 +4,6 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import Container from "@/components/Container";
-import HomeHero from "@/components/home/Hero";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
@@ -18,6 +17,10 @@ import useShows from "@/hooks/use-shows";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import taranScreaming from "@/public/photos/DSC09196.jpeg";
 import vixen1 from "@/public/photos/20240519_185543.jpg";
+import SoColdPromo from "@/components/SoColdPromo";
+import ResponsiveImage from "@/components/ResponsiveImage";
+import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
+import reggiesRockinMobile from "@/public/photos/20240612_202834.jpg";
 
 const homePics = [
   {
@@ -45,11 +48,13 @@ export default function Home() {
     <>
       <Main flushTop>
         <div className="space-y-20 lg:space-y-32">
-          <div className="relative">
-            <HomeHero />
-          </div>
+          <ResponsiveImage
+            mobileSrc={reggiesRockinMobile}
+            desktopSrc={reggiesRockin}
+            alt="The Midnight Calls"
+          />
 
-          <Image src={mcPhoto1} alt="The Midnight Calls" />
+          <SoColdPromo />
 
           {/* Shows */}
           <Container>

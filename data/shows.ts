@@ -371,4 +371,23 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
+  {
+    datetime: "2024-08-24T20:00:00",
+    notes: "",
+    venue: {
+      name: "Austin Community Tavern",
+      city: "Steger",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "https://austincommunitytavern.com/",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/3739711742942462",
+      image: "",
+      ticket: "",
+    },
+  },
 ];

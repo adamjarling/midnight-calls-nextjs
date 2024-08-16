@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import soColdCover from "public/images/so-cold_single-cover.png";
 
-const HomeHero = () => {
+const SoColdPromo = () => {
   return (
     <div className="space-y-6 xl:container">
       <div className="relative flex justify-center">
@@ -34,4 +34,4 @@ const HomeHero = () => {
   );
 };
 
-export default HomeHero;
+export default SoColdPromo;
