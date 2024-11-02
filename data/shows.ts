@@ -390,4 +390,24 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
+  {
+    datetime: "2024-11-06T20:00:00",
+    notes: "",
+    venue: {
+      name: "Reggies",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "https://www.reggieslive.com/",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/471826992314224",
+      image: "",
+      ticket:
+        "https://www.ticketweb.com/event/supersuckers-the-atomic-bitchwax-the-reggies-rock-club-tickets/13856903",
+    },
+  },
 ];

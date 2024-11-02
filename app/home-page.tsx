@@ -3,24 +3,26 @@ import { Show, shows } from "@/data/shows";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
+import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import ShowListItem from "@/components/shows/ListItem";
+import SoColdPromo from "@/components/SoColdPromo";
+import aprilForge from "@/public/photos/DSC05536.jpeg";
+import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import garageShot from "@/public/photos/mc-garage-rockin.jpg";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
 import mcPhoto2 from "@/public/images/the-midnight-calls_promo-pic-closeup.jpg";
-import aprilForge from "@/public/photos/DSC05536.jpeg";
-import taranLeaning from "@/public/photos/DSC01206.jpg";
-import useShows from "@/hooks/use-shows";
-import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
-import taranScreaming from "@/public/photos/DSC09196.jpeg";
-import vixen1 from "@/public/photos/20240519_185543.jpg";
-import SoColdPromo from "@/components/SoColdPromo";
-import ResponsiveImage from "@/components/ResponsiveImage";
+import reggiesFlyer from "@/public/posters/2024_11_06_reggies.jpg";
 import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
 import reggiesRockinMobile from "@/public/photos/20240612_202834.jpg";
+import taranLeaning from "@/public/photos/DSC01206.jpg";
+import taranScreaming from "@/public/photos/DSC09196.jpeg";
+import useShows from "@/hooks/use-shows";
+import vixen1 from "@/public/photos/20240519_185543.jpg";
 
 const homePics = [
   {
@@ -53,6 +55,15 @@ export default function Home() {
             desktopSrc={reggiesRockin}
             alt="The Midnight Calls"
           />
+
+          <Container>
+            <Link href="https://www.ticketweb.com/event/supersuckers-the-atomic-bitchwax-the-reggies-rock-club-tickets/13856903">
+              <Image
+                src={reggiesFlyer}
+                alt="The Midnight Calls w/ Atomic Bitchwax and Supersuckers"
+              />
+            </Link>
+          </Container>
 
           <SoColdPromo />
 

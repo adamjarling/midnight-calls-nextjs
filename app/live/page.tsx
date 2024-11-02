@@ -10,6 +10,7 @@ import ShowListBig from "@/components/shows/ListBig";
 import { promises as fs } from "fs";
 import jasonKaneGig from "@/public/posters/2024-06-12-reggies-jason-kane1.jpg";
 import path from "path";
+import reggiesFlyer from "@/public/posters/2024_11_06_reggies.jpg";
 import useShows from "@/hooks/use-shows";
 
 export const metadata: Metadata = {
@@ -42,13 +43,13 @@ const Shows = async () => {
       <HeroWrapper />
 
       <div className="space-y-16">
-        {/* <div className="flex flex-col items-center space-y-10">
+        <div className="flex flex-col items-center space-y-10">
           <Image
-            src={jasonKaneGig}
+            src={reggiesFlyer}
             alt="Live at Reggies"
             className="inline-block"
           />
-        </div> */}
+        </div>
 
         <ShowListBig shows={currentShows as Show[]} />
 
