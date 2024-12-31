@@ -410,4 +410,23 @@ export const shows: Show[] = [
         "https://www.ticketweb.com/event/supersuckers-the-atomic-bitchwax-the-reggies-rock-club-tickets/13856903",
     },
   },
+  {
+    datetime: "2025-02-14T19:00:00",
+    notes: "",
+    venue: {
+      name: "Martyrs",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "https://martyrslive.com/",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/1642588282958104",
+      image: "",
+      ticket: "https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20",
+    },
+  },
 ];

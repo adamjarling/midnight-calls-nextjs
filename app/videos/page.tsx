@@ -1,10 +1,10 @@
 import MasonryGallery, { MasonryImage } from "@/components/Masonry";
-import React from "react";
 
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import Main from "@/components/Main";
 import { Metadata } from "next";
+import React from "react";
 import { promises as fs } from "fs";
 import path from "path";
 import { shuffle } from "../utils/shuffle";
@@ -14,6 +14,12 @@ export const metadata: Metadata = {
 };
 
 const videos = [
+  {
+    youTubeId: "tpHGded-Ung",
+    title: "The Midnight Calls - Since I've Been Thinking (Official Video)",
+    description:
+      "“Since I’ve Been Thinking” is the fourth single by Chicago rockers, The Midnight Calls. In this track, the band digs into its Midwest roots producing a melodic Rock & Roll display reminiscent of classic Illinois bands like Cheap Trick, REO Speedwagon or Enuff Z’Nuff. Play it loud!  Filmed, edited, and directed by Michael DiGioia (https://www.mikedphoto.com)",
+  },
   {
     youTubeId: "0EN_QF5trtU",
     title: "The Midnight Calls - So Cold (Official Video)",

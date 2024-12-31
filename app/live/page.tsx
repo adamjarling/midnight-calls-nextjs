@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import ShowListBig from "@/components/shows/ListBig";
 import { promises as fs } from "fs";
 import jasonKaneGig from "@/public/posters/2024-06-12-reggies-jason-kane1.jpg";
+import mcSWFlyer from "@/public/posters/2025_02_14-SWB_MC.v2.png";
 import path from "path";
 import reggiesFlyer from "@/public/posters/2024_11_06_reggies.jpg";
 import useShows from "@/hooks/use-shows";
@@ -45,9 +46,9 @@ const Shows = async () => {
       <div className="space-y-16">
         <div className="flex flex-col items-center space-y-10">
           <Image
-            src={reggiesFlyer}
-            alt="Live at Reggies"
-            className="inline-block"
+            src={mcSWFlyer}
+            alt="Live at Martyrs Valentines Day with Steepwater Band"
+            className="inline-block max-w-screen-lg"
           />
         </div>
 

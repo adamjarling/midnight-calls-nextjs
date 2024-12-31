@@ -10,13 +10,12 @@ import Link from "next/link";
 import Main from "@/components/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import ShowListItem from "@/components/shows/ListItem";
-import SoColdPromo from "@/components/SoColdPromo";
+import SincePromo from "@/components/SincePromo";
 import aprilForge from "@/public/photos/DSC05536.jpeg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import garageShot from "@/public/photos/mc-garage-rockin.jpg";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
-import mcPhoto2 from "@/public/images/the-midnight-calls_promo-pic-closeup.jpg";
-import reggiesFlyer from "@/public/posters/2024_11_06_reggies.jpg";
+import mcSWFlyer from "@/public/posters/2025_02_14-SWB_MC.v2.png";
 import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
 import reggiesRockinMobile from "@/public/photos/20240612_202834.jpg";
 import taranLeaning from "@/public/photos/DSC01206.jpg";
@@ -56,16 +55,28 @@ export default function Home() {
             alt="The Midnight Calls"
           />
 
-          <Container>
-            <Link href="https://www.ticketweb.com/event/supersuckers-the-atomic-bitchwax-the-reggies-rock-club-tickets/13856903">
-              <Image
-                src={reggiesFlyer}
-                alt="The Midnight Calls w/ Atomic Bitchwax and Supersuckers"
-              />
+          <Container className="flex flex-col items-center max-w-screen-lg">
+            <div className="pb-10">
+              <Link
+                href="https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20"
+                target="_blank"
+              >
+                <Image
+                  src={mcSWFlyer}
+                  alt="The Midnight Calls w/ Steepwater Band"
+                />
+              </Link>
+            </div>
+            <Link
+              className="button"
+              href="https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20"
+              target="_blank"
+            >
+              Buy Tickets
             </Link>
           </Container>
 
-          <SoColdPromo />
+          <SincePromo />
 
           {/* Shows */}
           <Container>
@@ -98,10 +109,9 @@ export default function Home() {
 
           <iframe
             className="w-full aspect-video"
-            src="https://www.youtube.com/embed/0EN_QF5trtU?si=WO3DKH9d4X50ZmY8"
+            src="https://www.youtube.com/embed/tpHGded-Ung?si=X5aT2dxLg2S-UO3G"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
 
