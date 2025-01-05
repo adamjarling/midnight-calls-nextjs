@@ -48,7 +48,7 @@ const VideoPage = async () => {
       </Banner>
       <div className="space-y-16 lg:space-y-20">
         {videos.map(({ youTubeId, title, description }) => (
-          <div key={youTubeId} className="container">
+          <div key={youTubeId} className="md:container">
             <iframe
               key={youTubeId}
               className="w-full aspect-video"

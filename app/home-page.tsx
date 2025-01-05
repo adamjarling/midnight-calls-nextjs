@@ -12,10 +12,12 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import ShowListItem from "@/components/shows/ListItem";
 import SincePromo from "@/components/SincePromo";
 import aprilForge from "@/public/photos/DSC05536.jpeg";
+import bigStagePic from "@/public/photos/DSC05874.jpeg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
+import forgeStagePic from "@/public/photos/20240831_202753.jpg";
 import garageShot from "@/public/photos/mc-garage-rockin.jpg";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
-import mcSWFlyer from "@/public/posters/2025_02_14-SWB_MC.v2.png";
+import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
 import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
 import reggiesRockinMobile from "@/public/photos/20240612_202834.jpg";
 import taranLeaning from "@/public/photos/DSC01206.jpg";
@@ -33,12 +35,12 @@ const homePics = [
     alt: "The Midnight Calls Whaddya vid shoot",
   },
   {
-    src: aprilForge,
+    src: bigStagePic,
     alt: "Roc haus",
   },
   {
-    src: taranScreaming,
-    alt: "The Midnight Calls",
+    src: forgeStagePic,
+    alt: "Live with Living Colour",
   },
 ];
 
@@ -55,8 +57,9 @@ export default function Home() {
             alt="The Midnight Calls"
           />
 
-          <Container className="flex flex-col items-center max-w-screen-lg">
-            <div className="pb-10">
+          <Container className="max-w-screen-lg ">
+            <div className="flex flex-col items-center space-y-4">
+              <h3 className="">Valentines Day 2025!</h3>
               <Link
                 href="https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20"
                 target="_blank"
@@ -66,14 +69,14 @@ export default function Home() {
                   alt="The Midnight Calls w/ Steepwater Band"
                 />
               </Link>
+              <Link
+                className="button"
+                href="https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20"
+                target="_blank"
+              >
+                Buy Tickets
+              </Link>
             </div>
-            <Link
-              className="button"
-              href="https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20"
-              target="_blank"
-            >
-              Buy Tickets
-            </Link>
           </Container>
 
           <SincePromo />

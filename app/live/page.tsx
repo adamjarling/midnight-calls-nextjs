@@ -1,5 +1,6 @@
 import { Show, shows } from "@/data/shows";
 
+import Container from "@/components/Container";
 import HeroWrapper from "./HeroWrapper";
 import Image from "next/image";
 import Main from "@/components/Main";
@@ -8,10 +9,8 @@ import { MasonryImage } from "@/components/Masonry";
 import { Metadata } from "next";
 import ShowListBig from "@/components/shows/ListBig";
 import { promises as fs } from "fs";
-import jasonKaneGig from "@/public/posters/2024-06-12-reggies-jason-kane1.jpg";
-import mcSWFlyer from "@/public/posters/2025_02_14-SWB_MC.v2.png";
+import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
 import path from "path";
-import reggiesFlyer from "@/public/posters/2024_11_06_reggies.jpg";
 import useShows from "@/hooks/use-shows";
 
 export const metadata: Metadata = {
@@ -44,13 +43,12 @@ const Shows = async () => {
       <HeroWrapper />
 
       <div className="space-y-16">
-        <div className="flex flex-col items-center space-y-10">
+        <Container className="flex flex-col items-center max-w-screen-lg">
           <Image
             src={mcSWFlyer}
             alt="Live at Martyrs Valentines Day with Steepwater Band"
-            className="inline-block max-w-screen-lg"
           />
-        </div>
+        </Container>
 
         <ShowListBig shows={currentShows as Show[]} />
 
