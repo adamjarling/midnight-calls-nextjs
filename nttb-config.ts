@@ -28,6 +28,7 @@ const nav = [
   { name: "Live", href: "/live" },
   { name: "Videos", href: "/videos" },
   { name: "Photos", href: "/photos" },
+  { name: "Music", href: "/music" },
   { name: "Press Pack", href: "/press" },
 ];
 

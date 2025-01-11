@@ -70,7 +70,7 @@ const Navbar = () => {
           {nav.map((link) => (
             <li
               key={link.name}
-              className="text-4xl font-bold uppercase duration-200 ease-in transform lg:text-5xl hover:scale-110"
+              className="text-3xl font-bold uppercase duration-200 ease-in transform lg:text-5xl hover:scale-110"
             >
               <a href={link.href}>{link.name}</a>
             </li>
