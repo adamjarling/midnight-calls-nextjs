@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import sinceCover from "public/images/since_single_cover-final.jpeg";
 
-const SoColdPromo = () => {
+const SincePromo = () => {
   return (
     <div className="space-y-6 xl:container">
       <div className="relative flex justify-center">
@@ -34,4 +34,4 @@ const SoColdPromo = () => {
   );
 };
 
-export default SoColdPromo;
+export default SincePromo;
