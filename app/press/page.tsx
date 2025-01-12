@@ -10,23 +10,13 @@ import logoBW from "@/public/images/logo/mc-logo-outline_white.png";
 import logoWhite from "@/public/images/logo/mc-logo_white.png";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
 import mcPhotoCloseup from "@/public/images/the-midnight-calls_promo-pic-closeup.jpg";
-
-const videos = [
-  {
-    youTubeId: "8p8w0IqR1kg",
-    title: "The Midnight Calls - Whaddya (Official Video)",
-  },
-  {
-    youTubeId: "ba9kWpoC9_U",
-    title: "The Midnight Calls - Coming Up Roses (Official Video)",
-  },
-];
+import { videos } from "@/data/videos";
 
 export const metadata: Metadata = {
   title: "Press Pack",
 };
 
-const About = () => {
+const PressPack = () => {
   return (
     <Main flushTop={false}>
       <div className="space-y-16">
@@ -49,30 +39,42 @@ const About = () => {
             <div className="leading-relaxed lg:text-xl">
               <p>
                 The Midnight Calls is a denim and leather Rock & Roll outfit
-                from Chicago. The band is fronted by Spain-born singer, Taran de
-                Pablos and features guitarists Adam Arling (The Last Vegas, Urge
+                from Chicago. The band is fronted by Spain-born singer,{" "}
+                <a
+                  href="https://www.facebook.com/taran.depablos"
+                  target="_blank"
+                >
+                  Taran de Pablos
+                </a>
+                and features guitarists Adam Arling (The Last Vegas, Urge
                 Overkill, Warrior Soul) and Tony McQuaid (Loudmouth, Frank Bang
                 & the Secret Stash), bassist Sean Barnes and drummer Chuck
-                Harling. Their music is heavily influenced by the blues-infused
-                sounds of classic bands like Aerosmith, The Rolling Stones or
-                AC/DC. With a recipe based on grooves, hooks, and loud guitars
-                as the main ingredients, The Midnight Calls are not reinventing
-                the Rock & Roll wheel, but rather rolling it down the road with
-                the swagger and style that you would expect from road-tested
-                musicians that have toured the US and Europe a few times over.{" "}
+                Harling.
+              </p>
+
+              <p>
+                Their music is heavily influenced by the blues-infused sounds of
+                classic bands like Aerosmith, The Rolling Stones or AC/DC. With
+                a recipe based on grooves, hooks, and loud guitars as the main
+                ingredients, The Midnight Calls are not reinventing the Rock &
+                Roll wheel, but rather rolling it down the road with the swagger
+                and style that you would expect from road-tested musicians that
+                have toured the US and Europe a few times over.
               </p>
 
               <p>
                 Since their inception in late 2022, The Midnight Calls have
-                released three singles, “Whaddya”, “Coming Up Roses”, and their
-                latest song, “So Cold” which features Chris Grove (Survivor,
-                Joel Hoekstra, Eddie Money) on keyboards. While developing their
-                music in the studio, the band has stayed active, sharing the
-                stage with national acts like The Supersuckers, The Steepwater
-                Band, Faster Pussycat, Blacktop Mojo, or Jason Kane & The Jive
-                amongst others. At the moment, The Midnight Calls are working on
-                material for their first album, to be expected in early 2025,
-                with touring planned following its release.
+                released three singles, “Whaddya”, “Coming Up Roses”, “So Cold”
+                and their latest song, “Since I've Been Thinking” which features
+                Chris Grove (Survivor, Joel Hoekstra, Eddie Money) on keyboards.
+              </p>
+              <p>
+                While developing their music in the studio, the band has stayed
+                active, sharing the stage with national acts like The
+                Supersuckers, Living Colour, The Steepwater Band, Faster
+                Pussycat, Blacktop Mojo, Jason Kane & The Jive amongst others.
+                The Midnight Calls with release their first full-length album,
+                expected summer 2025, with Europe touring plans to follow.
               </p>
             </div>
           </BannerText>
@@ -137,4 +139,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default PressPack;

@@ -66,11 +66,11 @@ const Navbar = () => {
           }
         )}
       >
-        <ul className="absolute w-full pb-24 space-y-12 -translate-x-1/2 -translate-y-1/2 lg:pb-16 lg:space-y-16 left-1/2 top-1/2">
+        <ul className="absolute w-full pb-24 space-y-8 -translate-x-1/2 -translate-y-1/2 md:space-y-12 lg:pb-16 lg:space-y-16 left-1/2 top-1/2">
           {nav.map((link) => (
             <li
               key={link.name}
-              className="text-3xl font-bold uppercase duration-200 ease-in transform lg:text-5xl hover:scale-110"
+              className="text-2xl font-bold uppercase duration-200 ease-in transform md:text-3xl lg:text-5xl hover:scale-110"
             >
               <a href={link.href}>{link.name}</a>
             </li>
