@@ -429,4 +429,42 @@ export const shows: Show[] = [
       ticket: "https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20",
     },
   },
+  {
+    datetime: "2025-01-27T21:00:00",
+    notes: "Private Event - Reggies / Liars Club Staff Holiday Party",
+    venue: {
+      name: "Reggies",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-03-23T13:00:00",
+    notes: "Early afternoon festival show",
+    venue: {
+      name: "Rochaus",
+      city: "West Dundee",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
 ];
