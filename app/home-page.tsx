@@ -57,30 +57,6 @@ export default function Home() {
             alt="The Midnight Calls"
           />
 
-          <Container className="max-w-screen-lg ">
-            <div className="flex flex-col items-center space-y-4">
-              <h3 className="text-2xl text-center md:text-4xl">
-                Valentines Day 2025!
-              </h3>
-              <Link
-                href="https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20"
-                target="_blank"
-              >
-                <Image
-                  src={mcSWFlyer}
-                  alt="The Midnight Calls w/ Steepwater Band"
-                />
-              </Link>
-              <Link
-                className="button"
-                href="https://martyrslive.com/fri-feb-14th-doors-7pm-show-8pm-20"
-                target="_blank"
-              >
-                Reserve Your Tickets!
-              </Link>
-            </div>
-          </Container>
-
           <SincePromo />
 
           {/* Shows */}

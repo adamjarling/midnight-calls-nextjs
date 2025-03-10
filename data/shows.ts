@@ -467,4 +467,61 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
+  {
+    datetime: "2025-04-12T20:00:00",
+    notes: "",
+    venue: {
+      name: "Austin Community Tavern",
+      city: "Steger",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/austincommunitytavern",
+        website: "https://austincommunitytavern.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-05-03T20:00:00",
+    notes: "",
+    venue: {
+      name: "Tony Ds",
+      city: "Elmwood Park",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/TonyDsEP/",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-06-27T20:00:00",
+    notes: "w/ Jason Kane and the Jive",
+    venue: {
+      name: "Reggies Live",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/reggiesrockclub",
+        website: "https://www.reggieslive.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
 ];

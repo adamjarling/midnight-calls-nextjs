@@ -43,12 +43,6 @@ const Shows = async () => {
       <HeroWrapper />
 
       <div className="space-y-16">
-        <Container className="flex flex-col items-center max-w-screen-lg">
-          <Image
-            src={mcSWFlyer}
-            alt="Live at Martyrs Valentines Day with Steepwater Band"
-          />
-        </Container>
 
         <ShowListBig shows={currentShows as Show[]} />
 
