@@ -506,6 +506,158 @@ export const shows: Show[] = [
     },
   },
   {
+    datetime: "2025-05-29T20:00:00",
+    notes: "",
+    venue: {
+      name: "MásMúsica",
+      city: "Ávila",
+      stateProvince: "Castilla y León",
+      country: "Spain",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-05-31T20:00:00",
+    notes: "",
+    venue: {
+      name: "Infinity",
+      city: "Palencia",
+      stateProvince: "Castilla y León",
+      country: "Spain",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-06-01T20:00:00",
+    notes: "",
+    venue: {
+      name: "Porta Caeli",
+      city: "Valladolid",
+      stateProvince: "Castilla y León",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/salaportacaeli/",
+        website: "https://portacaeli.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-06-03T20:00:00",
+    notes: "",
+    venue: {
+      name: "Trooper",
+      city: "Cangas do Morrazo",
+      stateProvince: "Galicia",
+      country: "Spain",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-06-05T20:00:00",
+    notes: "",
+    venue: {
+      name: "Café Teatro Central",
+      city: "Baeza",
+      stateProvince: "Andalucía",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/cafeteatrocentral/",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-06-06T20:00:00",
+    notes: "",
+    venue: {
+      name: "La Guardia del Angel",
+      city: "Jerez de la Frontera",
+      stateProvince: "Andalucía",
+      country: "Spain",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-06-07T20:00:00",
+    notes: "",
+    venue: {
+      name: "Louie Louie",
+      city: "Estepona",
+      stateProvince: "Andalucía",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/louielouie.rockbar/",
+        website: "https://louielouie.es/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-06-08T16:00:00",
+    notes: "",
+    venue: {
+      name: "Bar de las Motos",
+      city: "Málaga",
+      stateProvince: "Andalucía",
+      country: "Spain",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
     datetime: "2025-06-27T20:00:00",
     notes: "w/ Jason Kane and the Jive",
     venue: {
