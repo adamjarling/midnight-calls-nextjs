@@ -506,7 +506,27 @@ export const shows: Show[] = [
     },
   },
   {
-    datetime: "2025-05-29T20:00:00",
+    datetime: "2025-05-16T20:00:00",
+    notes: "",
+    venue: {
+      name: "The Forge",
+      city: "Joliet",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/theforgelive",
+        website: "https://theforgelive.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket:
+        "https://www.ticketweb.com/event/witchhammer-the-midnight-calls-chains-the-forge-tickets/14330713",
+    },
+  },
+  {
+    datetime: "2025-05-30T20:00:00",
     notes: "",
     venue: {
       name: "MásMúsica",
@@ -514,7 +534,7 @@ export const shows: Show[] = [
       stateProvince: "Castilla y León",
       country: "Spain",
       url: {
-        facebook: "",
+        facebook: "https://www.facebook.com/josemasmusica",
         website: "",
       },
     },
@@ -533,7 +553,7 @@ export const shows: Show[] = [
       stateProvince: "Castilla y León",
       country: "Spain",
       url: {
-        facebook: "",
+        facebook: "https://www.facebook.com/p/Sala-Infinity-100041851091623/",
         website: "",
       },
     },
@@ -572,7 +592,7 @@ export const shows: Show[] = [
       country: "Spain",
       url: {
         facebook: "",
-        website: "",
+        website: "https://sites.google.com/view/thetrooperpub/inicio",
       },
     },
     url: {
@@ -604,9 +624,9 @@ export const shows: Show[] = [
     datetime: "2025-06-06T20:00:00",
     notes: "",
     venue: {
-      name: "La Guardia del Angel",
-      city: "Jerez de la Frontera",
-      stateProvince: "Andalucía",
+      name: "TBA",
+      city: "TBA",
+      stateProvince: "",
       country: "Spain",
       url: {
         facebook: "",
@@ -623,13 +643,13 @@ export const shows: Show[] = [
     datetime: "2025-06-07T20:00:00",
     notes: "",
     venue: {
-      name: "Louie Louie",
-      city: "Estepona",
+      name: "La Guardia del Angel",
+      city: "Jerez de la Frontera",
       stateProvince: "Andalucía",
       country: "Spain",
       url: {
-        facebook: "https://www.facebook.com/louielouie.rockbar/",
-        website: "https://louielouie.es/",
+        facebook: "https://www.facebook.com/laguaridadelangel/",
+        website: "https://laguaridadelangel.com/",
       },
     },
     url: {
@@ -638,6 +658,7 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
+
   {
     datetime: "2025-06-08T16:00:00",
     notes: "",
@@ -668,6 +689,25 @@ export const shows: Show[] = [
       url: {
         facebook: "https://www.facebook.com/reggiesrockclub",
         website: "https://www.reggieslive.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-07-26T19:00:00",
+    notes: "w/ Gunshine",
+    venue: {
+      name: "The Forge",
+      city: "Joliet",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/theforgelive",
+        website: "https://theforgelive.com/",
       },
     },
     url: {
