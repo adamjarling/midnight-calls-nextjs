@@ -624,13 +624,13 @@ export const shows: Show[] = [
     datetime: "2025-06-06T20:00:00",
     notes: "",
     venue: {
-      name: "TBA",
-      city: "TBA",
-      stateProvince: "",
+      name: "ZZ Pub",
+      city: "Málaga",
+      stateProvince: "Andalucía",
       country: "Spain",
       url: {
-        facebook: "",
-        website: "",
+        facebook: "https://www.facebook.com/ZZPUB",
+        website: "https://www.zzpub.es/",
       },
     },
     url: {
@@ -664,7 +664,7 @@ export const shows: Show[] = [
     notes: "",
     venue: {
       name: "Bar de las Motos",
-      city: "Málaga",
+      city: "Benalmedena",
       stateProvince: "Andalucía",
       country: "Spain",
       url: {
