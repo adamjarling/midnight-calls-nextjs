@@ -643,7 +643,7 @@ export const shows: Show[] = [
     datetime: "2025-06-07T20:00:00",
     notes: "",
     venue: {
-      name: "La Guardia del Angel",
+      name: "La Guarida del Angel",
       city: "Jerez de la Frontera",
       stateProvince: "Andalucía",
       country: "Spain",
