@@ -46,11 +46,11 @@ export default function Home() {
     <>
       <Main flushTop>
         <div className="space-y-20 lg:space-y-32">
-          {/* <ResponsiveImage
+          <ResponsiveImage
             mobileSrc={reggiesRockinMobile}
             desktopSrc={reggiesRockin}
             alt="The Midnight Calls"
-          /> */}
+          />
 
           <div className="relative flex justify-center">
             <Image
@@ -61,7 +61,7 @@ export default function Home() {
             />
           </div>
 
-          <SincePromo />
+          {/* <SincePromo /> */}
 
           {/* Shows */}
           <Container>
