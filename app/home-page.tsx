@@ -3,7 +3,6 @@ import { Show, shows } from "@/data/shows";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
-import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,17 +10,13 @@ import Main from "@/components/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import ShowListItem from "@/components/shows/ListItem";
 import SincePromo from "@/components/SincePromo";
-import aprilForge from "@/public/photos/DSC05536.jpeg";
 import bigStagePic from "@/public/photos/DSC05874.jpeg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import forgeStagePic from "@/public/photos/20240831_202753.jpg";
-import garageShot from "@/public/photos/mc-garage-rockin.jpg";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
-import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
+import mcSpain2025 from "@/public/images/MC_Spain2025_v1.png";
 import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
 import reggiesRockinMobile from "@/public/photos/20240612_202834.jpg";
-import taranLeaning from "@/public/photos/DSC01206.jpg";
-import taranScreaming from "@/public/photos/DSC09196.jpeg";
 import useShows from "@/hooks/use-shows";
 import vixen1 from "@/public/photos/20240519_185543.jpg";
 
@@ -51,11 +46,20 @@ export default function Home() {
     <>
       <Main flushTop>
         <div className="space-y-20 lg:space-y-32">
-          <ResponsiveImage
+          {/* <ResponsiveImage
             mobileSrc={reggiesRockinMobile}
             desktopSrc={reggiesRockin}
             alt="The Midnight Calls"
-          />
+          /> */}
+
+          <div className="relative flex justify-center">
+            <Image
+              src={mcSpain2025}
+              alt="Spain Tour Poster 2025"
+              className="w-full h-auto lg:max-w-3xl"
+              priority
+            />
+          </div>
 
           <SincePromo />
 

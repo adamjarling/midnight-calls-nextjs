@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import ShowListBig from "@/components/shows/ListBig";
 import { promises as fs } from "fs";
 import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
+import mcSpain2025 from "@/public/images/MC_Spain2025_v1.png";
 import path from "path";
 import useShows from "@/hooks/use-shows";
 
@@ -43,6 +44,15 @@ const Shows = async () => {
       <HeroWrapper />
 
       <div className="space-y-16">
+        <div className="relative flex justify-center">
+          <Image
+            src={mcSpain2025}
+            alt="Spain Tour Poster 2025"
+            className="w-full h-auto md:max-w-2xl"
+            priority
+          />
+        </div>
+
         <ShowListBig shows={currentShows as Show[]} />
 
         {currentShows.length === 0 && (
