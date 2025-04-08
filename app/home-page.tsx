@@ -10,6 +10,7 @@ import Main from "@/components/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import ShowListItem from "@/components/shows/ListItem";
 import SincePromo from "@/components/SincePromo";
+import SpainTourAnnouncement from "@/components/SpainTourAnnouncement";
 import bigStagePic from "@/public/photos/DSC05874.jpeg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import forgeStagePic from "@/public/photos/20240831_202753.jpg";
@@ -52,14 +53,7 @@ export default function Home() {
             alt="The Midnight Calls"
           />
 
-          <div className="relative flex justify-center">
-            <Image
-              src={mcSpain2025}
-              alt="Spain Tour Poster 2025"
-              className="w-full h-auto lg:max-w-3xl"
-              priority
-            />
-          </div>
+          <SpainTourAnnouncement />
 
           {/* <SincePromo /> */}
 
