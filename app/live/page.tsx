@@ -10,7 +10,7 @@ import { Metadata } from "next";
 import ShowListBig from "@/components/shows/ListBig";
 import { promises as fs } from "fs";
 import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
-import mcSpain2025 from "@/public/images/MC_Spain2025_v1.png";
+import mcSpain2025 from "@/public/images/MC_Spain2025_v2.png";
 import path from "path";
 import useShows from "@/hooks/use-shows";
 

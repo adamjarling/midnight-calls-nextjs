@@ -526,8 +526,27 @@ export const shows: Show[] = [
     },
   },
   {
+    datetime: "2025-05-29T20:00:00",
+    notes: "GIRA ESPAÑA 2025! w/ Jason Kane and the Jive",
+    venue: {
+      name: "Sala Creedence",
+      city: "Zaragoza",
+      stateProvince: "Aragón",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/salacreedence/",
+        website: "https://creedencesound.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
     datetime: "2025-05-30T20:00:00",
-    notes: "",
+    notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "MásMúsica",
       city: "Ávila",
@@ -546,7 +565,7 @@ export const shows: Show[] = [
   },
   {
     datetime: "2025-05-31T20:00:00",
-    notes: "",
+    notes: "GIRA ESPAÑA 2025! w/ Frank Meyer (The Streetwalkin' Cheetahs)",
     venue: {
       name: "Infinity",
       city: "Palencia",
@@ -565,7 +584,7 @@ export const shows: Show[] = [
   },
   {
     datetime: "2025-06-01T20:00:00",
-    notes: "",
+    notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "Porta Caeli",
       city: "Valladolid",
@@ -584,7 +603,7 @@ export const shows: Show[] = [
   },
   {
     datetime: "2025-06-03T20:00:00",
-    notes: "",
+    notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "Trooper",
       city: "Cangas do Morrazo",
@@ -603,7 +622,7 @@ export const shows: Show[] = [
   },
   {
     datetime: "2025-06-05T20:00:00",
-    notes: "",
+    notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "Café Teatro Central",
       city: "Baeza",
@@ -622,7 +641,7 @@ export const shows: Show[] = [
   },
   {
     datetime: "2025-06-06T20:00:00",
-    notes: "",
+    notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "ZZ Pub",
       city: "Málaga",
@@ -641,7 +660,7 @@ export const shows: Show[] = [
   },
   {
     datetime: "2025-06-07T20:00:00",
-    notes: "",
+    notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "La Guarida del Angel",
       city: "Jerez de la Frontera",
@@ -661,7 +680,7 @@ export const shows: Show[] = [
 
   {
     datetime: "2025-06-08T16:00:00",
-    notes: "",
+    notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "Bar de las Motos",
       city: "Benalmedena",

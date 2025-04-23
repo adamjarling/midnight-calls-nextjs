@@ -15,7 +15,7 @@ import bigStagePic from "@/public/photos/DSC05874.jpeg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import forgeStagePic from "@/public/photos/20240831_202753.jpg";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
-import mcSpain2025 from "@/public/images/MC_Spain2025_v1.png";
+import mcSpain2025 from "@/public/images/MC_Spain2025_v2.png";
 import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
 import reggiesRockinMobile from "@/public/photos/20240612_202834.jpg";
 import useShows from "@/hooks/use-shows";
