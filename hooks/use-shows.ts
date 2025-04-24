@@ -43,6 +43,7 @@ export default function useShows(shows?: Array<Show>) {
     });
     const time = date.toLocaleTimeString("en-US", {
       hour: "numeric",
+      minute: "2-digit",
     });
     const year = date.getFullYear();
 

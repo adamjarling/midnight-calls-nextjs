@@ -583,8 +583,8 @@ export const shows: Show[] = [
     },
   },
   {
-    datetime: "2025-06-01T20:00:00",
-    notes: "GIRA ESPAÑA 2025!",
+    datetime: "2025-06-01T16:00:00",
+    notes: "GIRA ESPAÑA 2025! w/ Sixty Nine Souls!",
     venue: {
       name: "Porta Caeli",
       city: "Valladolid",
@@ -621,7 +621,7 @@ export const shows: Show[] = [
     },
   },
   {
-    datetime: "2025-06-05T20:00:00",
+    datetime: "2025-06-05T22:30:00",
     notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "Café Teatro Central",
@@ -640,7 +640,7 @@ export const shows: Show[] = [
     },
   },
   {
-    datetime: "2025-06-06T20:00:00",
+    datetime: "2025-06-06T22:30:00",
     notes: "GIRA ESPAÑA 2025!",
     venue: {
       name: "ZZ Pub",
@@ -680,7 +680,7 @@ export const shows: Show[] = [
 
   {
     datetime: "2025-06-08T16:00:00",
-    notes: "GIRA ESPAÑA 2025!",
+    notes: "GIRA ESPAÑA 2025! Early show",
     venue: {
       name: "Bar de las Motos",
       city: "Benalmedena",
