@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import mcSpain2025 from "@/public/images/MC_Spain2025_v2.png";
+import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
 
 const spanishNews = `
     <p>
