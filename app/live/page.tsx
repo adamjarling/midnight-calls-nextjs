@@ -8,6 +8,7 @@ import MasonryGallery from "@/components/Masonry";
 import { MasonryImage } from "@/components/Masonry";
 import { Metadata } from "next";
 import ShowListBig from "@/components/shows/ListBig";
+import SpainPosterGrid from "@/components/PosterGrid";
 import { promises as fs } from "fs";
 import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
 import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
@@ -44,14 +45,7 @@ const Shows = async () => {
       <HeroWrapper />
 
       <div className="space-y-16">
-        <div className="relative flex justify-center">
-          <Image
-            src={mcSpain2025}
-            alt="Spain Tour Poster 2025"
-            className="w-full h-auto md:max-w-2xl"
-            priority
-          />
-        </div>
+        <SpainPosterGrid />
 
         <ShowListBig shows={currentShows as Show[]} />
 

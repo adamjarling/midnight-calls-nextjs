@@ -10,6 +10,7 @@ import Main from "@/components/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import ShowListItem from "@/components/shows/ListItem";
 import SincePromo from "@/components/SincePromo";
+import SpainPosterGrid from "@/components/PosterGrid";
 import SpainTourAnnouncement from "@/components/SpainTourAnnouncement";
 import bigStagePic from "@/public/photos/DSC05874.jpeg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
