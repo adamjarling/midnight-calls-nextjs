@@ -9,12 +9,17 @@ import mc from "@/public/posters/MCSpainMCClubIdea_w_dates.png";
 import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
 import motos from "@/public/posters/Motos_Pink.jpeg";
 import valladolid from "@/public/posters/2025_Valladolid.jpg";
+import zaragoza from "@/public/posters/zaragoza.jpeg";
 import zzRock from "@/public/posters/ZZ_Pink.jpeg";
 
 const posters = [
+  //   {
+  //     src: mcSpain2025,
+  //     alt: "The Midnight Calls Spain Tour 2025",
+  //   },
   {
-    src: mcSpain2025,
-    alt: "The Midnight Calls Spain Tour 2025",
+    src: zaragoza,
+    alt: "The Midnight Calls Sala Creedence Zaragoza",
   },
   {
     src: masMusica,

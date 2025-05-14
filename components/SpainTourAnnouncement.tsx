@@ -77,14 +77,13 @@ function SpainTourAnnouncement() {
 
   return (
     <>
-      <SpainPosterGrid />
       <div className="flex flex-col items-center">
-        {/* <Image
-        src={mcSpain2025}
-        alt="Spain Tour Poster 2025"
-        className="w-full h-auto max-w-3xl mb-8"
-        priority
-      /> */}
+        <Image
+          src={mcSpain2025}
+          alt="Spain Tour Poster 2025"
+          className="w-full h-auto max-w-3xl mb-8"
+          priority
+        />
         <div className="container lg:max-w-3xl">
           <div className="flex justify-center mb-3 lg:justify-end">
             <button
@@ -188,6 +187,7 @@ function SpainTourAnnouncement() {
           )}
         </div>
       </div>
+      <SpainPosterGrid />
     </>
   );
 }
