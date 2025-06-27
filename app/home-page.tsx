@@ -19,25 +19,29 @@ import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
 import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
 import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
 import reggiesRockinMobile from "@/public/photos/20240612_202834.jpg";
+import spain1 from "@/public/photos/20250606_003253.jpg";
+import spain2 from "@/public/photos/DSC06377.jpeg";
+import spain3 from "@/public/photos/DSC05708.jpeg";
 import useShows from "@/hooks/use-shows";
-import vixen1 from "@/public/photos/20240519_185543.jpg";
+
+//import vixen1 from "@/public/photos/20240519_185543.jpg";
 
 const homePics = [
+  {
+    src: spain1,
+    alt: "Rocking in Spain",
+  },
   {
     src: mcPhoto1,
     alt: "The Midnight Calls photo shoot",
   },
   {
-    src: vixen1,
-    alt: "The Midnight Calls Whaddya vid shoot",
-  },
-  {
-    src: bigStagePic,
+    src: spain3,
     alt: "Roc haus",
   },
   {
-    src: forgeStagePic,
-    alt: "Live with Living Colour",
+    src: spain2,
+    alt: "Spain rocks",
   },
 ];
 
@@ -54,9 +58,7 @@ export default function Home() {
             alt="The Midnight Calls"
           />
 
-          <SpainTourAnnouncement />
-
-          {/* <SincePromo /> */}
+          <SincePromo />
 
           {/* Shows */}
           <Container>
@@ -87,14 +89,6 @@ export default function Home() {
             </div>
           </Container>
 
-          <iframe
-            className="w-full aspect-video"
-            src="https://www.youtube.com/embed/0EN_QF5trtU"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-
           {/* Photos */}
           <section>
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
@@ -111,6 +105,16 @@ export default function Home() {
               </Link>
             </div>
           </section>
+
+          <SpainTourAnnouncement />
+
+          <iframe
+            className="w-full aspect-video"
+            src="https://www.youtube.com/embed/0EN_QF5trtU"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
 
           {/* Classic Rock Magazine */}
           <div className="mt-20 space-y-6 text-center">

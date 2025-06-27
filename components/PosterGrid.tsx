@@ -53,7 +53,7 @@ const SpainPosterGrid = () => {
     <section>
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
         {posters.map((pic, i) => (
-          <Image src={pic.src} alt={pic.alt} />
+          <Image key={i} src={pic.src} alt={pic.alt} />
         ))}
       </div>
     </section>

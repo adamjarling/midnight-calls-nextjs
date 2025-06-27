@@ -45,8 +45,6 @@ const Shows = async () => {
       <HeroWrapper />
 
       <div className="space-y-16">
-        <SpainPosterGrid />
-
         <ShowListBig shows={currentShows as Show[]} />
 
         {currentShows.length === 0 && (

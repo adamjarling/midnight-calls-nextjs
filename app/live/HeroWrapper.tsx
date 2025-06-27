@@ -7,7 +7,7 @@ const HeroWrapper = () => {
   return (
     <div className="relative">
       <ParallaxHero
-        imageUrl={`/photos/DSC05518.jpg`}
+        imageUrl={`/photos/DSC08971-bw.jpg`}
         headline="Live"
         altText="MC Live"
         className="h-96 md:h-96"
