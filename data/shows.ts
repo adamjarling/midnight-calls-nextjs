@@ -716,23 +716,23 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
-  {
-    datetime: "2025-07-26T19:00:00",
-    notes: "w/ Gunshine",
-    venue: {
-      name: "The Forge",
-      city: "Joliet",
-      stateProvince: "IL",
-      country: "USA",
-      url: {
-        facebook: "https://www.facebook.com/theforgelive",
-        website: "https://theforgelive.com/",
-      },
-    },
-    url: {
-      facebook: "",
-      image: "",
-      ticket: "",
-    },
-  },
+  // {
+  //   datetime: "2025-07-26T19:00:00",
+  //   notes: "w/ Gunshine",
+  //   venue: {
+  //     name: "The Forge",
+  //     city: "Joliet",
+  //     stateProvince: "IL",
+  //     country: "USA",
+  //     url: {
+  //       facebook: "https://www.facebook.com/theforgelive",
+  //       website: "https://theforgelive.com/",
+  //     },
+  //   },
+  //   url: {
+  //     facebook: "",
+  //     image: "",
+  //     ticket: "",
+  //   },
+  // },
 ];
