@@ -716,23 +716,23 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
-  // {
-  //   datetime: "2025-07-26T19:00:00",
-  //   notes: "w/ Gunshine",
-  //   venue: {
-  //     name: "The Forge",
-  //     city: "Joliet",
-  //     stateProvince: "IL",
-  //     country: "USA",
-  //     url: {
-  //       facebook: "https://www.facebook.com/theforgelive",
-  //       website: "https://theforgelive.com/",
-  //     },
-  //   },
-  //   url: {
-  //     facebook: "",
-  //     image: "",
-  //     ticket: "",
-  //   },
-  // },
+  {
+    datetime: "2025-08-29T19:00:00",
+    notes: "w/ LA Guns",
+    venue: {
+      name: "The Vixen",
+      city: "McHenry",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/vixmchenry/",
+        website: "https://vixenmchenry.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "https://www.etix.com/ticket/p/59506578/laguns-mchenry-the-vixen",
+    },
+  },
 ];

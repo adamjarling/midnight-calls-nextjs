@@ -23,8 +23,7 @@ import spain1 from "@/public/photos/20250606_003253.jpg";
 import spain2 from "@/public/photos/DSC06377.jpeg";
 import spain3 from "@/public/photos/DSC05708.jpeg";
 import useShows from "@/hooks/use-shows";
-
-//import vixen1 from "@/public/photos/20240519_185543.jpg";
+import vixen from "@/public/posters/2025_08_29_vixen.jpeg";
 
 const homePics = [
   {
@@ -57,6 +56,24 @@ export default function Home() {
             desktopSrc={reggiesRockin}
             alt="The Midnight Calls"
           />
+
+          <Container>
+            <div className="space-y-6 xl:container">
+              <div className="relative flex justify-center">
+                <Image
+                  src={vixen}
+                  alt="Show poster for The Midnight Calls at The Vixen in McHenry, IL on August 29, 2025"
+                  className="w-auto max-h-[80vh]"
+                />
+              </div>
+
+              <div className="flex justify-center">
+                <a className="button" href="#" target="_blank">
+                  Buy Tickets
+                </a>
+              </div>
+            </div>
+          </Container>
 
           <SincePromo />
 
