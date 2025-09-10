@@ -12,34 +12,35 @@ import ShowListItem from "@/components/shows/ListItem";
 import SincePromo from "@/components/SincePromo";
 import SpainPosterGrid from "@/components/PosterGrid";
 import SpainTourAnnouncement from "@/components/SpainTourAnnouncement";
+import adamMalaga from "@/public/photos/505765446_775034304860057_1795501722162979861_n.jpg";
 import bigStagePic from "@/public/photos/DSC05874.jpeg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import forgeStagePic from "@/public/photos/20240831_202753.jpg";
+import homeSplash from "@/public/photos/505318457_775036008193220_1042307814692525926_n.jpg";
+import homeSplashMobile from "@/public/photos/505443704_775035508193270_2202194173097249010_n.jpg";
 import jjkellys from "@/public/posters/2025_09_20_jjkellys.jpg";
-import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
-import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
-import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
-import reggiesRockinMobile from "@/public/photos/20240612_202834.jpg";
 import spain1 from "@/public/photos/20250606_003253.jpg";
 import spain2 from "@/public/photos/DSC06377.jpeg";
 import spain3 from "@/public/photos/DSC05708.jpeg";
 import useShows from "@/hooks/use-shows";
+import valladolidRocking from "@/public/photos/20250601_225932.jpeg";
+import vixenJake from "@/public/photos/540479843_758329336943658_7874683605367703828_n.jpg";
 
 const homePics = [
+  {
+    src: vixenJake,
+    alt: "Live at the Vixen",
+  },
   {
     src: spain1,
     alt: "Rocking in Spain",
   },
   {
-    src: mcPhoto1,
-    alt: "The Midnight Calls photo shoot",
+    src: valladolidRocking,
+    alt: "The Midnight Calls on stage in Valladolid, Spain",
   },
   {
-    src: spain3,
-    alt: "Roc haus",
-  },
-  {
-    src: spain2,
+    src: adamMalaga,
     alt: "Spain rocks",
   },
 ];
@@ -52,8 +53,8 @@ export default function Home() {
       <Main flushTop>
         <div className="space-y-20 lg:space-y-32">
           <ResponsiveImage
-            mobileSrc={reggiesRockinMobile}
-            desktopSrc={reggiesRockin}
+            mobileSrc={homeSplashMobile}
+            desktopSrc={homeSplash}
             alt="The Midnight Calls"
           />
 
