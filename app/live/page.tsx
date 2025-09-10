@@ -10,11 +10,11 @@ import { Metadata } from "next";
 import ShowListBig from "@/components/shows/ListBig";
 import SpainPosterGrid from "@/components/PosterGrid";
 import { promises as fs } from "fs";
+import jjkellys from "@/public/posters/2025_09_20_jjkellys.jpg";
 import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
 import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
 import path from "path";
 import useShows from "@/hooks/use-shows";
-import vixen from "@/public/posters/2025_08_29_vixen.jpeg";
 
 export const metadata: Metadata = {
   title: "Live",
@@ -50,8 +50,8 @@ const Shows = async () => {
           <div className="space-y-6 xl:container">
             <div className="relative flex justify-center">
               <Image
-                src={vixen}
-                alt="Show poster for The Midnight Calls at The Vixen in McHenry, IL on August 29, 2025"
+                src={jjkellys}
+                alt="Show poster for The Midnight Calls at JJKelleys on September 20, 2025"
                 className="w-auto max-h-[80vh]"
               />
             </div>

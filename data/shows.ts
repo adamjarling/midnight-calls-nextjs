@@ -735,4 +735,42 @@ export const shows: Show[] = [
       ticket: "https://www.etix.com/ticket/p/59506578/laguns-mchenry-the-vixen",
     },
   },
+  {
+    datetime: "2025-09-20T19:30:00",
+    notes: "w/ Pipe and Highwired",
+    venue: {
+      name: "JJ Kelleys Pub",
+      city: "Lansing",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/pages/JJ-Kellys/220724348046855",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-12-31T20:00:00",
+    notes: "NEW YEARS EVE w/ Sunvolume",
+    venue: {
+      name: "Reggies",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/reggiesrockclub",
+        website: "https://www.reggieslive.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
 ];

@@ -15,6 +15,7 @@ import SpainTourAnnouncement from "@/components/SpainTourAnnouncement";
 import bigStagePic from "@/public/photos/DSC05874.jpeg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import forgeStagePic from "@/public/photos/20240831_202753.jpg";
+import jjkellys from "@/public/posters/2025_09_20_jjkellys.jpg";
 import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
 import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
 import reggiesRockin from "@/public/images/2024-06-12-reggies.jpeg";
@@ -23,7 +24,6 @@ import spain1 from "@/public/photos/20250606_003253.jpg";
 import spain2 from "@/public/photos/DSC06377.jpeg";
 import spain3 from "@/public/photos/DSC05708.jpeg";
 import useShows from "@/hooks/use-shows";
-import vixen from "@/public/posters/2025_08_29_vixen.jpeg";
 
 const homePics = [
   {
@@ -61,15 +61,19 @@ export default function Home() {
             <div className="space-y-6 xl:container">
               <div className="relative flex justify-center">
                 <Image
-                  src={vixen}
-                  alt="Show poster for The Midnight Calls at The Vixen in McHenry, IL on August 29, 2025"
+                  src={jjkellys}
+                  alt="Show poster for The Midnight Calls at JJ Kelleys on September 20, 2025"
                   className="w-auto max-h-[80vh]"
                 />
               </div>
 
               <div className="flex justify-center">
-                <a className="button" href="#" target="_blank">
-                  Buy Tickets
+                <a
+                  className="button"
+                  href="https://www.facebook.com/events/1954195245342228"
+                  target="_blank"
+                >
+                  View Info
                 </a>
               </div>
             </div>
