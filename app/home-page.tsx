@@ -11,11 +11,12 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import ShowListItem from "@/components/shows/ListItem";
 import SincePromo from "@/components/SincePromo";
 import SpainTourAnnouncement from "@/components/SpainTourAnnouncement";
-import adamMalaga from "@/public/photos/505765446_775034304860057_1795501722162979861_n.jpg";
+import adamMalaga from "@/public/photos/505117059_775036738193147_3844990692697810430_n.jpg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import homeSplash from "@/public/photos/505318457_775036008193220_1042307814692525926_n.jpg";
 import homeSplashMobile from "@/public/photos/505443704_775035508193270_2202194173097249010_n.jpg";
 import jjkellys from "@/public/posters/2025_09_20_jjkellys.jpg";
+import sean from "@/public/photos/505590872_775036394859848_3960217479809390153_n.jpg";
 import spain1 from "@/public/photos/20250606_003253.jpg";
 import useShows from "@/hooks/use-shows";
 import valladolidRocking from "@/public/photos/20250601_225932.jpeg";
@@ -26,10 +27,7 @@ const homePics = [
     src: vixenJake,
     alt: "Live at the Vixen",
   },
-  {
-    src: spain1,
-    alt: "Rocking in Spain",
-  },
+
   {
     src: valladolidRocking,
     alt: "The Midnight Calls on stage in Valladolid, Spain",
@@ -37,6 +35,10 @@ const homePics = [
   {
     src: adamMalaga,
     alt: "Spain rocks",
+  },
+  {
+    src: sean,
+    alt: "Rocking in Spain",
   },
 ];
 
@@ -52,6 +54,16 @@ export default function Home() {
             desktopSrc={homeSplash}
             alt="The Midnight Calls"
           />
+
+          <div className="max-w-sm px-6 mx-auto text-sm text-center md:max-w-lg">
+            <p>
+              "These Chicago blues rockers have listened to a tonne of
+              Aerosmith, Stones and AC/DC records... Warm, swaggering 70s hard
+              rock, spiced with bluesy slide guitar for a southern-tinged
+              finish... Tasty."
+            </p>
+            <p>- Classic Rock Magazine</p>
+          </div>
 
           <Container>
             <div className="space-y-6 xl:container">
@@ -123,20 +135,10 @@ export default function Home() {
             </div>
           </section>
 
-          <SpainTourAnnouncement />
-
-          <iframe
-            className="w-full aspect-video"
-            src="https://www.youtube.com/embed/0EN_QF5trtU"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-
           {/* Classic Rock Magazine */}
-          <div className="mt-20 space-y-6 text-center">
+          <section className="mt-20 space-y-6 text-center">
             <div className="flex flex-col items-center justify-center w-full">
-              <h2 className="max-w-3xl mb-5 text-2xl md:text-4xl">
+              <h2 className="max-w-sm mb-5 text-2xl md:max-w-2xl md:text-4xl">
                 Classic Rock Magazine
                 <br />
                 "So Cold" - The best new rock songs you need to hear right now
@@ -173,7 +175,17 @@ export default function Home() {
                 Check it out
               </a>
             </div>
-          </div>
+          </section>
+
+          <SpainTourAnnouncement />
+
+          <iframe
+            className="w-full aspect-video"
+            src="https://www.youtube.com/embed/0EN_QF5trtU"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
       </Main>
     </>
