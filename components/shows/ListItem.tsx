@@ -44,15 +44,14 @@ const ShowListItem = ({ show }: { show: Show }) => {
                 </a>
               )}
 
-              {show.url.facebook ||
-                (show.venue.url?.facebook && (
-                  <a
-                    className="inline-block lg:ml-3 button"
-                    href={show.url.facebook || show.venue.url?.facebook}
-                  >
-                    Facebook
-                  </a>
-                ))}
+              {(show.url.facebook || show.venue.url?.facebook) && (
+                <a
+                  className="inline-block lg:ml-3 button"
+                  href={show.url.facebook || show.venue.url?.facebook}
+                >
+                  Facebook
+                </a>
+              )}
             </>
           )}
           {show.notes && <p className="text-base">{show.notes}</p>}

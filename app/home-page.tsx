@@ -15,7 +15,7 @@ import adamMalaga from "@/public/photos/505117059_775036738193147_38449906926978
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import homeSplash from "@/public/photos/505318457_775036008193220_1042307814692525926_n.jpg";
 import homeSplashMobile from "@/public/photos/505443704_775035508193270_2202194173097249010_n.jpg";
-import jjkellys from "@/public/posters/2025_09_20_jjkellys.jpg";
+import jackyl_forge from "@/public/images/2025_Nov_20_Jackyl_FBEvent.jpg";
 import sean from "@/public/photos/505590872_775036394859848_3960217479809390153_n.jpg";
 import spain1 from "@/public/photos/20250606_003253.jpg";
 import useShows from "@/hooks/use-shows";
@@ -55,33 +55,38 @@ export default function Home() {
             alt="The Midnight Calls"
           />
 
-          <div className="max-w-sm px-6 mx-auto text-sm text-center md:max-w-lg">
+          <div className="max-w-sm px-6 mx-auto text-base italic tracking-widest text-center lg:text-xl md:max-w-lg">
             <p>
               "These Chicago blues rockers have listened to a tonne of
               Aerosmith, Stones and AC/DC records... Warm, swaggering 70s hard
               rock, spiced with bluesy slide guitar for a southern-tinged
               finish... Tasty."
             </p>
-            <p>- Classic Rock Magazine</p>
+            <p>- Classic Rock Magazine 2024</p>
           </div>
 
           <Container>
             <div className="space-y-6 xl:container">
               <div className="relative flex justify-center">
-                <Image
-                  src={jjkellys}
-                  alt="Show poster for The Midnight Calls at JJ Kelleys on September 20, 2025"
-                  className="w-auto max-h-[80vh]"
-                />
+                <a
+                  href="https://www.facebook.com/events/1553968025733528"
+                  target="_blank"
+                >
+                  <Image
+                    src={jackyl_forge}
+                    alt="Show poster for The Midnight Calls at The Forge on November 20, 2025 with Jackyl"
+                    className="w-auto max-h-[80vh]"
+                  />
+                </a>
               </div>
 
               <div className="flex justify-center">
                 <a
                   className="button"
-                  href="https://www.facebook.com/events/1954195245342228"
+                  href="https://www.ticketweb.com/event/jackyl-the-forge-tickets/14587363"
                   target="_blank"
                 >
-                  View Info
+                  Get tickets
                 </a>
               </div>
             </div>

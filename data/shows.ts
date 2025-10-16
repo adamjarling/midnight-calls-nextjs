@@ -755,6 +755,26 @@ export const shows: Show[] = [
     },
   },
   {
+    datetime: "2025-11-20T18:30:00",
+    notes: "w/ Jackyl",
+    venue: {
+      name: "The Forge",
+      city: "Joliet",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/theforgelive",
+        website: "https://www.theforgelive.com/",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/1553968025733528",
+      image: "",
+      ticket:
+        "https://www.ticketweb.com/event/jackyl-the-forge-tickets/14587363",
+    },
+  },
+  {
     datetime: "2025-12-31T20:00:00",
     notes: "NEW YEARS EVE w/ Sunvolume",
     venue: {

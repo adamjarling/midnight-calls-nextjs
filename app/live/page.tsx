@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import ShowListBig from "@/components/shows/ListBig";
 import SpainPosterGrid from "@/components/PosterGrid";
 import { promises as fs } from "fs";
+import jackyl_forge from "@/public/images/2025_Nov_20_Jackyl_FBEvent.jpg";
 import jjkellys from "@/public/posters/2025_09_20_jjkellys.jpg";
 import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
 import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
@@ -47,11 +48,14 @@ const Shows = async () => {
 
       <div className="space-y-16">
         <Container>
+          <h3 className="py-10 text-4xl font-bold text-center md:text-6xl">
+            Upcoming Show
+          </h3>
           <div className="space-y-6 xl:container">
             <div className="relative flex justify-center">
               <Image
-                src={jjkellys}
-                alt="Show poster for The Midnight Calls at JJKelleys on September 20, 2025"
+                src={jackyl_forge}
+                alt="Show poster for The Midnight Calls at the Forge with Jackyl on November 20, 2025"
                 className="w-auto max-h-[80vh]"
               />
             </div>
@@ -68,7 +72,12 @@ const Shows = async () => {
           Past Shows
         </h3>
 
-        {images && <MasonryGallery dir={folder} images={images.reverse()} />}
+        {images && (
+          <MasonryGallery
+            dir={folder}
+            images={images.sort(() => Math.random() - 0.5)}
+          />
+        )}
 
         {currentShows.length > 0 && (
           <section className="container">
