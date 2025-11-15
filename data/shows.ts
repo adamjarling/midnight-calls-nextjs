@@ -755,6 +755,26 @@ export const shows: Show[] = [
     },
   },
   {
+    datetime: "2025-11-16T18:00:00",
+    notes: "w/ Pat Travers Band",
+    venue: {
+      name: "West Chicago Social Club",
+      city: "West Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/TheWCSocialClub/",
+        website: "https://www.thewcsocialclub.com/",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/1161786215815330",
+      image: "",
+      ticket:
+        "https://skeletix.com/3870-pat-travers-the-wc-social-club-2025-11-16/",
+    },
+  },
+  {
     datetime: "2025-11-20T18:30:00",
     notes: "w/ Jackyl",
     venue: {

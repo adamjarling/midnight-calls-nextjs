@@ -11,9 +11,8 @@ import ShowListBig from "@/components/shows/ListBig";
 import SpainPosterGrid from "@/components/PosterGrid";
 import { promises as fs } from "fs";
 import jackyl_forge from "@/public/images/2025_Nov_20_Jackyl_FBEvent.jpg";
-import jjkellys from "@/public/posters/2025_09_20_jjkellys.jpg";
-import mcSWFlyer from "@/public/posters/2025_02_14_SWB-MC_v3.png";
 import mcSpain2025 from "@/public/images/MC_Spain2025_v3.png";
+import patTraversPoster from "@/public/posters/2025_11_16_pat_travers.jpeg";
 import path from "path";
 import useShows from "@/hooks/use-shows";
 
@@ -52,6 +51,13 @@ const Shows = async () => {
             Upcoming Show
           </h3>
           <div className="space-y-6 xl:container">
+            <div className="relative flex justify-center">
+              <Image
+                src={patTraversPoster}
+                alt="Show poster for The Midnight Calls with Pat Travers on November 16, 2025"
+                className="w-auto max-h-[80vh]"
+              />
+            </div>
             <div className="relative flex justify-center">
               <Image
                 src={jackyl_forge}

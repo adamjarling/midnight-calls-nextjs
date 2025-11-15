@@ -16,6 +16,7 @@ import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import homeSplash from "@/public/photos/505318457_775036008193220_1042307814692525926_n.jpg";
 import homeSplashMobile from "@/public/photos/505443704_775035508193270_2202194173097249010_n.jpg";
 import jackyl_forge from "@/public/images/2025_Nov_20_Jackyl_FBEvent.jpg";
+import patTraversPoster from "@/public/posters/2025_11_16_pat_travers.jpeg";
 import sean from "@/public/photos/505590872_775036394859848_3960217479809390153_n.jpg";
 import spain1 from "@/public/photos/20250606_003253.jpg";
 import useShows from "@/hooks/use-shows";
@@ -69,6 +70,33 @@ export default function Home() {
             <div className="space-y-6 xl:container">
               <div className="relative flex justify-center">
                 <a
+                  href="https://www.facebook.com/events/1161786215815330"
+                  target="_blank"
+                >
+                  <Image
+                    src={patTraversPoster}
+                    alt="Show poster for The Midnight Calls with Pat Travers Band"
+                    className="w-auto max-h-[80vh]"
+                  />
+                </a>
+              </div>
+
+              <div className="flex justify-center">
+                <a
+                  className="button"
+                  href="https://skeletix.com/3870-pat-travers-the-wc-social-club-2025-11-16/"
+                  target="_blank"
+                >
+                  Get tickets
+                </a>
+              </div>
+            </div>
+          </Container>
+
+          <Container>
+            <div className="space-y-6 xl:container">
+              <div className="relative flex justify-center">
+                <a
                   href="https://www.facebook.com/events/1553968025733528"
                   target="_blank"
                 >
@@ -91,8 +119,6 @@ export default function Home() {
               </div>
             </div>
           </Container>
-
-          <SincePromo />
 
           {/* Shows */}
           <Container>
@@ -139,6 +165,8 @@ export default function Home() {
               </Link>
             </div>
           </section>
+
+          <SincePromo />
 
           {/* Classic Rock Magazine */}
           <section className="mt-20 space-y-6 text-center">
