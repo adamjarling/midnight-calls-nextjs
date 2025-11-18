@@ -795,8 +795,28 @@ export const shows: Show[] = [
     },
   },
   {
+    datetime: "2025-11-28T20:00:00",
+    notes: "w/ Viceroy, Takfavince Band",
+    venue: {
+      name: "Live Wire Lounge",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/livewireloungechicago",
+        website: "https://www.livewirelounge.com/",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/2656625584682845",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
     datetime: "2025-12-31T20:00:00",
-    notes: "NEW YEARS EVE w/ Sunvolume",
+    notes:
+      "NEW YEARS EVE (no cover!!) w/ Kozmic Kicks, Sunvolume, Ricky Liontones",
     venue: {
       name: "Reggies",
       city: "Chicago",
@@ -808,9 +828,30 @@ export const shows: Show[] = [
       },
     },
     url: {
-      facebook: "",
+      facebook: "https://www.facebook.com/events/1855754991689128",
       image: "",
-      ticket: "",
+      ticket: "https://www.reggieslive.com/show/new-years-eve-in-the-shack",
+    },
+  },
+  {
+    datetime: "2026-01-02T20:00:00",
+    notes:
+      "Enuff Z'Nuff Illinois Rock'n'Roll Hall of Fame Induction party w/ The Midnight Calls and Yet Again",
+    venue: {
+      name: "Jamos Live",
+      city: "Mokena",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/jamoslive/",
+        website: "https://jamoslive.com/",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/2194738887718247",
+      image: "",
+      ticket:
+        "https://www.eventbrite.com/e/enuff-z-nuff-hof-induction-party-w-midnight-calls-yet-again-at-jamos-tickets-1964610014439",
     },
   },
 ];

@@ -68,19 +68,6 @@ export default function Home() {
 
           <Container>
             <div className="space-y-6 xl:container">
-              <div className="relative flex justify-center">
-                <a
-                  href="https://www.facebook.com/events/1161786215815330"
-                  target="_blank"
-                >
-                  <Image
-                    src={patTraversPoster}
-                    alt="Show poster for The Midnight Calls with Pat Travers Band"
-                    className="w-auto max-h-[80vh]"
-                  />
-                </a>
-              </div>
-
               <div className="flex justify-center">
                 <a
                   className="button"
