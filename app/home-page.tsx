@@ -13,20 +13,18 @@ import SincePromo from "@/components/SincePromo";
 import SpainTourAnnouncement from "@/components/SpainTourAnnouncement";
 import adamMalaga from "@/public/photos/505117059_775036738193147_3844990692697810430_n.jpg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
+import coolCrowd from "@/public/photos/IMG_7642.jpg";
 import homeSplash from "@/public/photos/505318457_775036008193220_1042307814692525926_n.jpg";
 import homeSplashMobile from "@/public/photos/505443704_775035508193270_2202194173097249010_n.jpg";
-import jackyl_forge from "@/public/images/2025_Nov_20_Jackyl_FBEvent.jpg";
-import patTraversPoster from "@/public/posters/2025_11_16_pat_travers.jpeg";
 import sean from "@/public/photos/505590872_775036394859848_3960217479809390153_n.jpg";
-import spain1 from "@/public/photos/20250606_003253.jpg";
 import useShows from "@/hooks/use-shows";
 import valladolidRocking from "@/public/photos/20250601_225932.jpeg";
 import vixenJake from "@/public/photos/540479843_758329336943658_7874683605367703828_n.jpg";
 
 const homePics = [
   {
-    src: vixenJake,
-    alt: "Live at the Vixen",
+    src: coolCrowd,
+    alt: "Live at the Forge",
   },
 
   {
@@ -34,12 +32,12 @@ const homePics = [
     alt: "The Midnight Calls on stage in Valladolid, Spain",
   },
   {
-    src: adamMalaga,
-    alt: "Spain rocks",
-  },
-  {
     src: sean,
     alt: "Rocking in Spain",
+  },
+  {
+    src: adamMalaga,
+    alt: "Spain rocks",
   },
 ];
 
@@ -65,47 +63,6 @@ export default function Home() {
             </p>
             <p>- Classic Rock Magazine 2024</p>
           </div>
-
-          <Container>
-            <div className="space-y-6 xl:container">
-              <div className="flex justify-center">
-                <a
-                  className="button"
-                  href="https://skeletix.com/3870-pat-travers-the-wc-social-club-2025-11-16/"
-                  target="_blank"
-                >
-                  Get tickets
-                </a>
-              </div>
-            </div>
-          </Container>
-
-          <Container>
-            <div className="space-y-6 xl:container">
-              <div className="relative flex justify-center">
-                <a
-                  href="https://www.facebook.com/events/1553968025733528"
-                  target="_blank"
-                >
-                  <Image
-                    src={jackyl_forge}
-                    alt="Show poster for The Midnight Calls at The Forge on November 20, 2025 with Jackyl"
-                    className="w-auto max-h-[80vh]"
-                  />
-                </a>
-              </div>
-
-              <div className="flex justify-center">
-                <a
-                  className="button"
-                  href="https://www.ticketweb.com/event/jackyl-the-forge-tickets/14587363"
-                  target="_blank"
-                >
-                  Get tickets
-                </a>
-              </div>
-            </div>
-          </Container>
 
           {/* Shows */}
           <Container>
@@ -196,8 +153,6 @@ export default function Home() {
               </a>
             </div>
           </section>
-
-          <SpainTourAnnouncement />
 
           <iframe
             className="w-full aspect-video"

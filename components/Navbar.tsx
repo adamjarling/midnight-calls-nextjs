@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import classNames from "classnames";
 import cn from "classnames";
-import mcLogo from "public/images/logo/mc-logo_white.png";
+import mcLogo from "public/images/logo/tmc-logo-2026-white.png";
 import { nav } from "@/nttb-config";
 import { useOverflowHidden } from "@/context/overflow-hidden";
 
@@ -90,7 +90,7 @@ const Navbar = () => {
           ref={imageRef}
           src={mcLogo}
           alt="Midnight Calls logo"
-          className="absolute top-0 z-30 w-auto h-20 pt-3 -translate-x-1/2 left-1/2"
+          className="absolute top-0 z-30 w-auto h-24 pt-3 -translate-x-1/2 md:h-32 left-1/2"
         />
       </Link>
 

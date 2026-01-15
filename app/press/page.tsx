@@ -7,10 +7,9 @@ import Link from "next/link";
 import Main from "@/components/Main";
 import { Metadata } from "next";
 import SpainTourAnnouncement from "@/components/SpainTourAnnouncement";
-import logoBW from "@/public/images/logo/mc-logo-outline_white.png";
-import logoWhite from "@/public/images/logo/mc-logo_white.png";
-import mcPhoto1 from "@/public/images/the-midnight-calls_promo-pic.jpg";
-import mcPhotoCloseup from "@/public/images/the-midnight-calls_promo-pic-closeup.jpg";
+import logoGrey from "@/public/images/logo/the-midnight-calls-logo-transparent.png";
+import logoWhite from "@/public/images/logo/tmc-logo-2026-white.png";
+import mcPhoto1 from "@/public/photos/tmc-band-photo-2026-4.jpg";
 import { videos } from "@/data/videos";
 
 export const metadata: Metadata = {
@@ -21,23 +20,17 @@ const PressPack = () => {
   return (
     <Main flushTop={false}>
       <div className="space-y-16">
-        <SpainTourAnnouncement />
-
-        <div>
+        <div className="mt-8">
           <Container>
             <BannerHeadline>Press Photos</BannerHeadline>
           </Container>
 
-          <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2">
-            <div>
-              <Image src={mcPhoto1} alt="Midnight Calls promo picture" />
-            </div>
-            <div>
-              <Image
-                src={mcPhotoCloseup}
-                alt="Midnight Calls promo picture close-up"
-              />
-            </div>
+          <div className="relative flex items-center justify-center mt-8">
+            <Image
+              className="w-auto max-h-[80vh]"
+              src={mcPhoto1}
+              alt="Midnight Calls promo picture"
+            />
           </div>
         </div>
 
@@ -48,7 +41,10 @@ const PressPack = () => {
           <section className="container">
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
               <div>
-                <Image src={logoBW} alt="Midnight Calls logo black and white" />
+                <Image
+                  src={logoGrey}
+                  alt="Midnight Calls logo black and white"
+                />
               </div>
               <div>
                 <Image src={logoWhite} alt="Midnight Calls logo blue" />
@@ -56,6 +52,7 @@ const PressPack = () => {
             </div>
           </section>
         </div>
+
         <div>
           <Banner>
             <BannerHeadline>Videos</BannerHeadline>
@@ -77,6 +74,8 @@ const PressPack = () => {
             <p className="pt-5">themidnightcallsofficial [at] gmail.com</p>
           </Banner>
         </div>
+
+        <SpainTourAnnouncement />
       </div>
     </Main>
   );
