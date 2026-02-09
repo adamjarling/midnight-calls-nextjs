@@ -1,15 +1,8 @@
 import { type Show } from "@/data/shows";
 
-export default function useShows(shows?: Array<Show>) {
-  const payload = {
-    currentShows: [],
-    pastShows: [],
-    sorted: [],
-  };
+export default function getShowData(shows?: Array<Show>) {
   const currentShows: Show[] = [];
   const pastShows: Show[] = [];
-
-  //if (!shows || shows.length === 0) return payload;
 
   const sorted = shows
     ? shows.sort((a, b) => {
@@ -32,12 +25,11 @@ export default function useShows(shows?: Array<Show>) {
 
   const getNiceDate = (show: Show) => {
     const date = new Date(show.datetime);
-    const options = {
+    const options: Intl.DateTimeFormatOptions = {
       month: "short",
       day: "numeric",
     };
 
-    const hours = date.getHours();
     const weekday = date.toLocaleDateString("en-US", {
       weekday: "short",
     });
@@ -47,7 +39,6 @@ export default function useShows(shows?: Array<Show>) {
     });
     const year = date.getFullYear();
 
-    // @ts-ignore
     const niceDate = date.toLocaleDateString("en-US", options);
 
     return {
@@ -59,7 +50,6 @@ export default function useShows(shows?: Array<Show>) {
   };
 
   const isPastShow = (show: Show) => {
-    // return true if show is in the past
     const showDate = new Date(show.datetime);
     const now = new Date();
     return showDate < now;

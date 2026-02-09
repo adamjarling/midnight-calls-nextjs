@@ -81,8 +81,9 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
               width={image.width}
               height={image.height}
               onClick={() => handleImageClick(index)}
-              alt={"alt"}
+              alt={`The Midnight Calls - photo ${index + 1}`}
               className="cursor-pointer"
+              loading="lazy"
             />
           </motion.div>
         ))}

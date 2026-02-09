@@ -2,12 +2,10 @@
 
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import React, { useEffect, useRef, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import Image from "next/image";
 import Link from "next/link";
-import classNames from "classnames";
-import cn from "classnames";
 import mcLogo from "public/images/logo/tmc-logo-2026-white.png";
 import { nav } from "@/nttb-config";
 import { useOverflowHidden } from "@/context/overflow-hidden";
@@ -27,7 +25,17 @@ const Navbar = () => {
     toggleOverflowHidden();
   }
 
+  function handleLinkClick() {
+    if (isMobileNavOpen) {
+      setIsMobileNavOpen(false);
+      toggleOverflowHidden();
+    }
+  }
+
   useEffect(() => {
+    const node = imageRef.current;
+    if (!node) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsLogoVisible(entry.isIntersecting);
@@ -39,14 +47,10 @@ const Navbar = () => {
       }
     );
 
-    if (imageRef.current) {
-      observer.observe(imageRef.current);
-    }
+    observer.observe(node);
 
     return () => {
-      if (imageRef.current) {
-        observer.unobserve(imageRef.current);
-      }
+      observer.unobserve(node);
     };
   }, []);
 
@@ -54,17 +58,9 @@ const Navbar = () => {
     <div className="relative">
       {/* Nav overlay */}
       <nav
-        className={cn(
-          [
-            `z-30 w-full h-screen mb-64 text-center border border-black bg-black/85 border-spacing-10 transition-opacity duration-300 `,
-          ],
-          {
-            "opacity-0": !isMobileNavOpen,
-            "opacity-100": isMobileNavOpen,
-            hidden: !isMobileNavOpen,
-            fixed: isMobileNavOpen,
-          }
-        )}
+        className={`z-30 w-full h-screen mb-64 text-center border border-black bg-black/85 border-spacing-10 transition-opacity duration-300 ${
+          isMobileNavOpen ? "opacity-100 fixed" : "opacity-0 hidden"
+        }`}
       >
         <ul className="absolute w-full pb-24 space-y-8 -translate-x-1/2 -translate-y-1/2 md:space-y-12 lg:pb-16 lg:space-y-16 left-1/2 top-1/2">
           {nav.map((link) => (
@@ -72,7 +68,9 @@ const Navbar = () => {
               key={link.name}
               className="text-2xl font-bold uppercase duration-200 ease-in transform md:text-3xl lg:text-5xl hover:scale-110"
             >
-              <a href={link.href}>{link.name}</a>
+              <a href={link.href} onClick={handleLinkClick}>
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>
@@ -81,10 +79,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link
         href="/"
-        className={cn({
-          "opacity-0": hideLogo,
-          "opacity-100": !hideLogo,
-        })}
+        className={hideLogo ? "opacity-0" : "opacity-100"}
       >
         <Image
           ref={imageRef}
@@ -96,17 +91,15 @@ const Navbar = () => {
 
       {/* Header bar */}
       <header
-        className={classNames([`fixed z-40 w-full`], {
-          "bg-black": !isLogoVisible,
-        })}
+        className={`fixed z-40 w-full ${!isLogoVisible ? "bg-black" : ""}`}
       >
         <div className="flex items-center justify-center px-5 py-5">
           <Link
             href="/"
-            className={cn([`uppercase font-headline ease-in duration-200`], {
-              "opacity-0": isLogoVisible,
-              "opacity-100": !isLogoVisible,
-            })}
+            className={`uppercase font-headline ease-in duration-200 ${
+              isLogoVisible ? "opacity-0" : "opacity-100"
+            }`}
+            style={{ fontFamily: "var(--font-headline)" }}
           >
             The Midnight Calls
           </Link>

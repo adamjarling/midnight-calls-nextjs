@@ -7,17 +7,15 @@ import Container from "@/components/Container";
 import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
-import ResponsiveImage from "@/components/ResponsiveImage";
 import ShowListItem from "@/components/shows/ListItem";
 import SincePromo from "@/components/SincePromo";
-import SpainTourAnnouncement from "@/components/SpainTourAnnouncement";
 import adamMalaga from "@/public/photos/505117059_775036738193147_3844990692697810430_n.jpg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import coolCrowd from "@/public/photos/IMG_7642.jpg";
 import homeSplash from "@/public/photos/505318457_775036008193220_1042307814692525926_n.jpg";
 import homeSplashMobile from "@/public/photos/505443704_775035508193270_2202194173097249010_n.jpg";
 import sean from "@/public/photos/505590872_775036394859848_3960217479809390153_n.jpg";
-import useShows from "@/hooks/use-shows";
+import getShowData from "@/hooks/use-shows";
 import valladolidRocking from "@/public/photos/20250601_225932.jpeg";
 import vixenJake from "@/public/photos/540479843_758329336943658_7874683605367703828_n.jpg";
 
@@ -26,7 +24,6 @@ const homePics = [
     src: coolCrowd,
     alt: "Live at the Forge",
   },
-
   {
     src: valladolidRocking,
     alt: "The Midnight Calls on stage in Valladolid, Spain",
@@ -42,24 +39,32 @@ const homePics = [
 ];
 
 export default function Home() {
-  const { currentShows } = useShows(shows);
+  const { currentShows } = getShowData(shows);
 
   return (
     <>
       <Main flushTop>
         <div className="space-y-20 lg:space-y-32">
-          <ResponsiveImage
-            mobileSrc={homeSplashMobile}
-            desktopSrc={homeSplash}
+          {/* Hero - CSS responsive images */}
+          <Image
+            src={homeSplashMobile}
             alt="The Midnight Calls"
+            className="block lg:hidden w-full h-auto"
+            priority
+          />
+          <Image
+            src={homeSplash}
+            alt="The Midnight Calls"
+            className="hidden lg:block w-full h-auto"
+            priority
           />
 
           <div className="max-w-sm px-6 mx-auto text-base italic tracking-widest text-center lg:text-xl md:max-w-lg">
             <p>
-              "These Chicago blues rockers have listened to a tonne of
+              &quot;These Chicago blues rockers have listened to a tonne of
               Aerosmith, Stones and AC/DC records... Warm, swaggering 70s hard
               rock, spiced with bluesy slide guitar for a southern-tinged
-              finish... Tasty."
+              finish... Tasty.&quot;
             </p>
             <p>- Classic Rock Magazine 2024</p>
           </div>
@@ -98,7 +103,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
               {homePics.map((pic, i) => (
                 <Link href="/photos" key={i}>
-                  <Image src={pic.src} alt={pic.alt} />
+                  <Image src={pic.src} alt={pic.alt} loading="lazy" />
                 </Link>
               ))}
             </div>
@@ -118,28 +123,29 @@ export default function Home() {
               <h2 className="max-w-sm mb-5 text-2xl md:max-w-2xl md:text-4xl">
                 Classic Rock Magazine
                 <br />
-                "So Cold" - The best new rock songs you need to hear right now
+                &quot;So Cold&quot; - The best new rock songs you need to hear
+                right now
               </h2>
               <a
                 href="https://www.loudersound.com/features/tracks-of-the-week-may-20-2024"
-                className=""
                 target="_blank"
                 rel="noreferrer noopener"
               >
                 <Image
                   src={classicRock}
                   alt="Classic Rock Magazine - vote for The Midnight Calls new single flyer"
+                  loading="lazy"
                 />
               </a>
             </div>
 
             <div className="container text-center">
               <p className="max-w-3xl m-auto">
-                Classic Rock magazine featured "So Cold" as one of the best new
-                rock songs you need to hear right now the week of May 20, 2024.
-                Alongside fellow artists Nathaniel Rateliff, Black Smoke
-                Trigger, The Cold Stares and more, The Midnight Calls finished
-                in a strong 2nd place.
+                Classic Rock magazine featured &quot;So Cold&quot; as one of the
+                best new rock songs you need to hear right now the week of May
+                20, 2024. Alongside fellow artists Nathaniel Rateliff, Black
+                Smoke Trigger, The Cold Stares and more, The Midnight Calls
+                finished in a strong 2nd place.
               </p>
             </div>
             <div>
@@ -160,6 +166,7 @@ export default function Home() {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            loading="lazy"
           ></iframe>
         </div>
       </Main>

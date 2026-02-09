@@ -1,13 +1,8 @@
-import MasonryGallery, { MasonryImage } from "@/components/Masonry";
-
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import Main from "@/components/Main";
 import { Metadata } from "next";
 import React from "react";
-import { promises as fs } from "fs";
-import path from "path";
-import { shuffle } from "../utils/shuffle";
 import { videos } from "@/data/videos";
 
 export const metadata: Metadata = {
@@ -30,6 +25,7 @@ const VideoPage = async () => {
               title={title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
+              loading="lazy"
             ></iframe>
 
             {description && (

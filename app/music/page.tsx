@@ -6,9 +6,6 @@ import Link from "next/link";
 import Main from "@/components/Main";
 import { Metadata } from "next";
 import React from "react";
-import { promises as fs } from "fs";
-import path from "path";
-import { shuffle } from "../utils/shuffle";
 
 export const metadata: Metadata = {
   title: "Music",
@@ -23,7 +20,7 @@ const singles = [
     releaseDate: "2024",
     cover: "/images/since_single_cover-final.jpeg",
     description:
-      "“Since I’ve Been Thinking” is the fourth single by Chicago rockers, The Midnight Calls. In this track, the band digs into its Midwest roots producing a melodic Rock & Roll display reminiscent of classic Illinois bands like Cheap Trick, REO Speedwagon or Enuff Z’Nuff. Play it loud!  Filmed, edited, and directed by Michael DiGioia (https://www.mikedphoto.com)",
+      "\u201CSince I\u2019ve Been Thinking\u201D is the fourth single by Chicago rockers, The Midnight Calls. In this track, the band digs into its Midwest roots producing a melodic Rock & Roll display reminiscent of classic Illinois bands like Cheap Trick, REO Speedwagon or Enuff Z\u2019Nuff. Play it loud!  Filmed, edited, and directed by Michael DiGioia (https://www.mikedphoto.com)",
     youTubeId: "tpHGded-Ung",
   },
   {
@@ -34,7 +31,7 @@ const singles = [
     releaseDate: "2024",
     cover: "/images/so-cold_single-cover.png",
     description:
-      "“So Cold” is the third single by Chicago rockers The Midnight Calls.  In this 70s-influenced hard rocker, the band uses their brand of slide guitar to tell a twist on the traditional Blues tale of heartache caused by a woman. A cold temptress that leaves a trail of broken hearts in her path. Play it loud. The lyric video was conceptualized and filmed by UK media artist Mila Djokic-Randolph.",
+      "\u201CSo Cold\u201D is the third single by Chicago rockers The Midnight Calls.  In this 70s-influenced hard rocker, the band uses their brand of slide guitar to tell a twist on the traditional Blues tale of heartache caused by a woman. A cold temptress that leaves a trail of broken hearts in her path. Play it loud. The lyric video was conceptualized and filmed by UK media artist Mila Djokic-Randolph.",
     youTubeId: "0EN_QF5trtU",
   },
   {
@@ -56,7 +53,7 @@ const singles = [
     releaseDate: "2024",
     cover: "/images/roses-single-cover-v4-3.jpg",
     description:
-      "“Coming Up Roses” is the second single from Chicago rockers The Midnight Calls. This guitar-driven hit to the gut reflects on the out-of-reach nature of fame and the American dream. A working class scream into deaf ears from a working class Rock & Roll band.",
+      "\u201CComing Up Roses\u201D is the second single from Chicago rockers The Midnight Calls. This guitar-driven hit to the gut reflects on the out-of-reach nature of fame and the American dream. A working class scream into deaf ears from a working class Rock & Roll band.",
     youTubeId: "ba9kWpoC9_U",
   },
 ];
@@ -90,6 +87,7 @@ const MusicPage = async () => {
                   width={1600}
                   height={1600}
                   className="w-full h-auto max-w-full"
+                  loading="lazy"
                 />
 
                 <h3 className="p-0 m-0 text-2xl text-center">{title}</h3>
@@ -100,21 +98,21 @@ const MusicPage = async () => {
                 </div>
 
                 {description && (
-                  <p className="text-sm text-center text-gray-300 max-w-3xlmx-auto lg:text-base">
+                  <p className="text-sm text-center text-gray-300 max-w-3xl mx-auto lg:text-base">
                     {description}
                   </p>
                 )}
 
-                <div className="flex items-center justify-center w-full space-x-4">
+                <div className="flex flex-col w-full gap-3 sm:flex-row sm:items-center sm:justify-center">
                   <Link
-                    className="flex-grow block text-center button"
+                    className="block text-center button"
                     target="_blank"
                     href={hyperfollowLink}
                   >
                     Listen
                   </Link>
                   <Link
-                    className="flex-grow block text-center button"
+                    className="block text-center button"
                     href={`https://youtu.be/${youTubeId}`}
                     target="_blank"
                   >

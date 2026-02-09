@@ -4,7 +4,6 @@ import { Bungee, Libre_Franklin } from "next/font/google";
 import { config, nav } from "nttb-config";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import { OverflowHiddenProvider } from "@/context/overflow-hidden";
@@ -41,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${headlineFont.variable} ${libreFranklin.className}`}
+      className={`${headlineFont.variable} ${libreFranklin.className} scroll-smooth`}
     >
       <link
         rel="icon"
@@ -52,22 +51,22 @@ export default function RootLayout({
       <OverflowHiddenProvider>
         <Wrapper>
           <Navbar />
-          <div className="">{children}</div>
+          {children}
           <Footer />
-        </Wrapper>
-      </OverflowHiddenProvider>
 
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA}`}
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA}`}
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${process.env.NEXT_PUBLIC_GA}');
             `}
-      </Script>
+          </Script>
+        </Wrapper>
+      </OverflowHiddenProvider>
     </html>
   );
 }

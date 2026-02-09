@@ -1,48 +1,71 @@
 "use client";
 
-import { FooterSimpleCentered, SocialIcons } from "zuma-blocks";
 import { nav, socialMedia } from "@/nttb-config";
 
-import { BsSpotify } from "react-icons/bs";
+import { FaFacebook, FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 import React from "react";
 
-const footerInfo = {
-  bandName: "The Midnight Calls",
-  nav,
-  socials: [
-    {
-      name: "Facebook",
-      href: socialMedia.facebook.url,
-      icon: SocialIcons.FacebookIcon,
-    },
-    {
-      name: "Instagram",
-      href: socialMedia.instagram.url,
-      icon: SocialIcons.InstagramIcon,
-    },
-    {
-      name: "Spotify",
-      href: socialMedia.spotify.url,
-      icon: BsSpotify,
-    },
-    {
-      name: "YouTube",
-      href: socialMedia.youTube.url,
-      icon: SocialIcons.YouTubeIcon,
-    },
-  ],
-};
+const socials = [
+  {
+    name: "Facebook",
+    href: socialMedia.facebook.url,
+    icon: FaFacebook,
+  },
+  {
+    name: "Instagram",
+    href: socialMedia.instagram.url,
+    icon: FaInstagram,
+  },
+  {
+    name: "Spotify",
+    href: socialMedia.spotify.url,
+    icon: FaSpotify,
+  },
+  {
+    name: "YouTube",
+    href: socialMedia.youTube.url,
+    icon: FaYoutube,
+  },
+];
 
 const Footer = () => {
   return (
     <div className="relative">
       <div className="relative z-20">
-        <FooterSimpleCentered
-          bandName={footerInfo.bandName}
-          nav={footerInfo.nav}
-          socials={footerInfo.socials}
-        />
+        <footer className="py-12 text-center">
+          <nav className="flex flex-col items-center gap-4 mb-8 md:flex-row md:justify-center md:gap-8">
+            {nav.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium uppercase tracking-wider text-slate-300 hover:text-white transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex items-center justify-center gap-6 mb-8">
+            {socials.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors"
+                aria-label={social.name}
+              >
+                <social.icon className="w-6 h-6" />
+              </a>
+            ))}
+          </div>
+
+          <p className="text-sm text-slate-500 mb-0">
+            &copy; {new Date().getFullYear()} The Midnight Calls. All rights
+            reserved.
+          </p>
+        </footer>
       </div>
 
       <div

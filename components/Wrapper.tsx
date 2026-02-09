@@ -1,6 +1,5 @@
 "use client";
 
-import cn from "classnames";
 import { useOverflowHidden } from "@/context/overflow-hidden";
 
 export default function Wrapper({ children }: { children: React.ReactNode }) {
@@ -8,13 +7,11 @@ export default function Wrapper({ children }: { children: React.ReactNode }) {
 
   return (
     <body
-      className={cn([`relative bg-black text-slate-50`], {
-        "overflow-hidden": isOverflowHidden,
-      })}
+      className={`relative bg-black text-slate-50 ${
+        isOverflowHidden ? "overflow-hidden" : ""
+      }`}
     >
-      <div>
-        <div className="">{children}</div>
-      </div>
+      {children}
     </body>
   );
 }

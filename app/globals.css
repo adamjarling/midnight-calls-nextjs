@@ -1,9 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html {
-  /* font-size: 21px; */
+@theme {
+  --font-headline: var(--font-headlineFont);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 
 @layer base {
@@ -12,22 +15,23 @@ html {
   h3,
   h4,
   h5 {
-    @apply font-medium uppercase font-headline;
+    @apply font-medium uppercase;
+    font-family: var(--font-headline);
   }
 
   p {
     @apply mb-4;
   }
+}
 
-  .button {
-    @apply px-6 py-4 uppercase border rounded hover:opacity-70 hover:transition-all hover:duration-300;
-  }
+@utility button {
+  @apply px-6 py-4 uppercase border rounded hover:opacity-70 hover:transition-all hover:duration-300;
+}
 
-  .banner-headline {
-    @apply text-4xl font-semibold leading-none text-center md:text-5xl lg:text-6xl;
-  }
+@utility banner-headline {
+  @apply text-4xl font-semibold leading-none text-center md:text-5xl lg:text-6xl;
+}
 
-  .section {
-    @apply max-w-3xl py-8 mx-auto;
-  }
+@utility section {
+  @apply max-w-3xl py-8 mx-auto;
 }

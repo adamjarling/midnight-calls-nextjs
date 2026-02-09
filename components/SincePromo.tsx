@@ -1,6 +1,5 @@
 "use client";
 
-import { ExternalLink } from "zuma-blocks";
 import Image from "next/image";
 import React from "react";
 import sinceCover from "public/images/since_single_cover-final.jpeg";
@@ -17,18 +16,20 @@ const SincePromo = () => {
       </div>
 
       <h2 className="text-2xl text-center md:text-4xl">
-        "Since I've Been Thinking"
+        &quot;Since I&apos;ve Been Thinking&quot;
         <br />
         Single Out Now!
       </h2>
 
       <div className="flex justify-center">
-        <ExternalLink
+        <a
           href="https://www.youtube.com/watch?v=tpHGded-Ung"
-          classNames="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button"
         >
           Watch on YouTube
-        </ExternalLink>
+        </a>
       </div>
     </div>
   );
