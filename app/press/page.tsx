@@ -33,15 +33,79 @@ const PressPack = () => {
           </div>
         </div>
 
-        {/* Bio */}
+        {/* Bio - English */}
         <Container>
-          <div className="max-w-3xl mx-auto text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl">About</h2>
-            <p className="text-lg text-slate-300 leading-relaxed">
-              The Midnight Calls are a blues rock band from Chicago featuring
-              Taran De Pablos, Adam J. Arling, Tony McQuaid, Sean Barnes and
-              Chuck Harling. Their music is strongly influenced by the Blues and
-              by bands like Aerosmith, The Rolling Stones, and AC/DC.
+          <div className="max-w-3xl mx-auto space-y-4">
+            <h2 className="text-3xl text-center md:text-4xl">About</h2>
+            <p className="text-base text-slate-300 leading-relaxed">
+              The Midnight Calls are a band from Chicago that plays
+              classic-style rock and roll with 70s and Southern touches.
+              Although they are an American group, they have a singer from
+              Segovia, Taran de Pablos, who emigrated to the Windy City more
+              than two decades ago. Alongside him are guitarists Adam Arling
+              (The Last Vegas, Urge Overkill, Warrior Soul) and Tony McQuaid
+              (Loudmouth, Frank Bang &amp; the Secret Stash), bassist Sean
+              Barnes, and drummer Chuck Harling. Their music is strongly
+              influenced by the Blues and by bands like Aerosmith, The Rolling
+              Stones, and AC/DC. With catchy melodies and guitars turned up to
+              11 as the main ingredients, The Midnight Calls&apos; musical
+              recipe doesn&apos;t try to surprise us but instead brings us
+              those recognizable flavors of American Blues Rock served with the
+              elegance and expertise expected of seasoned musicians who have
+              spent half their lives on the road on stages in America and
+              Europe.
+            </p>
+            <p className="text-base text-slate-300 leading-relaxed">
+              Since their formation in 2022, the band has been playing
+              regularly, sharing the stage with bands like Living Colour,
+              Supersuckers, The Steepwater Band, Faster Pussycat, Blacktop
+              Mojo, and Jason Kane &amp; The Jive, among others.
+            </p>
+            <p className="text-base text-slate-300 leading-relaxed">
+              The Midnight Calls have already released four singles:
+              &quot;Whaddya,&quot; &quot;Coming Up Roses,&quot; &quot;So
+              Cold,&quot; and their latest track, &quot;Since I&apos;ve Been
+              Thinking.&quot; For the latter, they collaborated with Chris
+              Grove (Survivor, Joel Hoekstra, Eddie Money, The Steepwater
+              Band) on keyboards.
+            </p>
+          </div>
+        </Container>
+
+        {/* Bio - Spanish */}
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-4">
+            <h2 className="text-3xl text-center md:text-4xl">Biografía</h2>
+            <p className="text-base text-slate-300 leading-relaxed">
+              The Midnight Calls son una banda de Chicago y hacen Rocanrol de
+              estilo clásico con toques setenteros y sureños. Aún siendo un
+              grupo americano, cuentan en sus filas con el cantante segoviano,
+              Taran de Pablos que emigró a la ciudad del viento hace ya más de
+              dos décadas. A su lado se encuentran los guitarristas Adam
+              Arling (The Last Vegas, Urge Overkill, Warrior Soul) y Tony
+              McQuaid (Loudmouth, Frank Bang &amp; the Secret Stash), el
+              bajista Sean Barnes y el batería Chuck Harling. Su música está
+              fuertemente influenciada por el Blues y por bandas como
+              Aerosmith, The Rolling Stones o AC/DC. Con melodías pegadizas y
+              guitarras al 10 como principales ingredientes, la receta musical
+              de The Midnight Calls no trata de sorprendernos sino que nos
+              trae esos sabores reconocibles del Blues Rock americano servidos
+              con la elegancia y el buen hacer que se espera de músicos
+              curtidos en mil batallas que llevan media vida haciendo
+              carretera en escenarios de América y Europa.
+            </p>
+            <p className="text-base text-slate-300 leading-relaxed">
+              Desde su creación en 2022, la banda ha estado tocando
+              regularmente, compartiendo escenario con bandas como Living
+              Colour, Supersuckers, The Steepwater Band, Faster Pussycat,
+              Blacktop Mojo, o Jason Kane &amp; The Jive entre otras.
+            </p>
+            <p className="text-base text-slate-300 leading-relaxed">
+              The Midnight Calls han lanzado ya cuatro sencillos, &quot;Whaddya&quot;,
+              &quot;Coming Up Roses&quot;, &quot;So Cold&quot; y su último tema,
+              &quot;Since I&apos;ve Been Thinking&quot;. Para estos últimos han
+              contado con la colaboración de Chris Grove (Survivor, Joel
+              Hoekstra, Eddie Money, The Steepwater Band) a los teclados.
             </p>
           </div>
         </Container>
