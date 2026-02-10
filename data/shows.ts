@@ -854,4 +854,80 @@ export const shows: Show[] = [
         "https://www.eventbrite.com/e/enuff-z-nuff-hof-induction-party-w-midnight-calls-yet-again-at-jamos-tickets-1964610014439",
     },
   },
+  {
+    datetime: "2026-03-14T20:00:00",
+    notes: "w/ The Kozmic Kicks & The Handcuffs",
+    venue: {
+      name: "Liars Club",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/liarsclubchicago/",
+        website: "https://www.liarsclubstore.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-04-11T20:00:00",
+    notes: "w/ Reflexicon and Viceroy",
+    venue: {
+      name: "Reggies Shack",
+      city: "Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/reggiesrockclub",
+        website: "https://www.reggieslive.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-04-24T20:00:00",
+    notes: "w/ Sponge",
+    venue: {
+      name: "The WC Social Club",
+      city: "West Chicago",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/TheWCSocialClub/",
+        website: "https://www.thewcsocialclub.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-05-16T20:00:00",
+    notes: "w/ Cuttlass",
+    venue: {
+      name: "Tony Ds",
+      city: "Elmwood Park",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/TonyDsEP/",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
 ];
