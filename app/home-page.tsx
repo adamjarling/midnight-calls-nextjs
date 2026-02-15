@@ -13,10 +13,10 @@ import SincePromo from "@/components/SincePromo";
 import adamMalaga from "@/public/photos/505117059_775036738193147_3844990692697810430_n.jpg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import coolCrowd from "@/public/photos/IMG_7642.jpg";
+import getShowData from "@/hooks/use-shows";
 import homeSplash from "@/public/photos/505318457_775036008193220_1042307814692525926_n.jpg";
 import homeSplashMobile from "@/public/photos/505443704_775035508193270_2202194173097249010_n.jpg";
 import sean from "@/public/photos/505590872_775036394859848_3960217479809390153_n.jpg";
-import getShowData from "@/hooks/use-shows";
 import valladolidRocking from "@/public/photos/20250601_225932.jpeg";
 import vixenJake from "@/public/photos/540479843_758329336943658_7874683605367703828_n.jpg";
 
@@ -63,14 +63,23 @@ export default function Home() {
             priority
           />
 
-          <div className="max-w-sm px-6 mx-auto text-base italic tracking-widest text-center lg:text-xl md:max-w-lg">
-            <p>
+          <div className="max-w-2xl px-6 mx-auto text-center">
+            <p className="text-xl md:text-2xl font-mono italic leading-relaxed mb-6 uppercase">
               &quot;These Chicago blues rockers have listened to a tonne of
               Aerosmith, Stones and AC/DC records... Warm, swaggering 70s hard
               rock, spiced with bluesy slide guitar for a southern-tinged
               finish... Tasty.&quot;
             </p>
-            <p>- Classic Rock Magazine 2024</p>
+            <div className="flex flex-col items-center gap-3">
+              <Image
+                src="/images/classic-rock-logo.png"
+                alt="Classic Rock Magazine"
+                width={200}
+                height={60}
+                className="h-12 w-auto"
+              />
+              <p className="text-lg font-mono font-medium">2024</p>
+            </div>
           </div>
 
           {/* Featured Show Poster */}
