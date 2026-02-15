@@ -12,6 +12,7 @@ export type Venue = {
 export type Show = {
   datetime: string;
   notes?: string;
+  poster?: string;
   venue: Venue;
   url: {
     facebook: string;
@@ -895,6 +896,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-04-24T20:00:00",
     notes: "w/ Sponge",
+    poster: "/posters/2026_04_26_sponge.jpeg",
     venue: {
       name: "The WC Social Club",
       city: "West Chicago",
@@ -908,7 +910,7 @@ export const shows: Show[] = [
     url: {
       facebook: "",
       image: "",
-      ticket: "",
+      ticket: "https://skeletix.com/4146-sponge-the-wc-social-club-2026-04-24/",
     },
   },
   {

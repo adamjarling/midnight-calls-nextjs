@@ -1,5 +1,6 @@
 import React from "react";
 import { Show } from "@/data/shows";
+import Image from "next/image";
 import getShowData from "@/hooks/use-shows";
 
 const ShowListItem = ({ show }: { show: Show }) => {
@@ -65,6 +66,19 @@ const ShowListItem = ({ show }: { show: Show }) => {
           {show.notes && <p className="text-base text-slate-400">{show.notes}</p>}
         </div>
       </div>
+
+      {/* Show Poster */}
+      {show.poster && (
+        <div className="mt-6 md:ml-[calc(33.333%+2rem)]">
+          <Image
+            src={show.poster}
+            alt={`${show.venue.name} show flyer`}
+            width={600}
+            height={900}
+            className="w-full h-auto max-w-md mx-auto md:mx-0"
+          />
+        </div>
+      )}
     </div>
   );
 };

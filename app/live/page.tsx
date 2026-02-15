@@ -7,6 +7,7 @@ import MasonryGallery from "@/components/Masonry";
 import { MasonryImage } from "@/components/Masonry";
 import { Metadata } from "next";
 import ShowListBig from "@/components/shows/ListBig";
+import ShowPoster from "@/components/shows/ShowPoster";
 import { promises as fs } from "fs";
 import path from "path";
 import getShowData from "@/hooks/use-shows";
@@ -36,11 +37,20 @@ const Shows = async () => {
     };
   });
 
+  // Find first upcoming show with a poster
+  const featuredShow = currentShows.find((show) => show.poster);
+
   return (
     <Main flushTop>
       <HeroWrapper />
 
       <div className="space-y-16">
+        {featuredShow && (
+          <Container>
+            <ShowPoster show={featuredShow as Show} />
+          </Container>
+        )}
+
         <Container>
           <h3 className="py-10 text-4xl font-bold text-center md:text-6xl">
             Upcoming Shows

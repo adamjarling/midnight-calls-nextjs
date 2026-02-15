@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Main from "@/components/Main";
 import ShowListItem from "@/components/shows/ListItem";
+import ShowPoster from "@/components/shows/ShowPoster";
 import SincePromo from "@/components/SincePromo";
 import adamMalaga from "@/public/photos/505117059_775036738193147_3844990692697810430_n.jpg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
@@ -41,6 +42,9 @@ const homePics = [
 export default function Home() {
   const { currentShows } = getShowData(shows);
 
+  // Find first upcoming show with a poster
+  const featuredShow = currentShows.find((show) => show.poster);
+
   return (
     <>
       <Main flushTop>
@@ -68,6 +72,13 @@ export default function Home() {
             </p>
             <p>- Classic Rock Magazine 2024</p>
           </div>
+
+          {/* Featured Show Poster */}
+          {featuredShow && (
+            <Container>
+              <ShowPoster show={featuredShow as Show} />
+            </Container>
+          )}
 
           {/* Shows */}
           <Container>
