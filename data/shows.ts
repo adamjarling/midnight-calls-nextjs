@@ -932,4 +932,167 @@ export const shows: Show[] = [
       ticket: "",
     },
   },
+  {
+    datetime: "2026-05-28T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "La Cueva del Jazz",
+      city: "Zamora",
+      stateProvince: "Castilla y León",
+      country: "Spain",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-05-29T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "Sala Jagger",
+      city: "Lugo",
+      stateProvince: "Galicia",
+      country: "Spain",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-05-30T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "O Bar Queiro",
+      city: "Mañón",
+      stateProvince: "Galicia",
+      country: "Spain",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-05-31T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "Casa Cultura",
+      city: "Vegadeo",
+      stateProvince: "Asturias",
+      country: "Spain",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-06-02T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "Karibe Zaharra",
+      city: "Legazpi",
+      stateProvince: "País Vasco",
+      country: "Spain",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-06-03T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "Sala Onura",
+      city: "Bilbao",
+      stateProvince: "País Vasco",
+      country: "Spain",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-06-04T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "Los Picos",
+      city: "Liérganes",
+      stateProvince: "Cantabria",
+      country: "Spain",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-06-05T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "Sala Mardi Gras",
+      city: "A Coruña",
+      stateProvince: "Galicia",
+      country: "Spain",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-06-06T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "GRC Amigos de Seixas",
+      city: "Seixas",
+      stateProvince: "Minho",
+      country: "Portugal",
+      url: {},
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2026-06-07T21:00:00",
+    notes: "España & Portugal 2026!",
+    venue: {
+      name: "Porta Caeli",
+      city: "Valladolid",
+      stateProvince: "Castilla y León",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/salaportacaeli/",
+        website: "https://portacaeli.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
 ];
