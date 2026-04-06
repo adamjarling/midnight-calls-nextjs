@@ -82,6 +82,19 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Tour Teaser */}
+          <Container>
+            <div className="text-center space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                España &amp; Portugal 2026 — Tour Dates Announced
+              </h2>
+              <Link href="/live" className="button inline-flex items-center mt-4">
+                See All Tour Dates
+                <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
+              </Link>
+            </div>
+          </Container>
+
           {/* Latest Video */}
           <Container>
             <div className="max-w-4xl mx-auto">
