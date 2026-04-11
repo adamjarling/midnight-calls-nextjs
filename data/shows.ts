@@ -1001,9 +1001,9 @@ export const shows: Show[] = [
     datetime: "2026-06-02T21:00:00",
     notes: "España & Portugal 2026!",
     venue: {
-      name: "Karibe Zaharra",
-      city: "Legazpi",
-      stateProvince: "País Vasco",
+      name: "Wurlitzer Ballroom",
+      city: "Madrid",
+      stateProvince: "Comunidad de Madrid",
       country: "Spain",
       url: {},
     },

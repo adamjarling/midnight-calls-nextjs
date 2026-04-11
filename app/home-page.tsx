@@ -42,8 +42,21 @@ const homePics = [
 export default function Home() {
   const { currentShows } = getShowData(shows);
 
+  const spainTourShows = currentShows.filter(
+    (show) =>
+      show.venue.country === "Spain" || show.venue.country === "Portugal"
+  );
+  const upcomingLocalShows = currentShows
+    .filter(
+      (show) =>
+        show.venue.country !== "Spain" && show.venue.country !== "Portugal"
+    )
+    .slice(0, 3);
+  const homeShows = [...upcomingLocalShows, ...spainTourShows];
+
   // Find first upcoming show with a poster
-  const featuredShow = currentShows.find((show) => show.poster);
+  //const featuredShow = currentShows.find((show) => show.poster);
+  const featuredShow = null;
 
   return (
     <>
@@ -88,7 +101,10 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                 España &amp; Portugal 2026 — Tour Dates Announced
               </h2>
-              <Link href="/live" className="button inline-flex items-center mt-4">
+              <Link
+                href="/live"
+                className="button inline-flex items-center mt-4"
+              >
                 See All Tour Dates
                 <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
               </Link>
@@ -111,7 +127,15 @@ export default function Home() {
               ></iframe>
               <div className="container text-center">
                 <p className="max-w-3xl m-auto">
-                  Objectophilia is the newest single from Chicago hard rockers The Midnight Calls. This relentless barnburner showcases the most aggressive side of the band with the scorching guitars of Adam Arling (The Last Vegas, Warrior Soul) and Jake Pallisard (Donnie Vie) setting the perfect tone for the aggressive howls of Spain born singer Taran de Pablos. Objectophilia is the 5th single released to this point by the band and will be featured in their upcoming album which will be available in spring 2026.
+                  Objectophilia is the newest single from Chicago hard rockers
+                  The Midnight Calls. This relentless barnburner showcases the
+                  most aggressive side of the band with the scorching guitars of
+                  Adam Arling (The Last Vegas, Warrior Soul) and Jake Pallisard
+                  (Donnie Vie) setting the perfect tone for the aggressive howls
+                  of Spain born singer Taran de Pablos. Objectophilia is the 5th
+                  single released to this point by the band and will be featured
+                  in their upcoming album which will be available in spring
+                  2026.
                 </p>
               </div>
             </div>
@@ -132,13 +156,13 @@ export default function Home() {
 
             <div className="max-w-3xl mx-auto">
               <ul>
-                {currentShows.length > 0 &&
-                  currentShows.slice(0, 3).map((show) => (
+                {homeShows.length > 0 &&
+                  homeShows.map((show) => (
                     <li key={show.datetime}>
                       <ShowListItem show={show as Show}></ShowListItem>
                     </li>
                   ))}
-                {currentShows.length === 0 && (
+                {homeShows.length === 0 && (
                   <p className="text-center">
                     Check back soon for show announcements!
                   </p>
