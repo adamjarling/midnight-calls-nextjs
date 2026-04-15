@@ -915,6 +915,25 @@ export const shows: Show[] = [
     },
   },
   {
+    datetime: "2026-05-13T20:00:00",
+    notes: "w/ John Corabi and Friends",
+    venue: {
+      name: "The Vixen",
+      city: "McHenry",
+      stateProvince: "IL",
+      country: "USA",
+      url: {
+        facebook: "https://www.facebook.com/vixmchenry/",
+        website: "https://vixenmchenry.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "https://vixenmchenry.com/event/john-corabi/",
+    },
+  },
+  {
     datetime: "2026-05-16T20:00:00",
     notes: "w/ Cuttlass",
     venue: {
