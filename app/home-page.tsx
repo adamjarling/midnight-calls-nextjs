@@ -9,7 +9,6 @@ import Link from "next/link";
 import Main from "@/components/Main";
 import ShowListItem from "@/components/shows/ListItem";
 import ShowPoster from "@/components/shows/ShowPoster";
-import SincePromo from "@/components/SincePromo";
 import adamMalaga from "@/public/photos/505117059_775036738193147_3844990692697810430_n.jpg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import coolCrowd from "@/public/photos/IMG_7642.jpg";
@@ -19,6 +18,7 @@ import homeSplashMobile from "@/public/photos/505443704_775035508193270_22021941
 import sean from "@/public/photos/505590872_775036394859848_3960217479809390153_n.jpg";
 import valladolidRocking from "@/public/photos/20250601_225932.jpeg";
 import vixenJake from "@/public/photos/540479843_758329336943658_7874683605367703828_n.jpg";
+import spainAllDates from "@/public/posters/tmc-spain-2026-all-dates.jpeg";
 
 const homePics = [
   {
@@ -52,7 +52,7 @@ export default function Home() {
         show.venue.country !== "Spain" && show.venue.country !== "Portugal"
     )
     .slice(0, 3);
-  const homeShows = [...upcomingLocalShows, ...spainTourShows];
+  const homeShows = [...upcomingLocalShows, ...spainTourShows].slice(0, 3);
 
   // Find first upcoming show with a poster
   //const featuredShow = currentShows.find((show) => show.poster);
@@ -101,6 +101,16 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                 España &amp; Portugal 2026 — Tour Dates Announced
               </h2>
+              <div className="max-w-lg mx-auto">
+                <Link href="/live">
+                  <Image
+                    src={spainAllDates}
+                    alt="The Midnight Calls España & Portugal 2026 — All Tour Dates"
+                    className="w-full h-auto rounded"
+                    loading="lazy"
+                  />
+                </Link>
+              </div>
               <Link
                 href="/live"
                 className="button inline-flex items-center mt-4"
@@ -155,20 +165,32 @@ export default function Home() {
             </Banner>
 
             <div className="max-w-3xl mx-auto">
-              <ul>
-                {homeShows.length > 0 &&
-                  homeShows.map((show) => (
-                    <li key={show.datetime}>
-                      <ShowListItem show={show as Show}></ShowListItem>
-                    </li>
-                  ))}
-                {homeShows.length === 0 && (
-                  <p className="text-center">
-                    Check back soon for show announcements!
-                  </p>
+              <div className="relative">
+                <ul>
+                  {homeShows.length > 0 &&
+                    homeShows.map((show, index) => (
+                      <li
+                        key={show.datetime}
+                        className={
+                          index === homeShows.length - 1
+                            ? "opacity-40 pointer-events-none"
+                            : ""
+                        }
+                      >
+                        <ShowListItem show={show as Show} />
+                      </li>
+                    ))}
+                  {homeShows.length === 0 && (
+                    <p className="text-center">
+                      Check back soon for show announcements!
+                    </p>
+                  )}
+                </ul>
+                {homeShows.length > 0 && (
+                  <div className="absolute bottom-0 left-0 right-0 h-48 bg-linear-to-b from-transparent to-black pointer-events-none" />
                 )}
-              </ul>
-              <div className="flex justify-end mb-20">
+              </div>
+              <div className="flex justify-end mt-4">
                 <Link href="/live" className="button">
                   View All Shows
                   <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
@@ -194,7 +216,6 @@ export default function Home() {
             </div>
           </section>
 
-          <SincePromo />
 
           {/* Classic Rock Magazine */}
           <section className="mt-20 space-y-6 text-center">
