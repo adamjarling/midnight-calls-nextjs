@@ -12,13 +12,14 @@ import ShowPoster from "@/components/shows/ShowPoster";
 import adamMalaga from "@/public/photos/505117059_775036738193147_3844990692697810430_n.jpg";
 import classicRock from "@/public/images/classic-rock-8-bands-to-hear.webp";
 import coolCrowd from "@/public/photos/IMG_7642.jpg";
+import drummerLive from "@/public/photos/_U7A3096.jpg";
 import getShowData from "@/hooks/use-shows";
+import guitarLive from "@/public/photos/_U7A3353.jpg";
 import homeSplash from "@/public/photos/505318457_775036008193220_1042307814692525926_n.jpg";
 import homeSplashMobile from "@/public/photos/505443704_775035508193270_2202194173097249010_n.jpg";
 import sean from "@/public/photos/505590872_775036394859848_3960217479809390153_n.jpg";
+import spainAllDates from "@/public/posters/tmc-spain-2026-all-dates-v2.png";
 import valladolidRocking from "@/public/photos/20250601_225932.jpeg";
-import vixenJake from "@/public/photos/540479843_758329336943658_7874683605367703828_n.jpg";
-import spainAllDates from "@/public/posters/tmc-spain-2026-all-dates.jpeg";
 
 const homePics = [
   {
@@ -26,16 +27,25 @@ const homePics = [
     alt: "Live at the Forge",
   },
   {
-    src: valladolidRocking,
-    alt: "The Midnight Calls on stage in Valladolid, Spain",
-  },
-  {
     src: sean,
     alt: "Rocking in Spain",
   },
   {
+    src: drummerLive,
+    alt: "The Midnight Calls drummer performing live",
+  },
+  {
+    src: valladolidRocking,
+    alt: "The Midnight Calls on stage in Valladolid, Spain",
+  },
+
+  {
     src: adamMalaga,
     alt: "Spain rocks",
+  },
+  {
+    src: guitarLive,
+    alt: "The Midnight Calls guitarist performing live",
   },
 ];
 
@@ -44,12 +54,12 @@ export default function Home() {
 
   const spainTourShows = currentShows.filter(
     (show) =>
-      show.venue.country === "Spain" || show.venue.country === "Portugal"
+      show.venue.country === "Spain" || show.venue.country === "Portugal",
   );
   const upcomingLocalShows = currentShows
     .filter(
       (show) =>
-        show.venue.country !== "Spain" && show.venue.country !== "Portugal"
+        show.venue.country !== "Spain" && show.venue.country !== "Portugal",
     )
     .slice(0, 3);
   const homeShows = [...upcomingLocalShows, ...spainTourShows].slice(0, 3);
@@ -215,7 +225,6 @@ export default function Home() {
               </Link>
             </div>
           </section>
-
 
           {/* Classic Rock Magazine */}
           <section className="mt-20 space-y-6 text-center">

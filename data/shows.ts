@@ -955,7 +955,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-05-28T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "La Cueva del Jazz",
       city: "Zamora",
@@ -972,7 +972,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-05-29T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "Sala Jagger",
       city: "Lugo",
@@ -989,7 +989,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-05-30T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "O Bar Queiro",
       city: "Mañón",
@@ -1006,7 +1006,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-05-31T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "Casa Cultura",
       city: "Vegadeo",
@@ -1023,7 +1023,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-06-02T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "Wurlitzer Ballroom",
       city: "Madrid",
@@ -1040,10 +1040,10 @@ export const shows: Show[] = [
   {
     datetime: "2026-06-03T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
-      name: "Sala Onura",
-      city: "Bilbao",
+      name: "El Comercio de Las Arenas",
+      city: "Getxo",
       stateProvince: "País Vasco",
       country: "Spain",
       url: {},
@@ -1057,7 +1057,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-06-04T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "Los Picos",
       city: "Liérganes",
@@ -1074,7 +1074,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-06-05T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "Sala Mardi Gras",
       city: "A Coruña",
@@ -1091,7 +1091,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-06-06T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "GRC Amigos de Seixas",
       city: "Seixas",
@@ -1108,7 +1108,7 @@ export const shows: Show[] = [
   {
     datetime: "2026-06-07T21:00:00",
     notes: "España & Portugal 2026!",
-    poster: "/posters/tmc-spain-2026-all-dates.jpeg",
+    poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "Porta Caeli",
       city: "Valladolid",
