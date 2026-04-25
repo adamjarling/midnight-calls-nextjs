@@ -992,7 +992,7 @@ export const shows: Show[] = [
     poster: "/posters/tmc-spain-2026-all-dates-v2.png",
     venue: {
       name: "O Bar Queiro",
-      city: "Mañón",
+      city: "Porto Do Barqueiro",
       stateProvince: "Galicia",
       country: "Spain",
       url: {},
